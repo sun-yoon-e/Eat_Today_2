@@ -28,7 +28,6 @@
 		A186CCCC26579C1E00F02B69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A186CCCA26579C1E00F02B69 /* Main.storyboard */; };
 		A1F5DA7B264A7CC200557B38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F5DA7A264A7CC200557B38 /* AppDelegate.swift */; };
 		A1F5DA7D264A7CC200557B38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F5DA7C264A7CC200557B38 /* SceneDelegate.swift */; };
-		A1F5DA7F264A7CC200557B38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F5DA7E264A7CC200557B38 /* ViewController.swift */; };
 		A1F5DA84264A7CC200557B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F5DA83264A7CC200557B38 /* Assets.xcassets */; };
 		A1F5DA87264A7CC200557B38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F5DA85264A7CC200557B38 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -56,7 +55,6 @@
 		A1F5DA77264A7CC200557B38 /* Eat_Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eat_Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F5DA7A264A7CC200557B38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1F5DA7C264A7CC200557B38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A1F5DA7E264A7CC200557B38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A1F5DA83264A7CC200557B38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1F5DA86264A7CC200557B38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1F5DA88264A7CC200557B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 				A1F5DA88264A7CC200557B38 /* Info.plist */,
 				A186CCB926578C9300F02B69 /* Home.storyboard */,
 				A186CCC22657916800F02B69 /* HomeViewController.swift */,
-				A1F5DA7E264A7CC200557B38 /* ViewController.swift */,
 			);
 			path = Eat_Today;
 			sourceTree = "<group>";
@@ -226,7 +223,6 @@
 				A114E539265A9A930099B4E7 /* Italy_TableViewController.swift in Sources */,
 				A114E536265A9A930099B4E7 /* China_TableViewController.swift in Sources */,
 				A186CCC32657916800F02B69 /* HomeViewController.swift in Sources */,
-				A1F5DA7F264A7CC200557B38 /* ViewController.swift in Sources */,
 				A114E538265A9A930099B4E7 /* Famous_TableViewController.swift in Sources */,
 				A1F5DA7B264A7CC200557B38 /* AppDelegate.swift in Sources */,
 				A114E52D265A99EF0099B4E7 /* Korea_TableViewController.swift in Sources */,

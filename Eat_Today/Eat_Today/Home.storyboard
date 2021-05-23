@@ -38,7 +38,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyf-iP-uxY">
-                                <rect key="frame" x="224" y="88" width="60" height="70"/>
+                                <rect key="frame" x="186" y="88" width="60" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal">
@@ -47,11 +47,11 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="semibold"/>
                                 </state>
                                 <connections>
-                                    <segue destination="VRb-Z1-mvA" kind="presentation" id="vOc-eH-g5C"/>
+                                    <segue destination="Q8m-Km-fn2" kind="presentation" identifier="segueToPickerView" id="nUc-wZ-7nl"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="시(군) 선택" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="da5-nd-mk3">
-                                <rect key="frame" x="66" y="96" width="150" height="45"/>
+                                <rect key="frame" x="28" y="96" width="150" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -70,7 +70,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Korea.png"/>
                                 <connections>
-                                    <segue destination="arQ-RB-FoP" kind="show" id="cOa-s4-xu1"/>
+                                    <action selector="pressedKorea:" destination="J2C-gM-yQ5" eventType="touchUpInside" id="0LR-7g-Vos"/>
+                                    <segue destination="arQ-RB-FoP" kind="show" id="ErL-aM-fuc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1p-36-acR">
@@ -78,7 +79,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Cafe.png"/>
                                 <connections>
-                                    <segue destination="Xlc-Hf-bWF" kind="show" id="HWm-Vn-oao"/>
+                                    <action selector="pressedCafe:" destination="J2C-gM-yQ5" eventType="touchUpInside" id="EjH-Gi-WN4"/>
+                                    <segue destination="Xlc-Hf-bWF" kind="show" id="n25-RG-gSP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azF-Bl-oMV">
@@ -86,7 +88,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Italy.png"/>
                                 <connections>
-                                    <segue destination="iXh-oG-KIB" kind="show" id="Xgk-10-RwW"/>
+                                    <action selector="pressedItaly:" destination="J2C-gM-yQ5" eventType="touchUpInside" id="8g4-h2-6Nh"/>
+                                    <segue destination="iXh-oG-KIB" kind="show" id="oYY-44-Utt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfD-aV-sCw">
@@ -94,7 +97,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Famous.png"/>
                                 <connections>
-                                    <segue destination="n5X-89-fUj" kind="show" id="VbC-a0-ZET"/>
+                                    <action selector="pressedFamous:" destination="J2C-gM-yQ5" eventType="touchUpInside" id="qV1-8o-tXp"/>
+                                    <segue destination="n5X-89-fUj" kind="show" id="Dlw-5K-J0R"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1h-rV-FMf">
@@ -102,7 +106,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="China.png"/>
                                 <connections>
-                                    <segue destination="2Fr-oL-qxU" kind="show" id="R3K-8s-w3A"/>
+                                    <action selector="pressedChina:" destination="J2C-gM-yQ5" eventType="touchUpInside" id="LAx-Gk-Ndh"/>
+                                    <segue destination="2Fr-oL-qxU" kind="show" id="osh-CK-KM6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNl-Dc-DrP">
@@ -110,9 +115,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Japan.png"/>
                                 <connections>
-                                    <segue destination="T02-IY-UiH" kind="show" id="xEn-2R-Yhv"/>
+                                    <action selector="pressedJapan:" destination="J2C-gM-yQ5" eventType="touchUpInside" id="PJ5-7c-jdN"/>
+                                    <segue destination="T02-IY-UiH" kind="show" identifier="segueToPickerView" id="EFs-9Z-I7i"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OO시(군)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNR-3k-sVS">
+                                <rect key="frame" x="270" y="105" width="117" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5P0-lO-qDw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -120,7 +133,7 @@
                     <navigationItem key="navigationItem" title="홈" id="kMf-k0-Bcl">
                         <barButtonItem key="rightBarButtonItem" title="AllMap" image="mappin.and.ellipse" catalog="system" id="JME-Du-FVt">
                             <connections>
-                                <segue destination="aKo-Av-t8v" kind="show" id="jEP-bG-m1E"/>
+                                <segue destination="aKo-Av-t8v" kind="show" identifier="segueToMapView" id="ogK-u4-gGv"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -129,7 +142,7 @@
             </objects>
             <point key="canvasLocation" x="2487" y="-1825"/>
         </scene>
-        <!--Korea Table View Controller-->
+        <!--한식-->
         <scene sceneID="dkN-do-cEU">
             <objects>
                 <tableViewController id="arQ-RB-FoP" customClass="Korea_TableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
@@ -171,16 +184,16 @@
                             <outlet property="delegate" destination="arQ-RB-FoP" id="N7C-ft-NQV"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Zen-cf-xWS"/>
+                    <navigationItem key="navigationItem" title="한식" id="Zen-cf-xWS"/>
                     <connections>
                         <outlet property="tbData" destination="dtV-WS-gid" id="krk-fl-5nR"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BOs-7R-u69" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5428" y="-2497"/>
+            <point key="canvasLocation" x="5591" y="-1825"/>
         </scene>
-        <!--Detail Food Table View Controller-->
+        <!--상세 정보-->
         <scene sceneID="fIa-20-giM">
             <objects>
                 <tableViewController id="wxV-88-XZ7" customClass="DetailFoodTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
@@ -219,7 +232,7 @@
                             <outlet property="delegate" destination="wxV-88-XZ7" id="mIx-G3-E5X"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="a3C-N7-lTy">
+                    <navigationItem key="navigationItem" title="상세 정보" id="a3C-N7-lTy">
                         <barButtonItem key="rightBarButtonItem" title="SpcMap" image="map.fill" catalog="system" id="8fd-oh-TXh">
                             <connections>
                                 <segue destination="8lG-yv-6Zc" kind="show" id="1MG-a1-cXX"/>
@@ -229,7 +242,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2YK-HP-uW4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6154" y="-2497"/>
+            <point key="canvasLocation" x="6317" y="-1825"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="LUf-eo-QBJ">
@@ -251,7 +264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ok-AZ-xYe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6878" y="-2497"/>
+            <point key="canvasLocation" x="7041" y="-1825"/>
         </scene>
         <!--시(군) 선택-->
         <scene sceneID="djF-py-eeD">
@@ -276,23 +289,25 @@
                     <navigationItem key="navigationItem" title="시(군) 선택" id="ai4-tg-jKT">
                         <barButtonItem key="leftBarButtonItem" title="취소" id="x6E-eL-bT1">
                             <connections>
-                                <segue destination="3fO-TG-4b7" kind="unwind" unwindAction="cancelToHomeWithSegue:" id="mbI-ln-lju"/>
+                                <action selector="cancelToHomeWithSegue:" destination="lL9-P3-fDy" id="ISD-lz-ODY"/>
+                                <segue destination="3fO-TG-4b7" kind="unwind" unwindAction="cancelToHomeWithSegue:" id="HHs-b1-F3Y"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="완료" id="1qz-E1-zsI">
                             <connections>
-                                <segue destination="3fO-TG-4b7" kind="unwind" identifier="SaveCity" unwindAction="saveToCityWithSegue:" id="ez7-HN-2tA"/>
+                                <action selector="saveToCityWithSegue:" destination="lL9-P3-fDy" id="l6Q-rC-sDu"/>
+                                <segue destination="3fO-TG-4b7" kind="unwind" unwindAction="saveToCityWithSegue:" id="ctM-eU-eVI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="pickerView" destination="bOG-om-VXC" id="Qdr-uE-MAZ"/>
+                        <outlet property="pickerView" destination="bOG-om-VXC" id="mXm-dk-knC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="byI-Bz-Y6i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="3fO-TG-4b7" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3212" y="-2497"/>
+            <point key="canvasLocation" x="4121.739130434783" y="-2497.0982142857142"/>
         </scene>
         <!--검색-->
         <scene sceneID="yBa-pA-tPO">
@@ -418,28 +433,10 @@
             </objects>
             <point key="canvasLocation" x="728" y="178"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="MXg-fJ-Gyy">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VRb-Z1-mvA" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Kp-7E-PJW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="lL9-P3-fDy" kind="relationship" relationship="rootViewController" id="Txa-Tj-O9z"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="590-Qs-K3g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2487" y="-2497"/>
-        </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="HnZ-tr-nX3">
             <objects>
-                <viewController id="aKo-Av-t8v" sceneMemberID="viewController">
+                <viewController id="aKo-Av-t8v" customClass="MapViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="as1-0v-d7d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -456,9 +453,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Lq-kV-gcj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3938" y="-2497"/>
+            <point key="canvasLocation" x="4847.826086956522" y="-2497.0982142857142"/>
         </scene>
-        <!--Cafe Table View Controller-->
+        <!--카페-->
         <scene sceneID="8LH-40-AeP">
             <objects>
                 <tableViewController id="Xlc-Hf-bWF" customClass="Cafe_TableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
@@ -500,16 +497,16 @@
                             <outlet property="delegate" destination="Xlc-Hf-bWF" id="7aQ-ZJ-Uhf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="FGu-Cw-4dE"/>
+                    <navigationItem key="navigationItem" title="카페" id="FGu-Cw-4dE"/>
                     <connections>
                         <outlet property="tbData" destination="8hX-UE-fkn" id="Uql-xR-9jP"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oqF-fX-NvD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5425" y="-1832"/>
+            <point key="canvasLocation" x="5588" y="-1160"/>
         </scene>
-        <!--Detail Food Table View Controller-->
+        <!--상세 정보-->
         <scene sceneID="fS2-QZ-ufX">
             <objects>
                 <tableViewController id="LbW-yg-n6b" customClass="DetailFoodTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
@@ -548,7 +545,7 @@
                             <outlet property="delegate" destination="LbW-yg-n6b" id="6HX-P8-OVc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="L7d-vl-LPw">
+                    <navigationItem key="navigationItem" title="상세 정보" id="L7d-vl-LPw">
                         <barButtonItem key="rightBarButtonItem" title="SpcMap" image="map.fill" catalog="system" id="YGF-3o-3cp">
                             <connections>
                                 <segue destination="XNI-rr-UJU" kind="show" id="rVA-2E-qcX"/>
@@ -558,7 +555,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CAO-44-xla" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6146" y="-1832"/>
+            <point key="canvasLocation" x="6309" y="-1160"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="Hb7-5E-BoR">
@@ -580,9 +577,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wCI-KB-d7Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6872" y="-1832"/>
+            <point key="canvasLocation" x="7035" y="-1160"/>
         </scene>
-        <!--Italy Table View Controller-->
+        <!--양식-->
         <scene sceneID="ixl-9z-GfL">
             <objects>
                 <tableViewController id="iXh-oG-KIB" customClass="Italy_TableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
@@ -624,16 +621,16 @@
                             <outlet property="delegate" destination="iXh-oG-KIB" id="1Ow-ft-KDc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="btN-UV-MAi"/>
+                    <navigationItem key="navigationItem" title="양식" id="btN-UV-MAi"/>
                     <connections>
                         <outlet property="tbData" destination="GsC-5d-qL6" id="qw5-G3-mgF"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bAK-Xg-6bG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5428" y="-1167"/>
+            <point key="canvasLocation" x="5591" y="-496"/>
         </scene>
-        <!--Detail Food Table View Controller-->
+        <!--상세 정보-->
         <scene sceneID="3kt-e1-4T3">
             <objects>
                 <tableViewController id="gNS-c8-Jbx" customClass="DetailFoodTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
@@ -672,7 +669,7 @@
                             <outlet property="delegate" destination="gNS-c8-Jbx" id="hTR-xK-wfM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="xpK-HN-rBH">
+                    <navigationItem key="navigationItem" title="상세 정보" id="xpK-HN-rBH">
                         <barButtonItem key="rightBarButtonItem" title="SpcMap" image="map.fill" catalog="system" id="LSg-Hm-EZP">
                             <connections>
                                 <segue destination="tEB-lJ-xCe" kind="show" id="cvu-x6-MdD"/>
@@ -682,7 +679,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7fl-bV-V7w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6154" y="-1167"/>
+            <point key="canvasLocation" x="6317" y="-496"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="scH-qZ-Mn5">
@@ -704,9 +701,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sdv-vh-z1v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6878" y="-1167"/>
+            <point key="canvasLocation" x="7041" y="-496"/>
         </scene>
-        <!--China Table View Controller-->
+        <!--중식-->
         <scene sceneID="TeQ-lM-5wh">
             <objects>
                 <tableViewController id="2Fr-oL-qxU" customClass="China_TableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
@@ -748,16 +745,16 @@
                             <outlet property="delegate" destination="2Fr-oL-qxU" id="lPp-iY-sxe"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="KkK-hI-5v1"/>
+                    <navigationItem key="navigationItem" title="중식" id="KkK-hI-5v1"/>
                     <connections>
                         <outlet property="tbData" destination="hDV-kZ-qi5" id="Wub-Xq-2G8"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="45K-Tq-OmL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5428" y="-494"/>
+            <point key="canvasLocation" x="5591" y="177"/>
         </scene>
-        <!--Detail Food Table View Controller-->
+        <!--상세 정보-->
         <scene sceneID="n4h-iU-8tk">
             <objects>
                 <tableViewController id="IfE-4C-FM1" customClass="DetailFoodTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
@@ -796,7 +793,7 @@
                             <outlet property="delegate" destination="IfE-4C-FM1" id="lPY-Qd-GhQ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="A3Q-Nw-glW">
+                    <navigationItem key="navigationItem" title="상세 정보" id="A3Q-Nw-glW">
                         <barButtonItem key="rightBarButtonItem" title="SpcMap" image="map.fill" catalog="system" id="Yeb-oe-byb">
                             <connections>
                                 <segue destination="t6a-yZ-hnH" kind="show" id="Y2d-yL-Njy"/>
@@ -806,7 +803,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uq1-2s-sS0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6154" y="-494"/>
+            <point key="canvasLocation" x="6317" y="177"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="cm3-sJ-SgM">
@@ -828,9 +825,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fpM-c9-7Ew" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6878" y="-494"/>
+            <point key="canvasLocation" x="7041" y="177"/>
         </scene>
-        <!--Japan Table View Controller-->
+        <!--일식-->
         <scene sceneID="3r6-vU-CQL">
             <objects>
                 <tableViewController id="T02-IY-UiH" customClass="Japan_TableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
@@ -872,16 +869,16 @@
                             <outlet property="delegate" destination="T02-IY-UiH" id="3sm-gG-pLC"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Fqu-Sp-WnY"/>
+                    <navigationItem key="navigationItem" title="일식" id="Fqu-Sp-WnY"/>
                     <connections>
                         <outlet property="tbData" destination="e5W-Tk-Ufk" id="Aa1-ob-fJE"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iAz-AF-IJ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5430" y="183"/>
+            <point key="canvasLocation" x="5593" y="854"/>
         </scene>
-        <!--Detail Food Table View Controller-->
+        <!--상세 정보-->
         <scene sceneID="9GF-eE-1j3">
             <objects>
                 <tableViewController id="mU6-cb-Oxu" customClass="DetailFoodTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
@@ -920,7 +917,7 @@
                             <outlet property="delegate" destination="mU6-cb-Oxu" id="7Fe-2c-YeX"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="meT-I0-HA8">
+                    <navigationItem key="navigationItem" title="상세 정보" id="meT-I0-HA8">
                         <barButtonItem key="rightBarButtonItem" title="SpcMap" image="map.fill" catalog="system" id="KrT-Qi-kZ4">
                             <connections>
                                 <segue destination="Wch-To-wLC" kind="show" id="cxK-Qm-ezG"/>
@@ -930,7 +927,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y59-BO-jNP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6157" y="183"/>
+            <point key="canvasLocation" x="6320" y="854"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="tPQ-OY-Q9a">
@@ -952,9 +949,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g04-zG-7vT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6883" y="183"/>
+            <point key="canvasLocation" x="7046" y="854"/>
         </scene>
-        <!--Famous Table View Controller-->
+        <!--맛집-->
         <scene sceneID="hzi-aj-YQT">
             <objects>
                 <tableViewController id="n5X-89-fUj" customClass="Famous_TableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
@@ -996,16 +993,16 @@
                             <outlet property="delegate" destination="n5X-89-fUj" id="5eL-5v-cAc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="hSs-MP-GqA"/>
+                    <navigationItem key="navigationItem" title="맛집" id="hSs-MP-GqA"/>
                     <connections>
                         <outlet property="tbData" destination="lO2-He-MZu" id="hMe-Rj-0Hf"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="31Z-3J-mGw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5428" y="848"/>
+            <point key="canvasLocation" x="5591" y="1519"/>
         </scene>
-        <!--Detail Food Table View Controller-->
+        <!--상세 정보-->
         <scene sceneID="G5Z-ZZ-flj">
             <objects>
                 <tableViewController id="ECR-3a-l3a" customClass="DetailFoodTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
@@ -1044,7 +1041,7 @@
                             <outlet property="delegate" destination="ECR-3a-l3a" id="nU1-hW-Jr2"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="JQj-YU-juC">
+                    <navigationItem key="navigationItem" title="상세 정보" id="JQj-YU-juC">
                         <barButtonItem key="rightBarButtonItem" title="SpcMap" image="map.fill" catalog="system" id="IhZ-OB-1yA">
                             <connections>
                                 <segue destination="fdk-y2-N6I" kind="show" id="qHV-xB-l2v"/>
@@ -1054,7 +1051,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wqQ-wH-Ec3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6149" y="848"/>
+            <point key="canvasLocation" x="6312" y="1519"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="aVU-7g-BfN">
@@ -1076,7 +1073,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cPk-Lb-FEk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6875" y="848"/>
+            <point key="canvasLocation" x="7038" y="1519"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZsR-qD-7s1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q8m-Km-fn2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vne-cQ-KMk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lL9-P3-fDy" kind="relationship" relationship="rootViewController" id="csC-ut-j0i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wc4-7D-RHY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3211.594202898551" y="-2497.0982142857142"/>
         </scene>
     </scenes>
     <resources>
@@ -1098,6 +1113,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

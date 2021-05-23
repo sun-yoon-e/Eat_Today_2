@@ -34,10 +34,11 @@ class Famous_TableViewController: UITableViewController, XMLParserDelegate {
         beginParsing()
     }
     
+    var url: String = "https://openapi.gg.go.kr/PlaceThatDoATasteyFoodSt?KEY=6d16cb57bdba4dadb6aa6394acf4116a&pSize=1000&sgguCd="
     func beginParsing() {
         posts = []
         
-        parser = XMLParser(contentsOf: (URL(string: "https://openapi.gg.go.kr/PlaceThatDoATasteyFoodSt?KEY=6d16cb57bdba4dadb6aa6394acf4116a"))!)!
+        parser = XMLParser(contentsOf: (URL(string: url))!)!
         
         parser.delegate = self
         parser.parse()
@@ -140,7 +141,7 @@ class Famous_TableViewController: UITableViewController, XMLParserDelegate {
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Food", for: indexPath)
         cell.textLabel?.text = (posts.object(at: indexPath.row) as AnyObject).value(forKey: "RESTRT_NM") as! NSString as String
-        cell.detailTextLabel?.text = (posts.object(at: indexPath.row) as AnyObject).value(forKey: "SIGUN_NM") as! NSString as String
+        cell.detailTextLabel?.text = (posts.object(at: indexPath.row) as AnyObject).value(forKey: "REFINE_ROADNM_ADDR") as! NSString as String
         return cell
     }
 }
