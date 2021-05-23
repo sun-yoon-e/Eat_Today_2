@@ -7,7 +7,9 @@
 
 import UIKit
 
-class FoodViewController: UIViewController, XMLParserDelegate {
+class FoodViewController: UITableViewController, XMLParserDelegate {
+    
+    @IBOutlet var tbData: UITableView!
 
     var parser1 = XMLParser()
     var parser2 = XMLParser()
@@ -20,12 +22,13 @@ class FoodViewController: UIViewController, XMLParserDelegate {
     var element = NSString()
     
     var SIGUN_NM = NSMutableString()    // 시군명
+    var SIGUN_CD = NSMutableString()    // 시군코드
     var BIZPLC_NM = NSMutableString()   // 업소명
-    var BIZCOND_NM = NSMutableString()  // 카테고리명
-    var LOTNO_ADDR = NSMutableString()  // 지번주소
-    var ROADNM_ADDR = NSMutableString() // 도로명주소
-    var LOGT = NSMutableString()        // 경도
-    var LAT = NSMutableString()         // 위도
+    var SANITTN_BIZCOND_NM = NSMutableString()  // 카테고리명
+    var REFINE_LOTNO_ADDR = NSMutableString()  // 지번주소
+    var REFINE_ROADNM_ADDR = NSMutableString() // 도로명주소
+    var REFINE_WGS84_LOGT = NSMutableString()        // 경도
+    var REFINE_WGS84_LAT = NSMutableString()         // 위도
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +49,7 @@ class FoodViewController: UIViewController, XMLParserDelegate {
         parser2.parse()
         
         // 3. 일식
-        parser3 = XMLParser(contentsOf: (URL(string: "openapi.gg.go.kr/GenrestrtjpnFood?KEY=4248c63bb9484a22a5a07c9e89d93ab1"))!)!
+        parser3 = XMLParser(contentsOf: (URL(string: "openapi.gg.go.kr/Genrestrtjpnfood?KEY=4248c63bb9484a22a5a07c9e89d93ab1"))!)!
         parser3.delegate = self
         parser3.parse()
         
@@ -59,6 +62,8 @@ class FoodViewController: UIViewController, XMLParserDelegate {
         parser5 = XMLParser(contentsOf: (URL(string: "openapi.gg.go.kr/Genrestrtcate?KEY=bfd03ce340c740e09b599ad146790ee2"))!)!
         parser5.delegate = self
         parser5.parse()
+        
+        tbData!.reloadData()
     }
     
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
@@ -69,36 +74,40 @@ class FoodViewController: UIViewController, XMLParserDelegate {
             elements = [:]
             SIGUN_NM = NSMutableString()
             SIGUN_NM = ""
+            SIGUN_CD = NSMutableString()
+            SIGUN_CD = ""
             BIZPLC_NM = NSMutableString()
             BIZPLC_NM = ""
-            BIZCOND_NM = NSMutableString()
-            BIZCOND_NM = ""
-            LOTNO_ADDR = NSMutableString()
-            LOTNO_ADDR = ""
-            ROADNM_ADDR = NSMutableString()
-            ROADNM_ADDR = ""
-            LOGT = NSMutableString()
-            LOGT = ""
-            LAT = NSMutableString()
-            LAT = ""
+            SANITTN_BIZCOND_NM = NSMutableString()
+            SANITTN_BIZCOND_NM = ""
+            REFINE_LOTNO_ADDR = NSMutableString()
+            REFINE_LOTNO_ADDR = ""
+            REFINE_ROADNM_ADDR = NSMutableString()
+            REFINE_ROADNM_ADDR = ""
+            REFINE_WGS84_LOGT = NSMutableString()
+            REFINE_WGS84_LOGT = ""
+            REFINE_WGS84_LAT = NSMutableString()
+            REFINE_WGS84_LAT = ""
         }
     }
     
     func parser(_ parser: XMLParser, foundCharacters string: String) {
         if element.isEqual(to: "SIGUN_NM") {
             SIGUN_NM.append(string)
+        } else if element.isEqual(to: "SIGUN_CD"){
+            SIGUN_CD.append(string)
         } else if element.isEqual(to: "BIZPLC_NM"){
             BIZPLC_NM.append(string)
         } else if element.isEqual(to: "SANITTN_BIZCOND_NM"){
-            BIZCOND_NM.append(string)
+            SANITTN_BIZCOND_NM.append(string)
         } else if element.isEqual(to: "REFINE_LOTNO_ADDR"){
-            LOTNO_ADDR.append(string)
+            REFINE_LOTNO_ADDR.append(string)
         } else if element.isEqual(to: "REFINE_ROADNM_ADDR"){
-            ROADNM_ADDR.append(string)
+            REFINE_ROADNM_ADDR.append(string)
         } else if element.isEqual(to: "REFINE_WGS84_LOGT"){
-            LOGT.append(string)
+            REFINE_WGS84_LOGT.append(string)
         } else if element.isEqual(to: "REFINE_WGS84_LAT"){
-            LAT.append(string)
+            REFINE_WGS84_LAT.append(string)
         }
     }
     
@@ -108,27 +117,48 @@ class FoodViewController: UIViewController, XMLParserDelegate {
             if !SIGUN_NM.isEqual(nil) {
                 elements.setObject(SIGUN_NM, forKey: "SIGUN_NM" as NSCopying)
             }
+            if !SIGUN_CD.isEqual(nil) {
+                elements.setObject(SIGUN_CD, forKey: "SIGUN_CD" as NSCopying)
+            }
             if !BIZPLC_NM.isEqual(nil) {
                 elements.setObject(BIZPLC_NM, forKey: "BIZPLC_NM" as NSCopying)
             }
-            if !BIZCOND_NM.isEqual(nil) {
-                elements.setObject(BIZCOND_NM, forKey: "SANITTN_BIZCOND_NM" as NSCopying)
+            if !SANITTN_BIZCOND_NM.isEqual(nil) {
+                elements.setObject(SANITTN_BIZCOND_NM, forKey: "SANITTN_BIZCOND_NM" as NSCopying)
             }
-            if !LOTNO_ADDR.isEqual(nil) {
-                elements.setObject(LOTNO_ADDR, forKey: "REFINE_LOTNO_ADDR" as NSCopying)
+            if !REFINE_LOTNO_ADDR.isEqual(nil) {
+                elements.setObject(REFINE_LOTNO_ADDR, forKey: "REFINE_LOTNO_ADDR" as NSCopying)
             }
-            if !ROADNM_ADDR.isEqual(nil) {
-                elements.setObject(ROADNM_ADDR, forKey: "REFINE_ROADNM_ADDR" as NSCopying)
+            if !REFINE_ROADNM_ADDR.isEqual(nil) {
+                elements.setObject(REFINE_ROADNM_ADDR, forKey: "REFINE_ROADNM_ADDR" as NSCopying)
             }
-            if !LOGT.isEqual(nil) {
-                elements.setObject(LOGT, forKey: "REFINE_WGS84_LOGT" as NSCopying)
+            if !REFINE_WGS84_LOGT.isEqual(nil) {
+                elements.setObject(REFINE_WGS84_LOGT, forKey: "REFINE_WGS84_LOGT" as NSCopying)
             }
-            if !LAT.isEqual(nil) {
-                elements.setObject(LAT, forKey: "REFINE_WGS84_LAT" as NSCopying)
+            if !REFINE_WGS84_LAT.isEqual(nil) {
+                elements.setObject(REFINE_WGS84_LAT, forKey: "REFINE_WGS84_LAT" as NSCopying)
             }
             
             posts.add(elements)
         }
+    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return posts.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Food", for: indexPath)
+        
+        cell.textLabel?.text = (posts.object(at: indexPath.row) as AnyObject).value(forKey: "BIZPLC_NM") as! NSString as String
+        //cell.detailTextLabel?.text = (posts.object(at: indexPath.row) as AnyObject).value(forKey: "BIZCOND_NM") as! NSString as String
+        return cell
     }
 }
 

@@ -5,7 +5,7 @@
 
 import UIKit
 
-class TastyViewController: UIViewController, XMLParserDelegate {
+class TastyViewController: UITableViewController, XMLParserDelegate {
 
     var parser6 = XMLParser()
     

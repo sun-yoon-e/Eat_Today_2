@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A1809C7526581155003EA49B /* TastyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1809C7426581155003EA49B /* TastyViewController.swift */; };
-		A1809C7826581541003EA49B /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1809C7726581541003EA49B /* FoodViewController.swift */; };
+		A114E509265A7B060099B4E7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E508265A7B060099B4E7 /* MapViewController.swift */; };
+		A114E50C265A7B490099B4E7 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E50B265A7B490099B4E7 /* Food.swift */; };
+		A114E50F265A83940099B4E7 /* DetailFoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E50E265A83940099B4E7 /* DetailFoodTableViewController.swift */; };
+		A114E512265A83BA0099B4E7 /* FoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E511265A83BA0099B4E7 /* FoodTableViewController.swift */; };
+		A114E516265A84470099B4E7 /* DetailTastyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E515265A84470099B4E7 /* DetailTastyTableViewController.swift */; };
+		A114E519265A84930099B4E7 /* TastyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E518265A84920099B4E7 /* TastyTableViewController.swift */; };
 		A186CCA22657620300F02B69 /* EatToday_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A186CCA12657620300F02B69 /* EatToday_Logo.png */; };
 		A186CCBA26578C9300F02B69 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A186CCB926578C9300F02B69 /* Home.storyboard */; };
 		A186CCBD26578D1700F02B69 /* LogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A186CCBC26578D1700F02B69 /* LogoViewController.swift */; };
@@ -22,8 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A1809C7426581155003EA49B /* TastyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastyViewController.swift; sourceTree = "<group>"; };
-		A1809C7726581541003EA49B /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		A114E508265A7B060099B4E7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A114E50B265A7B490099B4E7 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		A114E50E265A83940099B4E7 /* DetailFoodTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFoodTableViewController.swift; sourceTree = "<group>"; };
+		A114E511265A83BA0099B4E7 /* FoodTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTableViewController.swift; sourceTree = "<group>"; };
+		A114E515265A84470099B4E7 /* DetailTastyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTastyTableViewController.swift; sourceTree = "<group>"; };
+		A114E518265A84920099B4E7 /* TastyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TastyTableViewController.swift; sourceTree = "<group>"; };
 		A186CCA12657620300F02B69 /* EatToday_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EatToday_Logo.png; sourceTree = "<group>"; };
 		A186CCB926578C9300F02B69 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		A186CCBC26578D1700F02B69 /* LogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +57,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A114E514265A84120099B4E7 /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				A114E50B265A7B490099B4E7 /* Food.swift */,
+				A186CCC22657916800F02B69 /* HomeViewController.swift */,
+				A114E508265A7B060099B4E7 /* MapViewController.swift */,
+				A114E511265A83BA0099B4E7 /* FoodTableViewController.swift */,
+				A114E50E265A83940099B4E7 /* DetailFoodTableViewController.swift */,
+				A114E518265A84920099B4E7 /* TastyTableViewController.swift */,
+				A114E515265A84470099B4E7 /* DetailTastyTableViewController.swift */,
+			);
+			path = Food;
+			sourceTree = "<group>";
+		};
 		A186CCA0265761C400F02B69 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +108,7 @@
 		A1F5DA79264A7CC200557B38 /* Eat_Today */ = {
 			isa = PBXGroup;
 			children = (
+				A114E514265A84120099B4E7 /* Food */,
 				A186CCB826578C6F00F02B69 /* Loading */,
 				A186CCA0265761C400F02B69 /* Resource */,
 				A1F5DA7A264A7CC200557B38 /* AppDelegate.swift */,
@@ -93,10 +116,7 @@
 				A1F5DA83264A7CC200557B38 /* Assets.xcassets */,
 				A1F5DA88264A7CC200557B38 /* Info.plist */,
 				A186CCB926578C9300F02B69 /* Home.storyboard */,
-				A186CCC22657916800F02B69 /* HomeViewController.swift */,
 				A1F5DA7E264A7CC200557B38 /* ViewController.swift */,
-				A1809C7426581155003EA49B /* TastyViewController.swift */,
-				A1809C7726581541003EA49B /* FoodViewController.swift */,
 			);
 			path = Eat_Today;
 			sourceTree = "<group>";
@@ -173,13 +193,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A114E512265A83BA0099B4E7 /* FoodTableViewController.swift in Sources */,
 				A186CCC32657916800F02B69 /* HomeViewController.swift in Sources */,
-				A1809C7826581541003EA49B /* FoodViewController.swift in Sources */,
+				A114E50F265A83940099B4E7 /* DetailFoodTableViewController.swift in Sources */,
 				A1F5DA7F264A7CC200557B38 /* ViewController.swift in Sources */,
 				A1F5DA7B264A7CC200557B38 /* AppDelegate.swift in Sources */,
+				A114E519265A84930099B4E7 /* TastyTableViewController.swift in Sources */,
 				A186CCBD26578D1700F02B69 /* LogoViewController.swift in Sources */,
-				A1809C7526581155003EA49B /* TastyViewController.swift in Sources */,
+				A114E50C265A7B490099B4E7 /* Food.swift in Sources */,
+				A114E516265A84470099B4E7 /* DetailTastyTableViewController.swift in Sources */,
 				A1F5DA7D264A7CC200557B38 /* SceneDelegate.swift in Sources */,
+				A114E509265A7B060099B4E7 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
