@@ -126,7 +126,7 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.pickerView.delegate = self;
-        self.pickerView.dataSource = self;
+        //self.pickerView.delegate = self;
+        //self.pickerView.dataSource = self;
     }
 }

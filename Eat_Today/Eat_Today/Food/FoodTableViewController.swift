@@ -39,27 +39,27 @@ class FoodViewController: UITableViewController, XMLParserDelegate {
         posts = []
         
         // 1. 탕류
-        parser1 = XMLParser(contentsOf: (URL(string: "openapi.gg.go.kr/Genrestrtsoup?KEY=edba1fe215b8421f964a4c3d2b6606f7"))!)!
+        parser1 = XMLParser(contentsOf: (URL(string: "https://openapi.gg.go.kr/Genrestrtsoup?KEY=edba1fe215b8421f964a4c3d2b6606f7"))!)!
         parser1.delegate = self
         parser1.parse()
         
         // 2. 중식
-        parser2 = XMLParser(contentsOf: (URL(string: "openapi.gg.go.kr/Genrestrtchifood?KEY=cf374f022f87475d99fed3f72d463ed6"))!)!
+        parser2 = XMLParser(contentsOf: (URL(string: "https://openapi.gg.go.kr/Genrestrtchifood?KEY=cf374f022f87475d99fed3f72d463ed6"))!)!
         parser2.delegate = self
         parser2.parse()
         
         // 3. 일식
-        parser3 = XMLParser(contentsOf: (URL(string: "openapi.gg.go.kr/Genrestrtjpnfood?KEY=4248c63bb9484a22a5a07c9e89d93ab1"))!)!
+        parser3 = XMLParser(contentsOf: (URL(string: "https://openapi.gg.go.kr/Genrestrtjpnfood?KEY=4248c63bb9484a22a5a07c9e89d93ab1"))!)!
         parser3.delegate = self
         parser3.parse()
         
         // 4. 패스트푸드
-        parser4 = XMLParser(contentsOf: (URL(string: "openapi.gg.go.kr/Genrestrtfastfood?KEY=c65c95bb072f483da7d397123ffa187b"))!)!
+        parser4 = XMLParser(contentsOf: (URL(string: "https://openapi.gg.go.kr/Genrestrtfastfood?KEY=c65c95bb072f483da7d397123ffa187b"))!)!
         parser4.delegate = self
         parser4.parse()
         
         // 5. 카페
-        parser5 = XMLParser(contentsOf: (URL(string: "openapi.gg.go.kr/Genrestrtcate?KEY=bfd03ce340c740e09b599ad146790ee2"))!)!
+        parser5 = XMLParser(contentsOf: (URL(string: "https://openapi.gg.go.kr/Genrestrtcate?KEY=bfd03ce340c740e09b599ad146790ee2"))!)!
         parser5.delegate = self
         parser5.parse()
         
