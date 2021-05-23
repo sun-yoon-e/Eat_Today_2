@@ -33,7 +33,7 @@ class China_TableViewController: UITableViewController, XMLParserDelegate {
         beginParsing()
     }
     
-    var url: String = "https://openapi.gg.go.kr/Genrestrtchifood?KEY=cf374f022f87475d99fed3f72d463ed6&pSize=1000&sgguCd="
+    var url: String = "https://openapi.gg.go.kr/Genrestrtchifood?KEY=cf374f022f87475d99fed3f72d463ed6&pSize=1000&SIGUN_CD="
     func beginParsing() {
         posts = []
         

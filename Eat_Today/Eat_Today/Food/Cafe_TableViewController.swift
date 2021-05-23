@@ -33,7 +33,7 @@ class Cafe_TableViewController: UITableViewController, XMLParserDelegate {
         beginParsing()
     }
     
-    var url: String = "https://openapi.gg.go.kr/Genrestrtcate?KEY=bfd03ce340c740e09b599ad146790ee2&psize=1000&sgguCd="
+    var url: String = "https://openapi.gg.go.kr/Genrestrtcate?KEY=bfd03ce340c740e09b599ad146790ee2&psize=1000&SIGUN_CD="
     func beginParsing() {
         posts = []
         

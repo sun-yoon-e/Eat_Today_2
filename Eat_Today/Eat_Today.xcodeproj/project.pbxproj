@@ -21,6 +21,7 @@
 		A114E538265A9A930099B4E7 /* Famous_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E533265A9A930099B4E7 /* Famous_TableViewController.swift */; };
 		A114E539265A9A930099B4E7 /* Italy_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E534265A9A930099B4E7 /* Italy_TableViewController.swift */; };
 		A114E53A265A9A930099B4E7 /* Cafe_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E535265A9A930099B4E7 /* Cafe_TableViewController.swift */; };
+		A114E540265ABE8C0099B4E7 /* CityPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E53F265ABE8C0099B4E7 /* CityPickerViewController.swift */; };
 		A186CCA22657620300F02B69 /* EatToday_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A186CCA12657620300F02B69 /* EatToday_Logo.png */; };
 		A186CCBA26578C9300F02B69 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A186CCB926578C9300F02B69 /* Home.storyboard */; };
 		A186CCBD26578D1700F02B69 /* LogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A186CCBC26578D1700F02B69 /* LogoViewController.swift */; };
@@ -47,6 +48,7 @@
 		A114E533265A9A930099B4E7 /* Famous_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Famous_TableViewController.swift; sourceTree = "<group>"; };
 		A114E534265A9A930099B4E7 /* Italy_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Italy_TableViewController.swift; sourceTree = "<group>"; };
 		A114E535265A9A930099B4E7 /* Cafe_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cafe_TableViewController.swift; sourceTree = "<group>"; };
+		A114E53F265ABE8C0099B4E7 /* CityPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityPickerViewController.swift; sourceTree = "<group>"; };
 		A186CCA12657620300F02B69 /* EatToday_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EatToday_Logo.png; sourceTree = "<group>"; };
 		A186CCB926578C9300F02B69 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		A186CCBC26578D1700F02B69 /* LogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				A1F5DA88264A7CC200557B38 /* Info.plist */,
 				A186CCB926578C9300F02B69 /* Home.storyboard */,
 				A186CCC22657916800F02B69 /* HomeViewController.swift */,
+				A114E53F265ABE8C0099B4E7 /* CityPickerViewController.swift */,
 			);
 			path = Eat_Today;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				A114E538265A9A930099B4E7 /* Famous_TableViewController.swift in Sources */,
 				A1F5DA7B264A7CC200557B38 /* AppDelegate.swift in Sources */,
 				A114E52D265A99EF0099B4E7 /* Korea_TableViewController.swift in Sources */,
+				A114E540265ABE8C0099B4E7 /* CityPickerViewController.swift in Sources */,
 				A186CCBD26578D1700F02B69 /* LogoViewController.swift in Sources */,
 				A114E50C265A7B490099B4E7 /* Food.swift in Sources */,
 				A1F5DA7D264A7CC200557B38 /* SceneDelegate.swift in Sources */,

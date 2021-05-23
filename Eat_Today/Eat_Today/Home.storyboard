@@ -50,7 +50,7 @@
                                 <state key="normal" image="Korea.png"/>
                                 <connections>
                                     <action selector="pressedKorea:" destination="J2C-gM-yQ5" eventType="touchUpInside" id="0LR-7g-Vos"/>
-                                    <segue destination="arQ-RB-FoP" kind="show" id="ErL-aM-fuc"/>
+                                    <segue destination="arQ-RB-FoP" kind="show" identifier="" id="ErL-aM-fuc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1p-36-acR">
@@ -59,7 +59,7 @@
                                 <state key="normal" image="Cafe.png"/>
                                 <connections>
                                     <action selector="pressedCafe:" destination="J2C-gM-yQ5" eventType="touchUpInside" id="EjH-Gi-WN4"/>
-                                    <segue destination="Xlc-Hf-bWF" kind="show" id="n25-RG-gSP"/>
+                                    <segue destination="Xlc-Hf-bWF" kind="show" identifier="" id="n25-RG-gSP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azF-Bl-oMV">
@@ -68,7 +68,7 @@
                                 <state key="normal" image="Italy.png"/>
                                 <connections>
                                     <action selector="pressedItaly:" destination="J2C-gM-yQ5" eventType="touchUpInside" id="8g4-h2-6Nh"/>
-                                    <segue destination="iXh-oG-KIB" kind="show" id="oYY-44-Utt"/>
+                                    <segue destination="iXh-oG-KIB" kind="show" identifier="" id="oYY-44-Utt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfD-aV-sCw">
@@ -77,7 +77,7 @@
                                 <state key="normal" image="Famous.png"/>
                                 <connections>
                                     <action selector="pressedFamous:" destination="J2C-gM-yQ5" eventType="touchUpInside" id="qV1-8o-tXp"/>
-                                    <segue destination="n5X-89-fUj" kind="show" id="Dlw-5K-J0R"/>
+                                    <segue destination="n5X-89-fUj" kind="show" identifier="" id="Dlw-5K-J0R"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1h-rV-FMf">
@@ -86,7 +86,7 @@
                                 <state key="normal" image="China.png"/>
                                 <connections>
                                     <action selector="pressedChina:" destination="J2C-gM-yQ5" eventType="touchUpInside" id="LAx-Gk-Ndh"/>
-                                    <segue destination="2Fr-oL-qxU" kind="show" id="osh-CK-KM6"/>
+                                    <segue destination="2Fr-oL-qxU" kind="show" identifier="" id="osh-CK-KM6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNl-Dc-DrP">
@@ -95,7 +95,7 @@
                                 <state key="normal" image="Japan.png"/>
                                 <connections>
                                     <action selector="pressedJapan:" destination="J2C-gM-yQ5" eventType="touchUpInside" id="PJ5-7c-jdN"/>
-                                    <segue destination="T02-IY-UiH" kind="show" identifier="segueToPickerView" id="EFs-9Z-I7i"/>
+                                    <segue destination="T02-IY-UiH" kind="show" identifier="" id="EFs-9Z-I7i"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyf-iP-uxY">
@@ -108,6 +108,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="semibold"/>
                                 </state>
                                 <connections>
+                                    <action selector="ChooseCity:" destination="J2C-gM-yQ5" eventType="touchUpInside" id="Mpt-MM-JMS"/>
                                     <segue destination="Q8m-Km-fn2" kind="presentation" identifier="segueToPickerView" id="nUc-wZ-7nl"/>
                                 </connections>
                             </button>
@@ -264,7 +265,7 @@
         <!--시(군) 선택-->
         <scene sceneID="djF-py-eeD">
             <objects>
-                <viewController id="lL9-P3-fDy" customClass="HomeViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lL9-P3-fDy" customClass="CityPickerViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sDY-84-WOP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -296,7 +297,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="pickerView" destination="bOG-om-VXC" id="mXm-dk-knC"/>
+                        <outlet property="pickerView" destination="bOG-om-VXC" id="oV1-WE-WqA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="byI-Bz-Y6i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

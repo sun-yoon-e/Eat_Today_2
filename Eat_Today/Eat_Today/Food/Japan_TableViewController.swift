@@ -33,7 +33,7 @@ class Japan_TableViewController: UITableViewController, XMLParserDelegate {
         beginParsing()
     }
     
-    var url: String = "https://openapi.gg.go.kr/Genrestrtjpnfood?KEY=4248c63bb9484a22a5a07c9e89d93ab1&pSize=1000&sgguCd="
+    var url: String = "https://openapi.gg.go.kr/Genrestrtjpnfood?KEY=4248c63bb9484a22a5a07c9e89d93ab1&pSize=1000&SIGUN_CD="
     func beginParsing() {
         posts = []
         
