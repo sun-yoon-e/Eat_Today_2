@@ -76,8 +76,6 @@
 		A114E514265A84120099B4E7 /* Food */ = {
 			isa = PBXGroup;
 			children = (
-				A114E50B265A7B490099B4E7 /* Food.swift */,
-				A114E508265A7B060099B4E7 /* MapViewController.swift */,
 				A114E52C265A99EF0099B4E7 /* Korea_TableViewController.swift */,
 				A114E535265A9A930099B4E7 /* Cafe_TableViewController.swift */,
 				A114E534265A9A930099B4E7 /* Italy_TableViewController.swift */,
@@ -141,6 +139,8 @@
 				A186CCB926578C9300F02B69 /* Home.storyboard */,
 				A186CCC22657916800F02B69 /* HomeViewController.swift */,
 				A114E53F265ABE8C0099B4E7 /* CityPickerViewController.swift */,
+				A114E508265A7B060099B4E7 /* MapViewController.swift */,
+				A114E50B265A7B490099B4E7 /* Food.swift */,
 			);
 			path = Eat_Today;
 			sourceTree = "<group>";

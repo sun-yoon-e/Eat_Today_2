@@ -81,8 +81,6 @@ class HomeViewController: UIViewController {
         }
     }
     
-    @IBAction func cancelFromPickerToHome(segue: UIStoryboardSegue){
-    }
     @IBAction func saveFromPickerToHome(segue: UIStoryboardSegue) {
         if let cityPickerViewController = segue.source as? CityPickerViewController {
             let selectedCd = cityPickerViewController.sgguCd
@@ -91,6 +89,8 @@ class HomeViewController: UIViewController {
             sgguNm = selectedNm
             CityLabel.text = sgguNm
         }
+    }
+    @IBAction func cancelFromPickerToHome(segue: UIStoryboardSegue){
     }
     @IBAction func doneFromKoreaToHome(segue: UIStoryboardSegue) {
     }
