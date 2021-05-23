@@ -1,10 +1,3 @@
-//
-//  Korea_TableViewController.swift
-//  Eat_Today
-//
-//  Created by KPUGAME on 2021/05/23.
-//
-
 import UIKit
 
 class Italy_TableViewController: UITableViewController, XMLParserDelegate {
@@ -21,11 +14,12 @@ class Italy_TableViewController: UITableViewController, XMLParserDelegate {
     var SIGUN_CD = NSMutableString()            // 시군코드
     var REFINE_LOTNO_ADDR = NSMutableString()   // 지번주소
     var REFINE_ROADNM_ADDR = NSMutableString()  // 도로명주소
+    var REFINE_ZIP_CD = NSMutableString()       // 우편번호
     var REFINE_WGS84_LOGT = NSMutableString()   // 경도
     var REFINE_WGS84_LAT = NSMutableString()    // 위도
     
     // Food 전용
-    var BIZPLC_NM = NSMutableString()   // 업소명
+    var BIZPLC_NM = NSMutableString()           // 업소명
     var SANITTN_BIZCOND_NM = NSMutableString()  // 카테고리명
 
     override func viewDidLoad() {
@@ -60,6 +54,8 @@ class Italy_TableViewController: UITableViewController, XMLParserDelegate {
             REFINE_LOTNO_ADDR = ""
             REFINE_ROADNM_ADDR = NSMutableString()
             REFINE_ROADNM_ADDR = ""
+            REFINE_ZIP_CD = NSMutableString()
+            REFINE_ZIP_CD = ""
             REFINE_WGS84_LOGT = NSMutableString()
             REFINE_WGS84_LOGT = ""
             REFINE_WGS84_LAT = NSMutableString()
@@ -80,6 +76,8 @@ class Italy_TableViewController: UITableViewController, XMLParserDelegate {
             REFINE_LOTNO_ADDR.append(string)
         } else if element.isEqual(to: "REFINE_ROADNM_ADDR"){
             REFINE_ROADNM_ADDR.append(string)
+        } else if element.isEqual(to: "REFINE_ZIP_CD"){
+            REFINE_ZIP_CD.append(string)
         } else if element.isEqual(to: "REFINE_WGS84_LOGT"){
             REFINE_WGS84_LOGT.append(string)
         } else if element.isEqual(to: "REFINE_WGS84_LAT"){
@@ -107,6 +105,9 @@ class Italy_TableViewController: UITableViewController, XMLParserDelegate {
             if !REFINE_ROADNM_ADDR.isEqual(nil) {
                 elements.setObject(REFINE_ROADNM_ADDR, forKey: "REFINE_ROADNM_ADDR" as NSCopying)
             }
+            if !REFINE_ZIP_CD.isEqual(nil) {
+                elements.setObject(REFINE_ZIP_CD, forKey: "REFINE_ZIP_CD" as NSCopying)
+            }
             if !REFINE_WGS84_LOGT.isEqual(nil) {
                 elements.setObject(REFINE_WGS84_LOGT, forKey: "REFINE_WGS84_LOGT" as NSCopying)
             }
@@ -115,6 +116,36 @@ class Italy_TableViewController: UITableViewController, XMLParserDelegate {
             }
             
             posts.add(elements)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if segue.identifier == "segueToMapView"{
+            if let mapViewController = segue.destination as? MapViewController {
+                mapViewController.posts = posts
+            }
+        }
+        if segue.identifier == "segueToDetail"{
+            if let cell = sender as? UITableViewCell{
+                let indexPath = tableView.indexPath(for: cell)
+                BIZPLC_NM = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "BIZPLC_NM") as! NSMutableString
+                REFINE_ROADNM_ADDR = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "REFINE_ROADNM_ADDR") as! NSMutableString
+                REFINE_LOTNO_ADDR = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "REFINE_LOTNO_ADDR") as! NSMutableString
+                REFINE_ZIP_CD = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "REFINE_ZIP_CD") as! NSMutableString
+                
+                if let italyDetailTableViewController = segue.destination as? Italy_DetailTableViewController{
+                    italyDetailTableViewController.restNm = BIZPLC_NM
+                }
+                if let italyDetailTableViewController = segue.destination as? Italy_DetailTableViewController{
+                    italyDetailTableViewController.roadAddr = REFINE_ROADNM_ADDR
+                }
+                if let italyDetailTableViewController = segue.destination as? Italy_DetailTableViewController{
+                    italyDetailTableViewController.lotAddr = REFINE_LOTNO_ADDR
+                }
+                if let italyDetailTableViewController = segue.destination as? Italy_DetailTableViewController{
+                    italyDetailTableViewController.zipCd = REFINE_ZIP_CD
+                }
+            }
         }
     }
     

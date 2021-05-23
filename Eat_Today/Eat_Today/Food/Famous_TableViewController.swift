@@ -1,10 +1,3 @@
-//
-//  Korea_TableViewController.swift
-//  Eat_Today
-//
-//  Created by KPUGAME on 2021/05/23.
-//
-
 import UIKit
 
 class Famous_TableViewController: UITableViewController, XMLParserDelegate {

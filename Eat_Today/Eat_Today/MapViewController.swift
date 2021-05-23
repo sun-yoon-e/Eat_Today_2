@@ -1,8 +1,3 @@
-//
-//  MapViewController.swift
-//  Eat_Today
-//
-
 import UIKit
 import MapKit
 

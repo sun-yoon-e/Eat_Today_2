@@ -1,8 +1,3 @@
-//
-//  HomeViewController.swift
-//  Eat_Today
-//
-
 import UIKit
 
 class HomeViewController: UIViewController {

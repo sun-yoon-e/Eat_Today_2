@@ -1,10 +1,3 @@
-//
-//  CityPickerViewController.swift
-//  Eat_Today
-//
-//  Created by KPUGAME on 2021/05/24.
-//
-
 import UIKit
 
 class CityPickerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {

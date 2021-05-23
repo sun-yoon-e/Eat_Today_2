@@ -1,8 +1,3 @@
-//
-//  Food.swift
-//  Eat_Today
-//
-
 import Foundation
 import MapKit
 import Contacts

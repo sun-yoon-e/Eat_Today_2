@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  Eat_Today
-//
-//  Created by KPUGAME on 2021/05/11.
-//
-
 import UIKit
 
 @main
