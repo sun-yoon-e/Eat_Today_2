@@ -33,12 +33,10 @@ class Japan_TableViewController: UITableViewController, XMLParserDelegate {
         beginParsing()
     }
     
-    var url: String = "https://openapi.gg.go.kr/Genrestrtjpnfood?KEY=4248c63bb9484a22a5a07c9e89d93ab1&pSize=1000&SIGUN_CD="
+    var url: String?
     func beginParsing() {
         posts = []
-        
-        parser = XMLParser(contentsOf: (URL(string: url))!)!
-        
+        parser = XMLParser(contentsOf: (URL(string: url!))!)!
         parser.delegate = self
         parser.parse()
         tbData!.reloadData()
@@ -133,7 +131,7 @@ class Japan_TableViewController: UITableViewController, XMLParserDelegate {
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Food", for: indexPath)
         cell.textLabel?.text = (posts.object(at: indexPath.row) as AnyObject).value(forKey: "BIZPLC_NM") as! NSString as String
-        cell.detailTextLabel?.text = (posts.object(at: indexPath.row) as AnyObject).value(forKey: "REFINE_ROADNM_ADDR") as! NSString as String
+        cell.detailTextLabel?.text = (posts.object(at: indexPath.row) as AnyObject).value(forKey: "SANITTN_BIZCOND_NM") as! NSString as String
         return cell
     }
 }

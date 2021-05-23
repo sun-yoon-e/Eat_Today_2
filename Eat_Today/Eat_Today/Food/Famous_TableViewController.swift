@@ -34,12 +34,10 @@ class Famous_TableViewController: UITableViewController, XMLParserDelegate {
         beginParsing()
     }
     
-    var url: String = "https://openapi.gg.go.kr/PlaceThatDoATasteyFoodSt?KEY=6d16cb57bdba4dadb6aa6394acf4116a&pSize=1000&SIGUN_CD="
+    var url: String?
     func beginParsing() {
         posts = []
-        
-        parser = XMLParser(contentsOf: (URL(string: url))!)!
-        
+        parser = XMLParser(contentsOf: (URL(string: url!))!)!
         parser.delegate = self
         parser.parse()
         tbData!.reloadData()

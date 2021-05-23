@@ -33,12 +33,10 @@ class Italy_TableViewController: UITableViewController, XMLParserDelegate {
         beginParsing()
     }
     
-    var url: String = "https://openapi.gg.go.kr/Genrestrtfastfood?KEY=c65c95bb072f483da7d397123ffa187b&pSize=1000&SIGUN_CD="
+    var url: String?
     func beginParsing() {
         posts = []
-        
-        parser = XMLParser(contentsOf: (URL(string: url))!)!
-        
+        parser = XMLParser(contentsOf: (URL(string: url!))!)!
         parser.delegate = self
         parser.parse()
         tbData!.reloadData()
