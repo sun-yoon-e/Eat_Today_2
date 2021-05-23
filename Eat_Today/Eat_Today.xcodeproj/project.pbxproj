@@ -9,16 +9,18 @@
 /* Begin PBXBuildFile section */
 		A114E509265A7B060099B4E7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E508265A7B060099B4E7 /* MapViewController.swift */; };
 		A114E50C265A7B490099B4E7 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E50B265A7B490099B4E7 /* Food.swift */; };
-		A114E50F265A83940099B4E7 /* DetailFoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E50E265A83940099B4E7 /* DetailFoodTableViewController.swift */; };
-		A114E512265A83BA0099B4E7 /* FoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E511265A83BA0099B4E7 /* FoodTableViewController.swift */; };
-		A114E516265A84470099B4E7 /* DetailTastyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E515265A84470099B4E7 /* DetailTastyTableViewController.swift */; };
-		A114E519265A84930099B4E7 /* TastyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E518265A84920099B4E7 /* TastyTableViewController.swift */; };
 		A114E522265A895F0099B4E7 /* China.png in Resources */ = {isa = PBXBuildFile; fileRef = A114E51C265A895E0099B4E7 /* China.png */; };
 		A114E523265A895F0099B4E7 /* Italy.png in Resources */ = {isa = PBXBuildFile; fileRef = A114E51D265A895E0099B4E7 /* Italy.png */; };
 		A114E524265A895F0099B4E7 /* Korea.png in Resources */ = {isa = PBXBuildFile; fileRef = A114E51E265A895E0099B4E7 /* Korea.png */; };
 		A114E525265A895F0099B4E7 /* Japan.png in Resources */ = {isa = PBXBuildFile; fileRef = A114E51F265A895E0099B4E7 /* Japan.png */; };
 		A114E526265A895F0099B4E7 /* Cafe.png in Resources */ = {isa = PBXBuildFile; fileRef = A114E520265A895E0099B4E7 /* Cafe.png */; };
 		A114E527265A895F0099B4E7 /* Famous.png in Resources */ = {isa = PBXBuildFile; fileRef = A114E521265A895F0099B4E7 /* Famous.png */; };
+		A114E52D265A99EF0099B4E7 /* Korea_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E52C265A99EF0099B4E7 /* Korea_TableViewController.swift */; };
+		A114E536265A9A930099B4E7 /* China_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E531265A9A930099B4E7 /* China_TableViewController.swift */; };
+		A114E537265A9A930099B4E7 /* Japan_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E532265A9A930099B4E7 /* Japan_TableViewController.swift */; };
+		A114E538265A9A930099B4E7 /* Famous_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E533265A9A930099B4E7 /* Famous_TableViewController.swift */; };
+		A114E539265A9A930099B4E7 /* Italy_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E534265A9A930099B4E7 /* Italy_TableViewController.swift */; };
+		A114E53A265A9A930099B4E7 /* Cafe_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E535265A9A930099B4E7 /* Cafe_TableViewController.swift */; };
 		A186CCA22657620300F02B69 /* EatToday_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A186CCA12657620300F02B69 /* EatToday_Logo.png */; };
 		A186CCBA26578C9300F02B69 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A186CCB926578C9300F02B69 /* Home.storyboard */; };
 		A186CCBD26578D1700F02B69 /* LogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A186CCBC26578D1700F02B69 /* LogoViewController.swift */; };
@@ -34,16 +36,18 @@
 /* Begin PBXFileReference section */
 		A114E508265A7B060099B4E7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A114E50B265A7B490099B4E7 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
-		A114E50E265A83940099B4E7 /* DetailFoodTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFoodTableViewController.swift; sourceTree = "<group>"; };
-		A114E511265A83BA0099B4E7 /* FoodTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTableViewController.swift; sourceTree = "<group>"; };
-		A114E515265A84470099B4E7 /* DetailTastyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTastyTableViewController.swift; sourceTree = "<group>"; };
-		A114E518265A84920099B4E7 /* TastyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TastyTableViewController.swift; sourceTree = "<group>"; };
 		A114E51C265A895E0099B4E7 /* China.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = China.png; path = Eat_Today/Resource/China.png; sourceTree = SOURCE_ROOT; };
 		A114E51D265A895E0099B4E7 /* Italy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Italy.png; path = Eat_Today/Resource/Italy.png; sourceTree = SOURCE_ROOT; };
 		A114E51E265A895E0099B4E7 /* Korea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Korea.png; path = Eat_Today/Resource/Korea.png; sourceTree = SOURCE_ROOT; };
 		A114E51F265A895E0099B4E7 /* Japan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Japan.png; path = Eat_Today/Resource/Japan.png; sourceTree = SOURCE_ROOT; };
 		A114E520265A895E0099B4E7 /* Cafe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cafe.png; path = Eat_Today/Resource/Cafe.png; sourceTree = SOURCE_ROOT; };
 		A114E521265A895F0099B4E7 /* Famous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Famous.png; path = Eat_Today/Resource/Famous.png; sourceTree = SOURCE_ROOT; };
+		A114E52C265A99EF0099B4E7 /* Korea_TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Korea_TableViewController.swift; sourceTree = "<group>"; };
+		A114E531265A9A930099B4E7 /* China_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = China_TableViewController.swift; sourceTree = "<group>"; };
+		A114E532265A9A930099B4E7 /* Japan_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Japan_TableViewController.swift; sourceTree = "<group>"; };
+		A114E533265A9A930099B4E7 /* Famous_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Famous_TableViewController.swift; sourceTree = "<group>"; };
+		A114E534265A9A930099B4E7 /* Italy_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Italy_TableViewController.swift; sourceTree = "<group>"; };
+		A114E535265A9A930099B4E7 /* Cafe_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cafe_TableViewController.swift; sourceTree = "<group>"; };
 		A186CCA12657620300F02B69 /* EatToday_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EatToday_Logo.png; sourceTree = "<group>"; };
 		A186CCB926578C9300F02B69 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		A186CCBC26578D1700F02B69 /* LogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewController.swift; sourceTree = "<group>"; };
@@ -73,12 +77,13 @@
 			isa = PBXGroup;
 			children = (
 				A114E50B265A7B490099B4E7 /* Food.swift */,
-				A186CCC22657916800F02B69 /* HomeViewController.swift */,
 				A114E508265A7B060099B4E7 /* MapViewController.swift */,
-				A114E511265A83BA0099B4E7 /* FoodTableViewController.swift */,
-				A114E50E265A83940099B4E7 /* DetailFoodTableViewController.swift */,
-				A114E518265A84920099B4E7 /* TastyTableViewController.swift */,
-				A114E515265A84470099B4E7 /* DetailTastyTableViewController.swift */,
+				A114E52C265A99EF0099B4E7 /* Korea_TableViewController.swift */,
+				A114E535265A9A930099B4E7 /* Cafe_TableViewController.swift */,
+				A114E534265A9A930099B4E7 /* Italy_TableViewController.swift */,
+				A114E531265A9A930099B4E7 /* China_TableViewController.swift */,
+				A114E532265A9A930099B4E7 /* Japan_TableViewController.swift */,
+				A114E533265A9A930099B4E7 /* Famous_TableViewController.swift */,
 			);
 			path = Food;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 				A1F5DA83264A7CC200557B38 /* Assets.xcassets */,
 				A1F5DA88264A7CC200557B38 /* Info.plist */,
 				A186CCB926578C9300F02B69 /* Home.storyboard */,
+				A186CCC22657916800F02B69 /* HomeViewController.swift */,
 				A1F5DA7E264A7CC200557B38 /* ViewController.swift */,
 			);
 			path = Eat_Today;
@@ -217,16 +223,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A114E512265A83BA0099B4E7 /* FoodTableViewController.swift in Sources */,
+				A114E539265A9A930099B4E7 /* Italy_TableViewController.swift in Sources */,
+				A114E536265A9A930099B4E7 /* China_TableViewController.swift in Sources */,
 				A186CCC32657916800F02B69 /* HomeViewController.swift in Sources */,
-				A114E50F265A83940099B4E7 /* DetailFoodTableViewController.swift in Sources */,
 				A1F5DA7F264A7CC200557B38 /* ViewController.swift in Sources */,
+				A114E538265A9A930099B4E7 /* Famous_TableViewController.swift in Sources */,
 				A1F5DA7B264A7CC200557B38 /* AppDelegate.swift in Sources */,
-				A114E519265A84930099B4E7 /* TastyTableViewController.swift in Sources */,
+				A114E52D265A99EF0099B4E7 /* Korea_TableViewController.swift in Sources */,
 				A186CCBD26578D1700F02B69 /* LogoViewController.swift in Sources */,
 				A114E50C265A7B490099B4E7 /* Food.swift in Sources */,
-				A114E516265A84470099B4E7 /* DetailTastyTableViewController.swift in Sources */,
 				A1F5DA7D264A7CC200557B38 /* SceneDelegate.swift in Sources */,
+				A114E537265A9A930099B4E7 /* Japan_TableViewController.swift in Sources */,
+				A114E53A265A9A930099B4E7 /* Cafe_TableViewController.swift in Sources */,
 				A114E509265A7B060099B4E7 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

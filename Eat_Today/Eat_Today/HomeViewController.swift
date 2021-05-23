@@ -124,6 +124,39 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     @IBAction func saveToCity(segue: UIStoryboardSegue){
         
     }
+    
+    /*var Korea: Bool = false
+    var Cafe: Bool = false
+    var Italy: Bool = false
+    var China: Bool = false
+    var Japan: Bool = false
+    var Famous: Bool = false
+    
+    @IBAction func pressedKorea(_ sender: Any) {
+        Korea = true
+        beginParsing(Korea)
+    }
+    @IBAction func pressedCafe(_ sender: Any) {
+        Cafe = true
+        beginParsing()
+    }
+    @IBAction func pressedItaly(_ sender: Any) {
+        Italy = true
+        beginParsing()
+    }
+    @IBAction func pressedChina(_ sender: Any) {
+        China = true
+        beginParsing()
+    }
+    @IBAction func pressedJapan(_ sender: Any) {
+        Japan = true
+        beginParsing()
+    }
+    @IBAction func pressedFamous(_ sender: Any) {
+        Famous = true
+        beginParsing()
+    }*/
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.pickerView.delegate = self;
