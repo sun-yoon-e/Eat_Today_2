@@ -7,6 +7,7 @@ import UIKit
 
 class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBOutlet weak var pickerView: UIPickerView!
+    @IBOutlet weak var CityLabel: UILabel!
     
     @IBAction func pressedKorea(_ sender: Any) {
     }
@@ -49,13 +50,13 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
             sgguCd = "41290"    //과천시
         }
         else if row == 3 {
-            sgguCd = ""         //광명시
+            sgguCd = "41210"    //광명시
         }
         else if row == 4 {
             sgguCd = "41610"    //광주시
         }
         else if row == 5 {
-            sgguCd = ""         //구리시
+            sgguCd = "41310"    //구리시
         }
         else if row == 6 {
             sgguCd = "41410"    //군포시
@@ -67,52 +68,52 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
             sgguCd = "41360"    //남양주시
         }
         else if row == 9 {
-            sgguCd = ""         //동두천시
+            sgguCd = "41250"    //동두천시
         }
         else if row == 10 {
             sgguCd = "41190"    //부천시
         }
         else if row == 11 {
-            sgguCd = ""         //성남시
+            sgguCd = "41130"    //성남시
         }
         else if row == 12 {
-            sgguCd = ""         //수원시
+            sgguCd = "41110"    //수원시
         }
         else if row == 13 {
             sgguCd = "41390"    //시흥시
         }
         else if row == 14 {
-            sgguCd = ""         //안산시
+            sgguCd = "41270"    //안산시
         }
         else if row == 15 {
-            sgguCd = ""         //안성시
+            sgguCd = "41550"    //안성시
         }
         else if row == 16 {
             sgguCd = "41170"    //안양시
         }
         else if row == 17 {
-            sgguCd = ""         //양주시
+            sgguCd = "41630"    //양주시
         }
         else if row == 18 {
-            sgguCd = ""         //양평군
+            sgguCd = "41830"    //양평군
         }
         else if row == 19 {
-            sgguCd = ""         //여주시
+            sgguCd = "41670"    //여주시
         }
         else if row == 20 {
             sgguCd = "41800"    //연천군
         }
         else if row == 21 {
-            sgguCd = ""         //오산시
+            sgguCd = "41370"    //오산시
         }
         else if row == 22 {
             sgguCd = "41460"    //용인시
         }
         else if row == 23 {
-            sgguCd = ""         //의왕시
+            sgguCd = "41430"    //의왕시
         }
         else if row == 24 {
-            sgguCd = "41460"    //의정부시
+            sgguCd = "41150"    //의정부시
         }
         else if row == 25 {
             sgguCd = "41500"    //이천시
@@ -124,7 +125,7 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
             sgguCd = "41220"    //평택시
         }
         else if row == 28 {
-            sgguCd = ""         //포천시
+            sgguCd = "41650"    //포천시
         }
         else if row == 29 {
             sgguCd = "41450"    //하남시
@@ -138,7 +139,69 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         
     }
     @IBAction func saveToCity(segue: UIStoryboardSegue){
-        
+        if sgguCd == "41820" {
+            CityLabel.text = "가평군"
+        } else if sgguCd == "41280" {
+            CityLabel.text = "고양시"
+        } else if sgguCd == "41290" {
+            CityLabel.text = "과천시"
+        } else if sgguCd == "41210" {
+            CityLabel.text = "광명시"
+        } else if sgguCd == "41610" {
+            CityLabel.text = "광주시"
+        } else if sgguCd == "41310" {
+            CityLabel.text = "구리시"
+        } else if sgguCd == "41410" {
+            CityLabel.text = "군포시"
+        } else if sgguCd == "41570" {
+            CityLabel.text = "김포시"
+        } else if sgguCd == "41360" {
+            CityLabel.text = "남양주시"
+        } else if sgguCd == "41250" {
+            CityLabel.text = "동두천시"
+        } else if sgguCd == "41190" {
+            CityLabel.text = "부천시"
+        } else if sgguCd == "41130" {
+            CityLabel.text = "성남시"
+        } else if sgguCd == "41110" {
+            CityLabel.text = "수원시"
+        } else if sgguCd == "41390" {
+            CityLabel.text = "시흥시"
+        } else if sgguCd == "41270" {
+            CityLabel.text = "안산시"
+        } else if sgguCd == "41550" {
+            CityLabel.text = "안성시"
+        } else if sgguCd == "41170" {
+            CityLabel.text = "안양시"
+        } else if sgguCd == "41630" {
+            CityLabel.text = "양주시"
+        } else if sgguCd == "41830" {
+            CityLabel.text = "양평군"
+        } else if sgguCd == "41670" {
+            CityLabel.text = "여주시"
+        } else if sgguCd == "41800" {
+            CityLabel.text = "연천군"
+        } else if sgguCd == "41370" {
+            CityLabel.text = "오산시"
+        } else if sgguCd == "41460" {
+            CityLabel.text = "용인시"
+        } else if sgguCd == "41430" {
+            CityLabel.text = "의왕시"
+        } else if sgguCd == "41150" {
+            CityLabel.text = "의정부시"
+        } else if sgguCd == "41500" {
+            CityLabel.text = "이천시"
+        } else if sgguCd == "41480" {
+            CityLabel.text = "파주시"
+        } else if sgguCd == "41220" {
+            CityLabel.text = "평택시"
+        } else if sgguCd == "41650" {
+            CityLabel.text = "포천시"
+        } else if sgguCd == "41450" {
+            CityLabel.text = "하남시"
+        } else if sgguCd == "41590" {
+            CityLabel.text = "화성시"
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
