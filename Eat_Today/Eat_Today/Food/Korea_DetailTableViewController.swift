@@ -44,6 +44,11 @@ class Korea_DetailTableViewController: UITableViewController, XMLParserDelegate 
                 mapViewController.REFINE_WGS84_LAT = REFINE_WGS84_LAT
             }
         }
+        if segue.identifier == "segueToHeartView" {
+            if let heartViewController = segue.destination as? Korea_HeartTableViewController {
+                heartViewController.restName = restNm
+            }
+        }
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {

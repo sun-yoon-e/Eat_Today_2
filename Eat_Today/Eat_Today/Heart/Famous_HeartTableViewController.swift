@@ -14,6 +14,8 @@ class Famous_HeartTableViewController: UITableViewController {
     @IBOutlet weak var reviewTextField: UITextField!
     @IBOutlet weak var ratingImageView: UIImageView!
     
+    var restName = NSMutableString()
+    
     func imageForRating(rating: Int) -> UIImage? {
         let imageName = "\(rating)Stars"
         return UIImage(named: imageName)
@@ -47,6 +49,7 @@ class Famous_HeartTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ratingImageView.image = imageForRating(rating: rating)
+        restNm.text = "\(restName)"
     }
     
     override func didReceiveMemoryWarning() {
