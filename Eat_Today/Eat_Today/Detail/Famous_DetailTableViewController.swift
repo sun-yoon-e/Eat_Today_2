@@ -47,11 +47,6 @@ class Famous_DetailTableViewController: UITableViewController, XMLParserDelegate
                 heartViewController.restName = restNm
             }
         }
-        if segue.identifier == "segueToHeartView" {
-            if let heartViewController = segue.destination as? Famous_HeartTableViewController {
-                heartViewController.restName = restNm
-            }
-        }
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
