@@ -119,12 +119,7 @@ class Japan_TableViewController: UITableViewController, XMLParserDelegate {
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        if segue.identifier == "segueToMapView"{
-            if let mapViewController = segue.destination as? MapViewController {
-                mapViewController.posts = posts
-            }
-        }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToDetail"{
             if let cell = sender as? UITableViewCell{
                 let indexPath = tableView.indexPath(for: cell)
@@ -142,8 +137,12 @@ class Japan_TableViewController: UITableViewController, XMLParserDelegate {
                 if let japanDetailTableViewController = segue.destination as? Japan_DetailTableViewController{
                     japanDetailTableViewController.roadAddr = REFINE_ROADNM_ADDR
                 }
-                if let chinaDetailTableViewController = segue.destination as? Japan_DetailTableViewController{
-                    chinaDetailTableViewController.zipCd = REFINE_ZIP_CD
+                if let japanDetailTableViewController = segue.destination as? Japan_DetailTableViewController{
+                    japanDetailTableViewController.zipCd = REFINE_ZIP_CD
+                }
+                
+                if let japanDetailTableViewController = segue.destination as? Japan_DetailTableViewController{
+                    japanDetailTableViewController.posts = posts
                 }
             }
         }

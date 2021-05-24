@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A114E509265A7B060099B4E7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E508265A7B060099B4E7 /* MapViewController.swift */; };
 		A114E50C265A7B490099B4E7 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E50B265A7B490099B4E7 /* Food.swift */; };
 		A114E522265A895F0099B4E7 /* China.png in Resources */ = {isa = PBXBuildFile; fileRef = A114E51C265A895E0099B4E7 /* China.png */; };
 		A114E523265A895F0099B4E7 /* Italy.png in Resources */ = {isa = PBXBuildFile; fileRef = A114E51D265A895E0099B4E7 /* Italy.png */; };
@@ -34,6 +33,12 @@
 		A186CCC32657916800F02B69 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A186CCC22657916800F02B69 /* HomeViewController.swift */; };
 		A186CCCC26579C1E00F02B69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A186CCCA26579C1E00F02B69 /* Main.storyboard */; };
 		A18CA54E265B98BB009CBD87 /* AllMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18CA54D265B98BB009CBD87 /* AllMapViewController.swift */; };
+		A18CA553265BA6E4009CBD87 /* Korea_MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18CA552265BA6E4009CBD87 /* Korea_MapViewController.swift */; };
+		A18CA55A265BA730009CBD87 /* Cafe_MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18CA555265BA72F009CBD87 /* Cafe_MapViewController.swift */; };
+		A18CA55B265BA730009CBD87 /* China_MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18CA556265BA72F009CBD87 /* China_MapViewController.swift */; };
+		A18CA55C265BA730009CBD87 /* Famous_MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18CA557265BA72F009CBD87 /* Famous_MapViewController.swift */; };
+		A18CA55D265BA730009CBD87 /* Italy_MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18CA558265BA72F009CBD87 /* Italy_MapViewController.swift */; };
+		A18CA55E265BA730009CBD87 /* Japan_MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18CA559265BA72F009CBD87 /* Japan_MapViewController.swift */; };
 		A1F5DA7B264A7CC200557B38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F5DA7A264A7CC200557B38 /* AppDelegate.swift */; };
 		A1F5DA7D264A7CC200557B38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F5DA7C264A7CC200557B38 /* SceneDelegate.swift */; };
 		A1F5DA84264A7CC200557B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F5DA83264A7CC200557B38 /* Assets.xcassets */; };
@@ -41,7 +46,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A114E508265A7B060099B4E7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A114E50B265A7B490099B4E7 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		A114E51C265A895E0099B4E7 /* China.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = China.png; path = Eat_Today/Resource/China.png; sourceTree = SOURCE_ROOT; };
 		A114E51D265A895E0099B4E7 /* Italy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Italy.png; path = Eat_Today/Resource/Italy.png; sourceTree = SOURCE_ROOT; };
@@ -68,6 +72,12 @@
 		A186CCC22657916800F02B69 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A186CCCB26579C1E00F02B69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A18CA54D265B98BB009CBD87 /* AllMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMapViewController.swift; sourceTree = "<group>"; };
+		A18CA552265BA6E4009CBD87 /* Korea_MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Korea_MapViewController.swift; sourceTree = "<group>"; };
+		A18CA555265BA72F009CBD87 /* Cafe_MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cafe_MapViewController.swift; sourceTree = "<group>"; };
+		A18CA556265BA72F009CBD87 /* China_MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = China_MapViewController.swift; sourceTree = "<group>"; };
+		A18CA557265BA72F009CBD87 /* Famous_MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Famous_MapViewController.swift; sourceTree = "<group>"; };
+		A18CA558265BA72F009CBD87 /* Italy_MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Italy_MapViewController.swift; sourceTree = "<group>"; };
+		A18CA559265BA72F009CBD87 /* Japan_MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Japan_MapViewController.swift; sourceTree = "<group>"; };
 		A1F5DA77264A7CC200557B38 /* Eat_Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eat_Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F5DA7A264A7CC200557B38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1F5DA7C264A7CC200557B38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +147,19 @@
 			path = Loading;
 			sourceTree = "<group>";
 		};
+		A18CA551265BA6D0009CBD87 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				A18CA552265BA6E4009CBD87 /* Korea_MapViewController.swift */,
+				A18CA555265BA72F009CBD87 /* Cafe_MapViewController.swift */,
+				A18CA558265BA72F009CBD87 /* Italy_MapViewController.swift */,
+				A18CA556265BA72F009CBD87 /* China_MapViewController.swift */,
+				A18CA559265BA72F009CBD87 /* Japan_MapViewController.swift */,
+				A18CA557265BA72F009CBD87 /* Famous_MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		A1F5DA6E264A7CC200557B38 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +179,7 @@
 		A1F5DA79264A7CC200557B38 /* Eat_Today */ = {
 			isa = PBXGroup;
 			children = (
+				A18CA551265BA6D0009CBD87 /* Map */,
 				A114E54D265B08B40099B4E7 /* Detail */,
 				A114E514265A84120099B4E7 /* Food */,
 				A186CCB826578C6F00F02B69 /* Loading */,
@@ -168,7 +192,6 @@
 				A186CCC22657916800F02B69 /* HomeViewController.swift */,
 				A114E53F265ABE8C0099B4E7 /* CityPickerViewController.swift */,
 				A114E50B265A7B490099B4E7 /* Food.swift */,
-				A114E508265A7B060099B4E7 /* MapViewController.swift */,
 				A18CA54D265B98BB009CBD87 /* AllMapViewController.swift */,
 			);
 			path = Eat_Today;
@@ -256,7 +279,10 @@
 				A114E54F265B0B8D0099B4E7 /* Korea_DetailTableViewController.swift in Sources */,
 				A114E536265A9A930099B4E7 /* China_TableViewController.swift in Sources */,
 				A186CCC32657916800F02B69 /* HomeViewController.swift in Sources */,
+				A18CA55E265BA730009CBD87 /* Japan_MapViewController.swift in Sources */,
 				A114E538265A9A930099B4E7 /* Famous_TableViewController.swift in Sources */,
+				A18CA55B265BA730009CBD87 /* China_MapViewController.swift in Sources */,
+				A18CA55D265BA730009CBD87 /* Italy_MapViewController.swift in Sources */,
 				A114E552265B0BD10099B4E7 /* Cafe_DetailTableViewController.swift in Sources */,
 				A114E558265B0BE60099B4E7 /* China_DetailTableViewController.swift in Sources */,
 				A1F5DA7B264A7CC200557B38 /* AppDelegate.swift in Sources */,
@@ -266,12 +292,14 @@
 				A186CCBD26578D1700F02B69 /* LogoViewController.swift in Sources */,
 				A114E55E265B0BFA0099B4E7 /* Famous_DetailTableViewController.swift in Sources */,
 				A114E50C265A7B490099B4E7 /* Food.swift in Sources */,
+				A18CA55A265BA730009CBD87 /* Cafe_MapViewController.swift in Sources */,
+				A18CA55C265BA730009CBD87 /* Famous_MapViewController.swift in Sources */,
 				A1F5DA7D264A7CC200557B38 /* SceneDelegate.swift in Sources */,
 				A18CA54E265B98BB009CBD87 /* AllMapViewController.swift in Sources */,
+				A18CA553265BA6E4009CBD87 /* Korea_MapViewController.swift in Sources */,
 				A114E555265B0BDA0099B4E7 /* Italy_DetailTableViewController.swift in Sources */,
 				A114E537265A9A930099B4E7 /* Japan_TableViewController.swift in Sources */,
 				A114E53A265A9A930099B4E7 /* Cafe_TableViewController.swift in Sources */,
-				A114E509265A7B060099B4E7 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -127,12 +127,7 @@ class Famous_TableViewController: UITableViewController, XMLParserDelegate {
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        if segue.identifier == "segueToMapView"{
-            if let mapViewController = segue.destination as? MapViewController {
-                mapViewController.posts = posts
-            }
-        }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToDetail"{
             if let cell = sender as? UITableViewCell{
                 let indexPath = tableView.indexPath(for: cell)
@@ -161,6 +156,11 @@ class Famous_TableViewController: UITableViewController, XMLParserDelegate {
                 if let famousDetailViewController = segue.destination as? Famous_DetailTableViewController{
                     famousDetailViewController.zipCd = REFINE_ZIP_CD
                 }
+                
+                if let famousDetailViewController = segue.destination as? Famous_DetailTableViewController{
+                    famousDetailViewController.posts = posts
+                }
+
             }
         }
     }

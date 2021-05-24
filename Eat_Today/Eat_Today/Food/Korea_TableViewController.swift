@@ -120,11 +120,6 @@ class Korea_TableViewController: UITableViewController, XMLParserDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "segueToMapView" {
-            if let mapViewController = segue.destination as? MapViewController {
-                mapViewController.posts = posts
-            }
-        }
         if segue.identifier == "segueToDetail"{
             if let cell = sender as? UITableViewCell{
                 let indexPath = tableView.indexPath(for: cell)
@@ -144,6 +139,10 @@ class Korea_TableViewController: UITableViewController, XMLParserDelegate {
                 }
                 if let koreaDetailTableViewController = segue.destination as? Korea_DetailTableViewController{
                     koreaDetailTableViewController.zipCd = REFINE_ZIP_CD
+                }
+                
+                if let koreaDetailTableViewController = segue.destination as? Korea_DetailTableViewController{
+                    koreaDetailTableViewController.posts = posts
                 }
             }
         }

@@ -119,12 +119,7 @@ class Cafe_TableViewController: UITableViewController, XMLParserDelegate {
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        if segue.identifier == "segueToMapView"{
-            if let mapViewController = segue.destination as? MapViewController {
-                mapViewController.posts = posts
-            }
-        }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToDetail"{
             if let cell = sender as? UITableViewCell{
                 let indexPath = tableView.indexPath(for: cell)
@@ -144,6 +139,10 @@ class Cafe_TableViewController: UITableViewController, XMLParserDelegate {
                 }
                 if let cafeDetailTableViewController = segue.destination as? Cafe_DetailTableViewController{
                     cafeDetailTableViewController.zipCd = REFINE_ZIP_CD
+                }
+                
+                if let cafeDetailTableViewController = segue.destination as? Cafe_DetailTableViewController{
+                    cafeDetailTableViewController.posts = posts
                 }
             }
         }

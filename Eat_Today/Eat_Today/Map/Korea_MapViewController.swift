@@ -1,11 +1,10 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController, MKMapViewDelegate {
+class Korea_MapViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var mapView: MKMapView!
     
     var posts = NSMutableArray()
-    let regionRadius: CLLocationDistance = 5000
     var foods : [Food] = []
     
     func loadInitialData() {
@@ -16,10 +15,12 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             let REFINE_WGS84_LAT = (post as AnyObject).value(forKey: "REFINE_WGS84_LAT") as! NSString as String
             let lat = (REFINE_WGS84_LAT as NSString).doubleValue
             let lon = (REFINE_WGS84_LOGT as NSString).doubleValue
-            let food = Food(title: BIZPLC_NM, locationName: REFINE_ROADNM_ADDR, coordinate: CLLocationCoordinate2D(latitude: lat, longitude: lon))
+            let food = Food(title: BIZPLC_NM, road_addr: REFINE_ROADNM_ADDR, coordinate: CLLocationCoordinate2D(latitude: lat, longitude: lon))
             foods.append(food)
         }
     }
+    
+    let regionRadius: CLLocationDistance = 5000
     
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
@@ -33,7 +34,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        guard let annotation = annotation as? Food else { return nil}
+        guard let annotation = annotation as? Food else { return nil }
         
         let identifier = "marker"
         var view: MKMarkerAnnotationView
@@ -53,7 +54,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let initialLocation = CLLocation(latitude: 37.5384514, longitude: 127.0709764)
+        let initialLocation = CLLocation(latitude: 37.275060, longitude: 127.009233)    // 초기 위치 : 경기도청
         
         centerMapOnLocation(location: initialLocation)
         

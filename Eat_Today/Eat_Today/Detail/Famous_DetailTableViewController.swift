@@ -4,10 +4,11 @@ class Famous_DetailTableViewController: UITableViewController, XMLParserDelegate
     @IBOutlet var detailTableView: UITableView!
 
     var url : String?
+    var posts = NSMutableArray()
     
     var parser = XMLParser()
     let postname : [String] = ["식당 이름", "대표 메뉴", "전화 번호", "지번 주소", "도로명 주소", "우편번호"]
-    var posts : [String] = ["", "", "", "", "", ""]
+    var category : [String] = ["", "", "", "", "", ""]
     var element = NSString()
     var restNm = NSMutableString()
     var bestMn = NSMutableString()
@@ -17,14 +18,22 @@ class Famous_DetailTableViewController: UITableViewController, XMLParserDelegate
     var zipCd = NSMutableString()
     
     func Fill(){
-        posts = ["", "", "", "", "", ""]
+        category = ["", "", "", "", "", ""]
         
-        posts[0] = restNm as String
-        posts[1] = bestMn as String
-        posts[2] = calling as String
-        posts[3] = lotAddr as String
-        posts[4] = roadAddr as String
-        posts[5] = zipCd as String
+        category[0] = restNm as String
+        category[1] = bestMn as String
+        category[2] = calling as String
+        category[3] = lotAddr as String
+        category[4] = roadAddr as String
+        category[5] = zipCd as String
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToMapView" {
+            if let mapViewController = segue.destination as? Famous_MapViewController {
+                mapViewController.posts = posts
+            }
+        }
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -32,13 +41,13 @@ class Famous_DetailTableViewController: UITableViewController, XMLParserDelegate
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return posts.count
+        return category.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FoodDetail", for: indexPath)
         cell.textLabel?.text = postname[indexPath.row]
-        cell.detailTextLabel?.text = posts[indexPath.row]
+        cell.detailTextLabel?.text = category[indexPath.row]
         return cell
     }
     
