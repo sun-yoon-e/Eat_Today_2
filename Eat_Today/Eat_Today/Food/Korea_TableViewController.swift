@@ -137,10 +137,10 @@ class Korea_TableViewController: UITableViewController, XMLParserDelegate {
                     koreaDetailTableViewController.restNm = BIZPLC_NM
                 }
                 if let koreaDetailTableViewController = segue.destination as? Korea_DetailTableViewController{
-                    koreaDetailTableViewController.roadAddr = REFINE_ROADNM_ADDR
+                    koreaDetailTableViewController.lotAddr = REFINE_LOTNO_ADDR
                 }
                 if let koreaDetailTableViewController = segue.destination as? Korea_DetailTableViewController{
-                    koreaDetailTableViewController.lotAddr = REFINE_LOTNO_ADDR
+                    koreaDetailTableViewController.roadAddr = REFINE_ROADNM_ADDR
                 }
                 if let koreaDetailTableViewController = segue.destination as? Korea_DetailTableViewController{
                     koreaDetailTableViewController.zipCd = REFINE_ZIP_CD

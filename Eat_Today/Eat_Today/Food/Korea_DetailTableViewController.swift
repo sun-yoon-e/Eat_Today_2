@@ -6,7 +6,7 @@ class Korea_DetailTableViewController: UITableViewController, XMLParserDelegate 
     var url : String?
     
     var parser = XMLParser()
-    let postname : [String] = ["식당 이름", "도로명 주소", "지번 주소", "우편번호"]
+    let postname : [String] = ["식당 이름", "지번 주소", "도로명 주소", "우편번호"]
     var posts : [String] = ["", "", "", ""]
     var element = NSString()
     var restNm = NSMutableString()

@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--초기화면-->
         <scene sceneID="31X-6i-yYx">
             <objects>
-                <tabBarController storyboardIdentifier="Home" id="wVV-s8-7Wt" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Home" title="초기화면" id="wVV-s8-7Wt" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qFj-v8-AiG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -360,10 +360,10 @@
             </objects>
             <point key="canvasLocation" x="728" y="178"/>
         </scene>
-        <!--Map View Controller-->
+        <!--도시 전체 Map-->
         <scene sceneID="HnZ-tr-nX3">
             <objects>
-                <viewController id="aKo-Av-t8v" customClass="MapViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="도시 전체 Map" id="aKo-Av-t8v" customClass="AllMapViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="as1-0v-d7d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -672,10 +672,10 @@
             </objects>
             <point key="canvasLocation" x="6500.0000000000009" y="1518.75"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Picker Nav-->
         <scene sceneID="91f-iz-n6X">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oUu-zB-kxi" sceneMemberID="viewController">
+                <navigationController title="Picker Nav" automaticallyAdjustsScrollViewInsets="NO" id="oUu-zB-kxi" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="31F-Rj-RWY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -690,10 +690,10 @@
             </objects>
             <point key="canvasLocation" x="3957" y="-2506"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--한식 Nav-->
         <scene sceneID="KiW-9t-6PK">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4dW-LN-FQc" sceneMemberID="viewController">
+                <navigationController title="한식 Nav" automaticallyAdjustsScrollViewInsets="NO" id="4dW-LN-FQc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="oBx-Nf-J62"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nro-va-Alm">
@@ -709,10 +709,10 @@
             </objects>
             <point key="canvasLocation" x="5589.8550724637689" y="-1825.4464285714284"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--카페 Nav-->
         <scene sceneID="Gwf-G7-avA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7n2-zo-FWI" sceneMemberID="viewController">
+                <navigationController title="카페 Nav" automaticallyAdjustsScrollViewInsets="NO" id="7n2-zo-FWI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="21J-B0-zhT"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1gH-Fk-zLh">
@@ -728,10 +728,10 @@
             </objects>
             <point key="canvasLocation" x="5586.9565217391309" y="-1160.4910714285713"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--양식 Nav-->
         <scene sceneID="gsK-pR-J1n">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mSr-Vg-RM6" sceneMemberID="viewController">
+                <navigationController title="양식 Nav" automaticallyAdjustsScrollViewInsets="NO" id="mSr-Vg-RM6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="dbC-Qm-gqK"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Eak-kM-PB4">
@@ -747,10 +747,10 @@
             </objects>
             <point key="canvasLocation" x="5589.8550724637689" y="-496.20535714285711"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--중식 Nav-->
         <scene sceneID="Rnq-b1-eJl">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SFu-sI-P0x" sceneMemberID="viewController">
+                <navigationController title="중식 Nav" automaticallyAdjustsScrollViewInsets="NO" id="SFu-sI-P0x" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="chH-W4-ToI"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lnk-Er-3Gb">
@@ -766,10 +766,10 @@
             </objects>
             <point key="canvasLocation" x="5589.8550724637689" y="176.78571428571428"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--일식 Nav-->
         <scene sceneID="Jzh-lN-BzY">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZHH-hS-Qma" sceneMemberID="viewController">
+                <navigationController title="일식 Nav" automaticallyAdjustsScrollViewInsets="NO" id="ZHH-hS-Qma" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="qIf-KY-MHq"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jfG-ly-oB9">
@@ -785,10 +785,10 @@
             </objects>
             <point key="canvasLocation" x="5592.753623188406" y="853.79464285714278"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--맛집 Nav-->
         <scene sceneID="PlV-Gs-mXj">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FTU-Nk-qF5" sceneMemberID="viewController">
+                <navigationController title="맛집 Nav" automaticallyAdjustsScrollViewInsets="NO" id="FTU-Nk-qF5" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="75I-lN-ytM"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iBn-Az-D4B">
@@ -804,10 +804,10 @@
             </objects>
             <point key="canvasLocation" x="5589.8550724637689" y="1518.75"/>
         </scene>
-        <!--상세 정보-->
+        <!--한식 상세 정보-->
         <scene sceneID="iEn-02-fDf">
             <objects>
-                <tableViewController id="ILG-C6-1kZ" customClass="Korea_DetailTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="한식 상세 정보" id="ILG-C6-1kZ" customClass="Korea_DetailTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JPf-AU-lga">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -858,10 +858,10 @@
             </objects>
             <point key="canvasLocation" x="7228" y="-1825"/>
         </scene>
-        <!--Map View Controller-->
+        <!--한식 Map-->
         <scene sceneID="Fk2-5f-GS7">
             <objects>
-                <viewController id="qC9-H5-5ny" customClass="MapViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="한식 Map" id="qC9-H5-5ny" customClass="MapViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0nd-pn-VVN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -880,10 +880,10 @@
             </objects>
             <point key="canvasLocation" x="7952" y="-1825"/>
         </scene>
-        <!--상세 정보-->
+        <!--카페 상세 정보-->
         <scene sceneID="JNx-bj-55n">
             <objects>
-                <tableViewController id="e6a-WP-cM3" customClass="Cafe_DetailTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="카페 상세 정보" id="e6a-WP-cM3" customClass="Cafe_DetailTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jik-mc-h0W">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -934,10 +934,10 @@
             </objects>
             <point key="canvasLocation" x="7220" y="-1160"/>
         </scene>
-        <!--Map View Controller-->
+        <!--카페 Map-->
         <scene sceneID="xMD-U6-iHF">
             <objects>
-                <viewController id="Li4-1U-4zk" customClass="MapViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="카페 Map" id="Li4-1U-4zk" customClass="MapViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S8z-zW-kAg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -956,10 +956,10 @@
             </objects>
             <point key="canvasLocation" x="7946" y="-1160"/>
         </scene>
-        <!--상세 정보-->
+        <!--양식 상세 정보-->
         <scene sceneID="Okx-Tn-KLr">
             <objects>
-                <tableViewController id="yjo-tb-sWq" customClass="Italy_DetailTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="양식 상세 정보" id="yjo-tb-sWq" customClass="Italy_DetailTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="PHQ-xq-MG3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1010,10 +1010,10 @@
             </objects>
             <point key="canvasLocation" x="7228" y="-496"/>
         </scene>
-        <!--Map View Controller-->
+        <!--양식 Map-->
         <scene sceneID="Tsh-pJ-IMI">
             <objects>
-                <viewController id="mit-KU-nwH" customClass="MapViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="양식 Map" id="mit-KU-nwH" customClass="MapViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YOD-Pd-jHz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1032,10 +1032,10 @@
             </objects>
             <point key="canvasLocation" x="7952" y="-496"/>
         </scene>
-        <!--상세 정보-->
+        <!--중식 상세 정보-->
         <scene sceneID="Vyv-Mo-zMf">
             <objects>
-                <tableViewController id="FLK-DC-dDx" customClass="China_DetailTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="중식 상세 정보" id="FLK-DC-dDx" customClass="China_DetailTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FHD-Kj-RUt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1086,10 +1086,10 @@
             </objects>
             <point key="canvasLocation" x="7228" y="177"/>
         </scene>
-        <!--Map View Controller-->
+        <!--중식 Map-->
         <scene sceneID="akc-ll-Xzf">
             <objects>
-                <viewController id="5Do-JL-3Or" customClass="MapViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="중식 Map" id="5Do-JL-3Or" customClass="MapViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oUE-Es-z5L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1108,10 +1108,10 @@
             </objects>
             <point key="canvasLocation" x="7952" y="177"/>
         </scene>
-        <!--상세 정보-->
+        <!--일식 상세 정보-->
         <scene sceneID="R3i-Fs-0aO">
             <objects>
-                <tableViewController id="70L-V4-2Hn" customClass="Japan_DetailTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="일식 상세 정보" id="70L-V4-2Hn" customClass="Japan_DetailTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rfB-AV-2rz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1162,10 +1162,10 @@
             </objects>
             <point key="canvasLocation" x="7230" y="854"/>
         </scene>
-        <!--Map View Controller-->
+        <!--일식 Map-->
         <scene sceneID="7hK-g6-MA4">
             <objects>
-                <viewController id="ekE-hD-EkT" customClass="MapViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="일식 Map" id="ekE-hD-EkT" customClass="MapViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nw1-TK-7DR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1184,10 +1184,10 @@
             </objects>
             <point key="canvasLocation" x="7957" y="854"/>
         </scene>
-        <!--상세 정보-->
+        <!--맛집 상세 정보-->
         <scene sceneID="aZ7-ti-EdP">
             <objects>
-                <tableViewController id="nfY-81-3fq" customClass="Famous_DetailTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="맛집 상세 정보" id="nfY-81-3fq" customClass="Famous_DetailTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="U9A-ZA-UlD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1238,10 +1238,10 @@
             </objects>
             <point key="canvasLocation" x="7223" y="1519"/>
         </scene>
-        <!--Map View Controller-->
+        <!--맛집 Map-->
         <scene sceneID="P4e-2Z-sQc">
             <objects>
-                <viewController id="vDi-TY-fMt" customClass="MapViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="맛집 Map" id="vDi-TY-fMt" customClass="MapViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k4b-ap-esL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

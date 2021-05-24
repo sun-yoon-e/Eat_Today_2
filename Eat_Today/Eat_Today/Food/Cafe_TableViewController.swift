@@ -137,10 +137,10 @@ class Cafe_TableViewController: UITableViewController, XMLParserDelegate {
                     cafeDetailTableViewController.restNm = BIZPLC_NM
                 }
                 if let cafeDetailTableViewController = segue.destination as? Cafe_DetailTableViewController{
-                    cafeDetailTableViewController.roadAddr = REFINE_ROADNM_ADDR
+                    cafeDetailTableViewController.lotAddr = REFINE_LOTNO_ADDR
                 }
                 if let cafeDetailTableViewController = segue.destination as? Cafe_DetailTableViewController{
-                    cafeDetailTableViewController.lotAddr = REFINE_LOTNO_ADDR
+                    cafeDetailTableViewController.roadAddr = REFINE_ROADNM_ADDR
                 }
                 if let cafeDetailTableViewController = segue.destination as? Cafe_DetailTableViewController{
                     cafeDetailTableViewController.zipCd = REFINE_ZIP_CD

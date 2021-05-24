@@ -137,10 +137,10 @@ class Italy_TableViewController: UITableViewController, XMLParserDelegate {
                     italyDetailTableViewController.restNm = BIZPLC_NM
                 }
                 if let italyDetailTableViewController = segue.destination as? Italy_DetailTableViewController{
-                    italyDetailTableViewController.roadAddr = REFINE_ROADNM_ADDR
+                    italyDetailTableViewController.lotAddr = REFINE_LOTNO_ADDR
                 }
                 if let italyDetailTableViewController = segue.destination as? Italy_DetailTableViewController{
-                    italyDetailTableViewController.lotAddr = REFINE_LOTNO_ADDR
+                    italyDetailTableViewController.roadAddr = REFINE_ROADNM_ADDR
                 }
                 if let italyDetailTableViewController = segue.destination as? Italy_DetailTableViewController{
                     italyDetailTableViewController.zipCd = REFINE_ZIP_CD
