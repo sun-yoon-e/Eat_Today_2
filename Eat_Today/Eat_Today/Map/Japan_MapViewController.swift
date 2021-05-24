@@ -6,17 +6,24 @@ class Japan_MapViewController: UIViewController, MKMapViewDelegate {
     
     var posts = NSMutableArray()
     var foods : [Food] = []
+    var restNm = NSMutableString()
+    var REFINE_WGS84_LOGT = NSMutableString()
+    var REFINE_WGS84_LAT = NSMutableString()
     
     func loadInitialData() {
         for post in posts {
             let BIZPLC_NM = (post as AnyObject).value(forKey: "BIZPLC_NM") as! NSString as String
-            let REFINE_ROADNM_ADDR = (post as AnyObject).value(forKey: "REFINE_ROADNM_ADDR") as! NSString as String
-            let REFINE_WGS84_LOGT = (post as AnyObject).value(forKey: "REFINE_WGS84_LOGT") as! NSString as String
-            let REFINE_WGS84_LAT = (post as AnyObject).value(forKey: "REFINE_WGS84_LAT") as! NSString as String
-            let lat = (REFINE_WGS84_LAT as NSString).doubleValue
-            let lon = (REFINE_WGS84_LOGT as NSString).doubleValue
-            let food = Food(title: BIZPLC_NM, road_addr: REFINE_ROADNM_ADDR, coordinate: CLLocationCoordinate2D(latitude: lat, longitude: lon))
-            foods.append(food)
+            let name1 = BIZPLC_NM as NSString as String
+            let name2 = restNm as NSString as String
+            if(name1 == name2){
+                let REFINE_ROADNM_ADDR = (post as AnyObject).value(forKey: "REFINE_ROADNM_ADDR") as! NSString as String
+                let REFINE_WGS84_LOGT = (post as AnyObject).value(forKey: "REFINE_WGS84_LOGT") as! NSString as String
+                let REFINE_WGS84_LAT = (post as AnyObject).value(forKey: "REFINE_WGS84_LAT") as! NSString as String
+                let lat = (REFINE_WGS84_LAT as NSString).doubleValue
+                let lon = (REFINE_WGS84_LOGT as NSString).doubleValue
+                let food = Food(title: BIZPLC_NM, road_addr: REFINE_ROADNM_ADDR, coordinate: CLLocationCoordinate2D(latitude: lat, longitude: lon))
+                foods.append(food)
+            }
         }
     }
     
@@ -53,8 +60,11 @@ class Japan_MapViewController: UIViewController, MKMapViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        let lat = (REFINE_WGS84_LAT as NSString).doubleValue
+        let lon = (REFINE_WGS84_LOGT as NSString).doubleValue
         
-        let initialLocation = CLLocation(latitude: 37.275060, longitude: 127.009233)    // 초기 위치 : 경기도청
+        let initialLocation = CLLocation(latitude: lat, longitude: lon)
         
         centerMapOnLocation(location: initialLocation)
         

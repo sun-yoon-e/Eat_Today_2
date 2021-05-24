@@ -140,6 +140,12 @@ class Korea_TableViewController: UITableViewController, XMLParserDelegate {
                 if let koreaDetailTableViewController = segue.destination as? Korea_DetailTableViewController{
                     koreaDetailTableViewController.zipCd = REFINE_ZIP_CD
                 }
+                if let koreaDetailTableViewController = segue.destination as? Korea_DetailTableViewController{
+                    koreaDetailTableViewController.REFINE_WGS84_LOGT = REFINE_WGS84_LOGT
+                }
+                if let koreaDetailTableViewController = segue.destination as? Korea_DetailTableViewController{
+                    koreaDetailTableViewController.REFINE_WGS84_LAT = REFINE_WGS84_LAT
+                }
                 
                 if let koreaDetailTableViewController = segue.destination as? Korea_DetailTableViewController{
                     koreaDetailTableViewController.posts = posts

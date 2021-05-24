@@ -14,13 +14,15 @@ class Italy_DetailTableViewController: UITableViewController, XMLParserDelegate 
     var roadAddr = NSMutableString()
     var lotAddr = NSMutableString()
     var zipCd = NSMutableString()
-    
+    var REFINE_WGS84_LOGT = NSMutableString()
+    var REFINE_WGS84_LAT = NSMutableString()
+ 
     func Fill(){
         category = ["", "", "", ""]
         
         category[0] = restNm as String
-        category[1] = lotAddr as String
-        category[2] = roadAddr as String
+        category[1] = roadAddr as String
+        category[2] = lotAddr as String
         category[3] = zipCd as String
     }
     
@@ -28,6 +30,15 @@ class Italy_DetailTableViewController: UITableViewController, XMLParserDelegate 
         if segue.identifier == "segueToMapView" {
             if let mapViewController = segue.destination as? Italy_MapViewController {
                 mapViewController.posts = posts
+            }
+            if let mapViewController = segue.destination as? Italy_MapViewController {
+                mapViewController.restNm = restNm
+            }
+            if let mapViewController = segue.destination as? Italy_MapViewController {
+                mapViewController.REFINE_WGS84_LOGT = REFINE_WGS84_LOGT
+            }
+            if let mapViewController = segue.destination as? Italy_MapViewController {
+                mapViewController.REFINE_WGS84_LAT = REFINE_WGS84_LAT
             }
         }
     }

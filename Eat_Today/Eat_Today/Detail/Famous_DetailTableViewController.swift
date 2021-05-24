@@ -16,6 +16,8 @@ class Famous_DetailTableViewController: UITableViewController, XMLParserDelegate
     var roadAddr = NSMutableString()
     var lotAddr = NSMutableString()
     var zipCd = NSMutableString()
+    var REFINE_WGS84_LOGT = NSMutableString()
+    var REFINE_WGS84_LAT = NSMutableString()
     
     func Fill(){
         category = ["", "", "", "", "", ""]
@@ -32,6 +34,15 @@ class Famous_DetailTableViewController: UITableViewController, XMLParserDelegate
         if segue.identifier == "segueToMapView" {
             if let mapViewController = segue.destination as? Famous_MapViewController {
                 mapViewController.posts = posts
+            }
+            if let mapViewController = segue.destination as? Famous_MapViewController {
+                mapViewController.restNm = restNm
+            }
+            if let mapViewController = segue.destination as? Famous_MapViewController {
+                mapViewController.REFINE_WGS84_LOGT = REFINE_WGS84_LOGT
+            }
+            if let mapViewController = segue.destination as? Famous_MapViewController {
+                mapViewController.REFINE_WGS84_LAT = REFINE_WGS84_LAT
             }
         }
     }

@@ -156,11 +156,16 @@ class Famous_TableViewController: UITableViewController, XMLParserDelegate {
                 if let famousDetailViewController = segue.destination as? Famous_DetailTableViewController{
                     famousDetailViewController.zipCd = REFINE_ZIP_CD
                 }
+                if let famousDetailViewController = segue.destination as? Famous_DetailTableViewController{
+                    famousDetailViewController.REFINE_WGS84_LOGT = REFINE_WGS84_LOGT
+                }
+                if let famousDetailViewController = segue.destination as? Famous_DetailTableViewController{
+                    famousDetailViewController.REFINE_WGS84_LAT = REFINE_WGS84_LAT
+                }
                 
                 if let famousDetailViewController = segue.destination as? Famous_DetailTableViewController{
                     famousDetailViewController.posts = posts
                 }
-
             }
         }
     }

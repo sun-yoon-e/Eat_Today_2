@@ -72,7 +72,7 @@ class HomeViewController: UIViewController {
             }
         }
         if segue.identifier == "segueToMapView" {
-            
+
         }
     }
     

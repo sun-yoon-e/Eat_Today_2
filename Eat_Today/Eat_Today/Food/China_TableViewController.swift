@@ -66,19 +66,19 @@ class China_TableViewController: UITableViewController, XMLParserDelegate {
     func parser(_ parser: XMLParser, foundCharacters string: String) {
         if element.isEqual(to: "SIGUN_NM") {
             SIGUN_NM.append(string)
-        } else if element.isEqual(to: "SIGUN_CD"){
+        } else if element.isEqual(to: "SIGUN_CD") {
             SIGUN_CD.append(string)
-        } else if element.isEqual(to: "BIZPLC_NM"){
+        } else if element.isEqual(to: "BIZPLC_NM") {
             BIZPLC_NM.append(string)
-        } else if element.isEqual(to: "SANITTN_BIZCOND_NM"){
+        } else if element.isEqual(to: "SANITTN_BIZCOND_NM") {
             SANITTN_BIZCOND_NM.append(string)
-        } else if element.isEqual(to: "REFINE_LOTNO_ADDR"){
+        } else if element.isEqual(to: "REFINE_LOTNO_ADDR") {
             REFINE_LOTNO_ADDR.append(string)
-        } else if element.isEqual(to: "REFINE_ROADNM_ADDR"){
+        } else if element.isEqual(to: "REFINE_ROADNM_ADDR") {
             REFINE_ROADNM_ADDR.append(string)
-        } else if element.isEqual(to: "REFINE_ZIP_CD"){
+        } else if element.isEqual(to: "REFINE_ZIP_CD") {
             REFINE_ZIP_CD.append(string)
-        } else if element.isEqual(to: "REFINE_WGS84_LOGT"){
+        } else if element.isEqual(to: "REFINE_WGS84_LOGT") {
             REFINE_WGS84_LOGT.append(string)
         } else if element.isEqual(to: "REFINE_WGS84_LAT"){
             REFINE_WGS84_LAT.append(string)
@@ -139,6 +139,12 @@ class China_TableViewController: UITableViewController, XMLParserDelegate {
                 }
                 if let chinaDetailTableViewController = segue.destination as? China_DetailTableViewController{
                     chinaDetailTableViewController.zipCd = REFINE_ZIP_CD
+                }
+                if let chinaDetailTableViewController = segue.destination as? China_DetailTableViewController{
+                    chinaDetailTableViewController.REFINE_WGS84_LOGT = REFINE_WGS84_LOGT
+                }
+                if let chinaDetailTableViewController = segue.destination as? China_DetailTableViewController{
+                    chinaDetailTableViewController.REFINE_WGS84_LAT = REFINE_WGS84_LAT
                 }
                 
                 if let chinaDetailTableViewController = segue.destination as? China_DetailTableViewController{
