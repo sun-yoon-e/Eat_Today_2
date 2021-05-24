@@ -29,7 +29,7 @@ class Italy_MapViewController: UIViewController, MKMapViewDelegate {
         }
     }
     
-    let regionRadius: CLLocationDistance = 5000
+    let regionRadius: CLLocationDistance = 3000
     
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)

@@ -12,6 +12,7 @@
         <!--초기화면-->
         <scene sceneID="31X-6i-yYx">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IZX-7V-nLS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController storyboardIdentifier="Home" title="초기화면" id="wVV-s8-7Wt" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qFj-v8-AiG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -25,13 +26,13 @@
                         <segue destination="pfn-aR-PkB" kind="relationship" relationship="viewControllers" id="BRC-Fg-4Rz"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IZX-7V-nLS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-55" y="-762"/>
         </scene>
         <!--홈-->
         <scene sceneID="AU2-Ot-pnl">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JJ1-Qo-pTV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="J2C-gM-yQ5" customClass="HomeViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yp2-Eq-5CF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -210,13 +211,14 @@
                         <outlet property="CityLabel" destination="zNR-3k-sVS" id="Ybw-Go-CYS"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JJ1-Qo-pTV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2487" y="-1825"/>
         </scene>
         <!--한식-->
         <scene sceneID="dkN-do-cEU">
             <objects>
+                <exit id="oAj-gi-eH1" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BOs-7R-u69" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="arQ-RB-FoP" customClass="Korea_TableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dtV-WS-gid">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -267,14 +269,14 @@
                         <outlet property="tbData" destination="dtV-WS-gid" id="krk-fl-5nR"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BOs-7R-u69" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="oAj-gi-eH1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4870" y="-1825"/>
         </scene>
         <!--시(군) 선택-->
         <scene sceneID="djF-py-eeD">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="byI-Bz-Y6i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="3fO-TG-4b7" userLabel="Exit" sceneMemberID="exit"/>
                 <viewController id="lL9-P3-fDy" customClass="CityPickerViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sDY-84-WOP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -308,14 +310,13 @@
                         <outlet property="pickerView" destination="bOG-om-VXC" id="oV1-WE-WqA"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="byI-Bz-Y6i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="3fO-TG-4b7" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4866.666666666667" y="-2506.4732142857142"/>
         </scene>
         <!--검색-->
         <scene sceneID="yBa-pA-tPO">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vkA-fA-rnh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="iYs-7p-tXN" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M86-8K-xV7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -325,13 +326,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="검색" id="Cgc-Eg-cEf"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vkA-fA-rnh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1467" y="-1160"/>
         </scene>
         <!--찜-->
         <scene sceneID="zR3-pr-7Ls">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mLa-YY-M8H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="HIS-7a-NqF" customClass="HeartTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="w9e-xD-Rxw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -345,27 +346,24 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="102" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q74-pL-pLz">
-                                            <rect key="frame" x="244" y="11" width="150" height="30"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="102" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NEO-7H-d9P">
+                                            <rect key="frame" x="244" y="12" width="150" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5tO-al-mQC">
-                                            <rect key="frame" x="20" y="11" width="59" height="62"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7I8-vN-cDy">
-                                                    <rect key="frame" x="0.0" y="0.0" width="59" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrc-hR-aHa">
-                                                    <rect key="frame" x="0.0" y="38" width="48" height="24"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcC-aE-Hq7">
+                                            <rect key="frame" x="191" y="53" width="33" height="16"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkT-DU-rjN">
+                                            <rect key="frame" x="20" y="17" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -377,7 +375,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="찜" id="MEQ-3B-J5s"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mLa-YY-M8H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1466.6666666666667" y="-496.20535714285711"/>
         </scene>
@@ -400,6 +397,7 @@
         <!--홈-->
         <scene sceneID="hFN-Gw-fbH">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6i0-Li-gtt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="235-2o-5M1" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="xbf-uS-AOa"/>
                     <toolbarItems/>
@@ -412,13 +410,13 @@
                         <segue destination="J2C-gM-yQ5" kind="relationship" relationship="rootViewController" id="BYI-NB-e6u"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6i0-Li-gtt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="728" y="-1825"/>
         </scene>
         <!--검색-->
         <scene sceneID="CWf-aY-naa">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RtG-Rv-lXT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e0F-QG-zHx" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="검색" image="magnifyingglass" catalog="system" id="gC7-oi-tCd"/>
                     <toolbarItems/>
@@ -431,7 +429,6 @@
                         <segue destination="iYs-7p-tXN" kind="relationship" relationship="rootViewController" id="LVW-5y-My7"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RtG-Rv-lXT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="728" y="-1160"/>
         </scene>
@@ -457,6 +454,7 @@
         <!--설정-->
         <scene sceneID="uGE-Fw-1OD">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DqS-V2-cwu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pfn-aR-PkB" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="설정" image="gearshape" catalog="system" id="llJ-IC-CWT"/>
                     <toolbarItems/>
@@ -469,13 +467,13 @@
                         <segue destination="Ryx-gP-J6q" kind="relationship" relationship="rootViewController" id="3ax-df-fcJ"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DqS-V2-cwu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="728" y="178"/>
         </scene>
         <!--도시 전체 Map-->
         <scene sceneID="HnZ-tr-nX3">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Lq-kV-gcj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="도시 전체 Map" id="aKo-Av-t8v" customClass="AllMapViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="as1-0v-d7d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -494,13 +492,14 @@
                         <outlet property="mapView" destination="YoY-PN-Ebj" id="TEF-X2-Xge"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Lq-kV-gcj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5593" y="-2506"/>
         </scene>
         <!--카페-->
         <scene sceneID="8LH-40-AeP">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oqF-fX-NvD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="h5w-2N-fDr" userLabel="Exit" sceneMemberID="exit"/>
                 <tableViewController id="Xlc-Hf-bWF" customClass="Cafe_TableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="8hX-UE-fkn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -551,14 +550,14 @@
                         <outlet property="tbData" destination="8hX-UE-fkn" id="Uql-xR-9jP"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oqF-fX-NvD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="h5w-2N-fDr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4867" y="-1160"/>
         </scene>
         <!--양식-->
         <scene sceneID="ixl-9z-GfL">
             <objects>
+                <exit id="pGK-G2-pWn" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bAK-Xg-6bG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="iXh-oG-KIB" customClass="Italy_TableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GsC-5d-qL6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -609,14 +608,14 @@
                         <outlet property="tbData" destination="GsC-5d-qL6" id="qw5-G3-mgF"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bAK-Xg-6bG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="pGK-G2-pWn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4870" y="-496"/>
         </scene>
         <!--중식-->
         <scene sceneID="TeQ-lM-5wh">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="45K-Tq-OmL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="2G3-MY-1Fh" userLabel="Exit" sceneMemberID="exit"/>
                 <tableViewController id="2Fr-oL-qxU" customClass="China_TableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hDV-kZ-qi5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -667,14 +666,14 @@
                         <outlet property="tbData" destination="hDV-kZ-qi5" id="Wub-Xq-2G8"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="45K-Tq-OmL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="2G3-MY-1Fh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4870" y="177"/>
         </scene>
         <!--일식-->
         <scene sceneID="3r6-vU-CQL">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iAz-AF-IJ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ang-go-mVk" userLabel="Exit" sceneMemberID="exit"/>
                 <tableViewController id="T02-IY-UiH" customClass="Japan_TableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="e5W-Tk-Ufk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -725,14 +724,14 @@
                         <outlet property="tbData" destination="e5W-Tk-Ufk" id="Aa1-ob-fJE"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iAz-AF-IJ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="ang-go-mVk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4872" y="854"/>
         </scene>
         <!--맛집-->
         <scene sceneID="hzi-aj-YQT">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="31Z-3J-mGw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="rqu-ch-H5t" userLabel="Exit" sceneMemberID="exit"/>
                 <tableViewController id="n5X-89-fUj" customClass="Famous_TableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lO2-He-MZu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -783,14 +782,13 @@
                         <outlet property="tbData" destination="lO2-He-MZu" id="hMe-Rj-0Hf"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="31Z-3J-mGw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="rqu-ch-H5t" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4870" y="1519"/>
         </scene>
         <!--Picker Nav-->
         <scene sceneID="91f-iz-n6X">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dme-jK-hbC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController title="Picker Nav" automaticallyAdjustsScrollViewInsets="NO" id="oUu-zB-kxi" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="31F-Rj-RWY">
@@ -802,13 +800,13 @@
                         <segue destination="lL9-P3-fDy" kind="relationship" relationship="rootViewController" id="d2V-gU-XbX"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dme-jK-hbC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3957" y="-2506"/>
         </scene>
         <!--한식 Nav-->
         <scene sceneID="KiW-9t-6PK">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eeu-qV-GcP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController title="한식 Nav" automaticallyAdjustsScrollViewInsets="NO" id="4dW-LN-FQc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="oBx-Nf-J62"/>
@@ -821,13 +819,13 @@
                         <segue destination="arQ-RB-FoP" kind="relationship" relationship="rootViewController" id="0D0-Ic-EbZ"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eeu-qV-GcP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3959" y="-1825"/>
         </scene>
         <!--카페 Nav-->
         <scene sceneID="Gwf-G7-avA">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhx-26-asM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController title="카페 Nav" automaticallyAdjustsScrollViewInsets="NO" id="7n2-zo-FWI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="21J-B0-zhT"/>
@@ -840,13 +838,13 @@
                         <segue destination="Xlc-Hf-bWF" kind="relationship" relationship="rootViewController" id="KCN-cf-loV"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bhx-26-asM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3957" y="-1160"/>
         </scene>
         <!--양식 Nav-->
         <scene sceneID="gsK-pR-J1n">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BbU-wH-Qpd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController title="양식 Nav" automaticallyAdjustsScrollViewInsets="NO" id="mSr-Vg-RM6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="dbC-Qm-gqK"/>
@@ -859,13 +857,13 @@
                         <segue destination="iXh-oG-KIB" kind="relationship" relationship="rootViewController" id="kZJ-rT-1ly"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BbU-wH-Qpd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3959" y="-496"/>
         </scene>
         <!--중식 Nav-->
         <scene sceneID="Rnq-b1-eJl">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kBf-iG-rdN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController title="중식 Nav" automaticallyAdjustsScrollViewInsets="NO" id="SFu-sI-P0x" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="chH-W4-ToI"/>
@@ -878,13 +876,13 @@
                         <segue destination="2Fr-oL-qxU" kind="relationship" relationship="rootViewController" id="k7o-cD-sz3"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kBf-iG-rdN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3959" y="177"/>
         </scene>
         <!--일식 Nav-->
         <scene sceneID="Jzh-lN-BzY">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vzX-uc-Fd1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController title="일식 Nav" automaticallyAdjustsScrollViewInsets="NO" id="ZHH-hS-Qma" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="qIf-KY-MHq"/>
@@ -897,13 +895,13 @@
                         <segue destination="T02-IY-UiH" kind="relationship" relationship="rootViewController" id="O3z-07-v4U"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vzX-uc-Fd1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3962" y="854"/>
         </scene>
         <!--맛집 Nav-->
         <scene sceneID="PlV-Gs-mXj">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ac0-eC-Ror" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController title="맛집 Nav" automaticallyAdjustsScrollViewInsets="NO" id="FTU-Nk-qF5" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="75I-lN-ytM"/>
@@ -916,13 +914,13 @@
                         <segue destination="n5X-89-fUj" kind="relationship" relationship="rootViewController" id="qsd-LR-sFB"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ac0-eC-Ror" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3959" y="1519"/>
         </scene>
         <!--한식 상세 정보-->
         <scene sceneID="iEn-02-fDf">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FGa-UP-Hh9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController title="한식 상세 정보" id="ILG-C6-1kZ" customClass="Korea_DetailTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JPf-AU-lga">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -968,7 +966,7 @@
                             </barButtonItem>
                             <barButtonItem title="Item" image="heart" catalog="system" id="n2Y-SF-2QZ">
                                 <connections>
-                                    <segue destination="RRP-aJ-2Ot" kind="show" id="zFI-Xp-dvS"/>
+                                    <segue destination="RRP-aJ-2Ot" kind="show" identifier="segueToHeartView" id="zFI-Xp-dvS"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -977,13 +975,13 @@
                         <outlet property="detailTableView" destination="JPf-AU-lga" id="Omo-uJ-7NQ"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FGa-UP-Hh9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5597" y="-1825"/>
         </scene>
         <!--한식 Map-->
         <scene sceneID="Fk2-5f-GS7">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kqb-RI-q9t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="한식 Map" id="qC9-H5-5ny" customClass="Korea_MapViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0nd-pn-VVN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1002,13 +1000,13 @@
                         <outlet property="mapView" destination="kOE-dY-1cY" id="566-8X-1XS"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kqb-RI-q9t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6313" y="-1825"/>
         </scene>
         <!--카페 상세 정보-->
         <scene sceneID="JNx-bj-55n">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Sg-nN-duW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController title="카페 상세 정보" id="e6a-WP-cM3" customClass="Cafe_DetailTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jik-mc-h0W">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1054,7 +1052,7 @@
                             </barButtonItem>
                             <barButtonItem title="Item" image="heart" catalog="system" id="5A3-xc-VQa">
                                 <connections>
-                                    <segue destination="D5a-Op-gry" kind="show" id="GnC-ZR-kv5"/>
+                                    <segue destination="D5a-Op-gry" kind="show" identifier="segueToHeartView" id="GnC-ZR-kv5"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -1063,13 +1061,13 @@
                         <outlet property="detailTableView" destination="jik-mc-h0W" id="qgk-BR-bGT"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Sg-nN-duW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5588" y="-1160"/>
         </scene>
         <!--카페 Map-->
         <scene sceneID="xMD-U6-iHF">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O1E-Vi-Dom" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="카페 Map" id="Li4-1U-4zk" customClass="Cafe_MapViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S8z-zW-kAg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1088,13 +1086,13 @@
                         <outlet property="mapView" destination="3rE-zU-3td" id="9xk-h8-UUU"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O1E-Vi-Dom" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6314" y="-1160"/>
         </scene>
         <!--양식 상세 정보-->
         <scene sceneID="Okx-Tn-KLr">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Dr-e6-kET" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController title="양식 상세 정보" id="yjo-tb-sWq" customClass="Italy_DetailTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="PHQ-xq-MG3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1140,7 +1138,7 @@
                             </barButtonItem>
                             <barButtonItem title="Item" image="heart" catalog="system" id="dx4-EB-D8h">
                                 <connections>
-                                    <segue destination="3a1-C7-757" kind="show" id="RPy-Ou-pzk"/>
+                                    <segue destination="3a1-C7-757" kind="show" identifier="segueToHeartView" id="RPy-Ou-pzk"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -1149,13 +1147,13 @@
                         <outlet property="detailTableView" destination="PHQ-xq-MG3" id="hGg-js-36S"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Dr-e6-kET" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5597" y="-496"/>
         </scene>
         <!--양식 Map-->
         <scene sceneID="Tsh-pJ-IMI">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W6h-fY-7Ym" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="양식 Map" id="mit-KU-nwH" customClass="Italy_MapViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YOD-Pd-jHz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1174,13 +1172,13 @@
                         <outlet property="mapView" destination="pxH-LH-kTf" id="ncg-Ph-wEe"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W6h-fY-7Ym" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6320" y="-496"/>
         </scene>
         <!--중식 상세 정보-->
         <scene sceneID="Vyv-Mo-zMf">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lxS-ee-mQ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController title="중식 상세 정보" id="FLK-DC-dDx" customClass="China_DetailTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FHD-Kj-RUt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1226,7 +1224,7 @@
                             </barButtonItem>
                             <barButtonItem title="Item" image="heart" catalog="system" id="RXX-m0-Dda">
                                 <connections>
-                                    <segue destination="HmN-sL-PcW" kind="show" id="2Xo-uv-8kH"/>
+                                    <segue destination="HmN-sL-PcW" kind="show" identifier="segueToHeartView" id="2Xo-uv-8kH"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -1235,13 +1233,13 @@
                         <outlet property="detailTableView" destination="FHD-Kj-RUt" id="LlS-C5-ugK"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lxS-ee-mQ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5597" y="177"/>
         </scene>
         <!--중식 Map-->
         <scene sceneID="akc-ll-Xzf">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mXc-wL-a6I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="중식 Map" id="5Do-JL-3Or" customClass="China_MapViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oUE-Es-z5L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1260,13 +1258,13 @@
                         <outlet property="mapView" destination="pdq-I9-EdB" id="76W-hM-1j1"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mXc-wL-a6I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6320" y="177"/>
         </scene>
         <!--일식 상세 정보-->
         <scene sceneID="R3i-Fs-0aO">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tx5-Nm-sWn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController title="일식 상세 정보" id="70L-V4-2Hn" customClass="Japan_DetailTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rfB-AV-2rz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1312,7 +1310,7 @@
                             </barButtonItem>
                             <barButtonItem title="Item" image="heart" catalog="system" id="xCx-Ns-QSe">
                                 <connections>
-                                    <segue destination="pxZ-e4-nv8" kind="show" id="9QS-CI-Yzr"/>
+                                    <segue destination="pxZ-e4-nv8" kind="show" identifier="segueToHeartView" id="9QS-CI-Yzr"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -1321,13 +1319,13 @@
                         <outlet property="detailTableView" destination="rfB-AV-2rz" id="ssS-8b-LkX"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tx5-Nm-sWn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5599" y="854"/>
         </scene>
         <!--일식 Map-->
         <scene sceneID="7hK-g6-MA4">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oky-pP-dfJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="일식 Map" id="ekE-hD-EkT" customClass="Japan_MapViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nw1-TK-7DR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1346,13 +1344,13 @@
                         <outlet property="mapView" destination="Jow-Kb-tmZ" id="hxn-E1-uUS"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oky-pP-dfJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6326" y="854"/>
         </scene>
         <!--맛집 상세 정보-->
         <scene sceneID="aZ7-ti-EdP">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qZR-za-vA9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController title="맛집 상세 정보" id="nfY-81-3fq" customClass="Famous_DetailTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="U9A-ZA-UlD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1398,7 +1396,7 @@
                             </barButtonItem>
                             <barButtonItem title="Item" image="heart" catalog="system" id="CXv-8y-Bal">
                                 <connections>
-                                    <segue destination="6Dt-FX-vaV" kind="show" id="aON-fx-xuk"/>
+                                    <segue destination="6Dt-FX-vaV" kind="show" identifier="segueToHeartView" id="aON-fx-xuk"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -1407,13 +1405,13 @@
                         <outlet property="detailTableView" destination="U9A-ZA-UlD" id="5a5-WS-m3Z"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qZR-za-vA9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5591" y="1519"/>
         </scene>
         <!--맛집 Map-->
         <scene sceneID="P4e-2Z-sQc">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bah-sr-vkA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="맛집 Map" id="vDi-TY-fMt" customClass="Famous_MapViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k4b-ap-esL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1432,13 +1430,14 @@
                         <outlet property="mapView" destination="xGJ-iT-9AJ" id="YiX-z6-9uM"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bah-sr-vkA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6317" y="1519"/>
         </scene>
         <!--한식 찜-->
         <scene sceneID="CDW-xQ-QR6">
             <objects>
+                <exit id="gck-aL-jTL" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7PP-o9-iz8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController title="한식 찜" id="RRP-aJ-2Ot" customClass="Korea_HeartTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="7aa-JS-arf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1544,14 +1543,14 @@
                         <outlet property="reviewTextField" destination="Z11-XD-mWY" id="Cwh-tN-Q1r"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7PP-o9-iz8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="gck-aL-jTL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="7262" y="-1825"/>
         </scene>
         <!--카페 찜-->
         <scene sceneID="8Lm-60-Aio">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sze-ia-aSZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="bY9-iB-jQT" userLabel="Exit" sceneMemberID="exit"/>
                 <tableViewController title="카페 찜" id="D5a-Op-gry" customClass="Cafe_HeartTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="QDA-eq-ZZ3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1646,7 +1645,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="jke-IS-R2n">
                             <connections>
-                                <segue destination="bY9-iB-jQT" kind="unwind" unwindAction="saveFromStarToHeartWithSegue:" id="D2W-Rj-hGD"/>
+                                <segue destination="bY9-iB-jQT" kind="unwind" identifier="SavePlayerDetail" unwindAction="saveFromStarToHeartWithSegue:" id="D2W-Rj-hGD"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1656,14 +1655,14 @@
                         <outlet property="reviewTextField" destination="w1S-th-9RY" id="poo-Dw-c34"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sze-ia-aSZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="bY9-iB-jQT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="7261" y="-1160"/>
         </scene>
         <!--양식 찜-->
         <scene sceneID="K5W-Hn-PKd">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="58L-qH-1H0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="7fj-la-KYN" userLabel="Exit" sceneMemberID="exit"/>
                 <tableViewController title="양식 찜" id="3a1-C7-757" customClass="Italy_HeartTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="xaN-r5-bD7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1758,7 +1757,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="w3V-ex-CwR">
                             <connections>
-                                <segue destination="7fj-la-KYN" kind="unwind" unwindAction="saveFromStarToHeartWithSegue:" id="O8B-Xd-1DV"/>
+                                <segue destination="7fj-la-KYN" kind="unwind" identifier="SavePlayerDetail" unwindAction="saveFromStarToHeartWithSegue:" id="O8B-Xd-1DV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1768,14 +1767,14 @@
                         <outlet property="reviewTextField" destination="ZFI-ur-LpJ" id="z5O-bl-irm"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="58L-qH-1H0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="7fj-la-KYN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="7261" y="-496"/>
         </scene>
         <!--중식 찜-->
         <scene sceneID="cG7-xA-uRR">
             <objects>
+                <exit id="Cf5-99-OsD" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ie-Jh-0XR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController title="중식 찜" id="HmN-sL-PcW" customClass="China_HeartTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="rzD-8M-lnQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1870,7 +1869,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="aPA-pF-nBP">
                             <connections>
-                                <segue destination="Cf5-99-OsD" kind="unwind" unwindAction="saveFromStarToHeartWithSegue:" id="Not-Kg-rcq"/>
+                                <segue destination="Cf5-99-OsD" kind="unwind" identifier="SavePlayerDetail" unwindAction="saveFromStarToHeartWithSegue:" id="Not-Kg-rcq"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1880,14 +1879,14 @@
                         <outlet property="reviewTextField" destination="0HB-h0-gwU" id="3ct-3o-haV"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ie-Jh-0XR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="Cf5-99-OsD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="7261" y="169"/>
         </scene>
         <!--일식 찜-->
         <scene sceneID="BqC-wb-QT4">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Blz-bb-cay" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="seJ-FW-O8r" userLabel="Exit" sceneMemberID="exit"/>
                 <tableViewController title="일식 찜" id="pxZ-e4-nv8" customClass="Japan_HeartTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="xjI-kT-U1O">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1982,7 +1981,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="H9S-Sd-mYE">
                             <connections>
-                                <segue destination="seJ-FW-O8r" kind="unwind" unwindAction="saveFromStarToHeartWithSegue:" id="K8p-M6-TvR"/>
+                                <segue destination="seJ-FW-O8r" kind="unwind" identifier="SavePlayerDetail" unwindAction="saveFromStarToHeartWithSegue:" id="K8p-M6-TvR"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1992,14 +1991,14 @@
                         <outlet property="reviewTextField" destination="hRY-cz-ztO" id="7qc-fA-fhx"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Blz-bb-cay" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="seJ-FW-O8r" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="7261" y="854"/>
         </scene>
         <!--맛집 찜-->
         <scene sceneID="7aI-9U-gi9">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X4g-sV-c2e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="OTv-7V-hwS" userLabel="Exit" sceneMemberID="exit"/>
                 <tableViewController title="맛집 찜" id="6Dt-FX-vaV" customClass="Famous_HeartTableViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="4Nq-ja-oKu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -2094,7 +2093,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="B6b-fW-TB2">
                             <connections>
-                                <segue destination="OTv-7V-hwS" kind="unwind" unwindAction="saveFromStarToHeartWithSegue:" id="urb-xo-y92"/>
+                                <segue destination="OTv-7V-hwS" kind="unwind" identifier="SavePlayerDetail" unwindAction="saveFromStarToHeartWithSegue:" id="urb-xo-y92"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -2104,14 +2103,14 @@
                         <outlet property="reviewTextField" destination="OTC-U1-Mth" id="8hd-zT-dfb"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X4g-sV-c2e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="OTv-7V-hwS" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="7261" y="1519"/>
         </scene>
         <!--한식 별점-->
         <scene sceneID="82M-Wo-Y6l">
             <objects>
+                <exit id="rL6-aE-wsy" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ihy-u8-2Ym" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController title="한식 별점" id="cEZ-Yr-CeR" customClass="StarPickerViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IqD-Uy-cqP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -2143,14 +2142,14 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="별점 선택" id="8s3-1m-4LU"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ihy-u8-2Ym" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="rL6-aE-wsy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="8032" y="-1825"/>
         </scene>
         <!--카페 별점-->
         <scene sceneID="1xj-0h-4HX">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mpw-xt-sT6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="I4h-gn-SVz" userLabel="Exit" sceneMemberID="exit"/>
                 <tableViewController title="카페 별점" id="HGC-wo-6at" customClass="StarPickerViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="KdB-Ea-Dqp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -2182,14 +2181,14 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="별점 선택" id="Bex-nD-gQu"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mpw-xt-sT6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="I4h-gn-SVz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="8032" y="-1160"/>
         </scene>
         <!--양식 별점-->
         <scene sceneID="iHN-1e-0tW">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BQW-VQ-i1i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="pzZ-0u-rJr" userLabel="Exit" sceneMemberID="exit"/>
                 <tableViewController title="양식 별점" id="a6W-iP-0WM" customClass="StarPickerViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wHK-cr-seR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -2221,14 +2220,14 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="별점 선택" id="DE8-TP-wi3"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BQW-VQ-i1i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="pzZ-0u-rJr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="8032" y="-496"/>
         </scene>
         <!--중식 별점-->
         <scene sceneID="Ubp-fB-TNo">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XDC-1B-gOv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="gnb-fI-5kg" userLabel="Exit" sceneMemberID="exit"/>
                 <tableViewController title="중식 별점" id="7Ua-hr-xuU" customClass="StarPickerViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Yto-eJ-Mo4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -2260,14 +2259,14 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="별점 선택" id="fJ6-6V-MGI"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XDC-1B-gOv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="gnb-fI-5kg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="8032" y="169"/>
         </scene>
         <!--양식 별점-->
         <scene sceneID="LzA-ik-2Nk">
             <objects>
+                <exit id="2Ci-da-A0s" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OWi-gn-vTt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController title="양식 별점" id="C5k-GH-jFb" customClass="StarPickerViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NUl-vn-uBt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -2299,14 +2298,14 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="별점 선택" id="QLX-Fk-k08"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OWi-gn-vTt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="2Ci-da-A0s" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="8032" y="854"/>
         </scene>
         <!--맛집 별점-->
         <scene sceneID="Yfd-1A-nn6">
             <objects>
+                <exit id="rjD-0I-dCK" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w6f-W9-lOM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController title="맛집 별점" id="H7k-rF-MmV" customClass="StarPickerViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qb4-Ap-LFn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -2338,8 +2337,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="별점 선택" id="oy8-wl-RRV"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="w6f-W9-lOM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="rjD-0I-dCK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="8032" y="1519"/>
         </scene>
