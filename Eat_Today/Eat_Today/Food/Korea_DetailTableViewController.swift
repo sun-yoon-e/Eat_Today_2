@@ -26,6 +26,9 @@ class Korea_DetailTableViewController: UITableViewController, XMLParserDelegate 
         category[3] = zipCd as String
     }
     
+    @IBAction func cancelFromHeartToDetail(segue: UIStoryboardSegue) {
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToMapView" {
             if let mapViewController = segue.destination as? Korea_MapViewController {
