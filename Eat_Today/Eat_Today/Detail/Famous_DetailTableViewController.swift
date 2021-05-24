@@ -30,6 +30,8 @@ class Famous_DetailTableViewController: UITableViewController, XMLParserDelegate
         category[5] = zipCd as String
     }
     
+    @IBOutlet weak var heartButton: UIBarButtonItem!
+    
     @IBAction func cancelFromHeartToDetail(segue: UIStoryboardSegue) {
     }
     

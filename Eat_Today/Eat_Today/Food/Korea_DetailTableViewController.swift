@@ -26,6 +26,8 @@ class Korea_DetailTableViewController: UITableViewController, XMLParserDelegate 
         category[3] = zipCd as String
     }
     
+    @IBOutlet weak var heartButton: UIBarButtonItem!        //UIImage(systemName: "heart.fill")
+    
     @IBAction func cancelFromHeartToDetail(segue: UIStoryboardSegue) {
     }
     

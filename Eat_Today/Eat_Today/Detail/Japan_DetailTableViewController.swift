@@ -26,6 +26,8 @@ class Japan_DetailTableViewController: UITableViewController, XMLParserDelegate 
         category[3] = zipCd as String
     }
     
+    @IBOutlet weak var heartButton: UIBarButtonItem!
+    
     @IBAction func cancelFromHeartToDetail(segue: UIStoryboardSegue) {
     }
     
