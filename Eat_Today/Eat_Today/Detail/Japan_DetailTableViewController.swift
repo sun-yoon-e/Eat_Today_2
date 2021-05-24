@@ -43,6 +43,11 @@ class Japan_DetailTableViewController: UITableViewController, XMLParserDelegate 
                 heartViewController.restName = restNm
             }
         }
+        if segue.identifier == "segueToHeartView" {
+            if let heartViewController = segue.destination as? Japan_HeartTableViewController {
+                heartViewController.restName = restNm
+            }
+        }
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
