@@ -7,8 +7,8 @@ class Cafe_MapViewController: UIViewController, MKMapViewDelegate {
     var posts = NSMutableArray()
     var foods : [Food] = []
     var restNm = NSMutableString()
-    var REFINE_WGS84_LOGT = NSMutableString()
-    var REFINE_WGS84_LAT = NSMutableString()
+    var LOGT : Double = 0
+    var LAT : Double = 0
     
     func loadInitialData() {
         for post in posts {
@@ -21,6 +21,8 @@ class Cafe_MapViewController: UIViewController, MKMapViewDelegate {
                 let REFINE_WGS84_LAT = (post as AnyObject).value(forKey: "REFINE_WGS84_LAT") as! NSString as String
                 let lat = (REFINE_WGS84_LAT as NSString).doubleValue
                 let lon = (REFINE_WGS84_LOGT as NSString).doubleValue
+                LAT = lat
+                LOGT = lon
                 let food = Food(title: BIZPLC_NM, road_addr: REFINE_ROADNM_ADDR, coordinate: CLLocationCoordinate2D(latitude: lat, longitude: lon))
                 foods.append(food)
             }
@@ -60,16 +62,13 @@ class Cafe_MapViewController: UIViewController, MKMapViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let lat = (REFINE_WGS84_LAT as NSString).doubleValue
-        let lon = (REFINE_WGS84_LOGT as NSString).doubleValue
         
-        let initialLocation = CLLocation(latitude: lat, longitude: lon)
+        loadInitialData()
         
+        let initialLocation = CLLocation(latitude: LAT, longitude: LOGT)
         centerMapOnLocation(location: initialLocation)
         
         mapView.delegate = self
-        loadInitialData()
         mapView.addAnnotations(foods)
     }
 }

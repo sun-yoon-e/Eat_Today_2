@@ -14,6 +14,8 @@ class China_HeartTableViewController: UITableViewController {
     @IBOutlet weak var reviewTextField: UITextField!
     @IBOutlet weak var ratingImageView: UIImageView!
     
+    var restName = NSMutableString()
+    
     func imageForRating(rating: Int) -> UIImage? {
         let imageName = "\(rating)Stars"
         return UIImage(named: imageName)
@@ -32,21 +34,22 @@ class China_HeartTableViewController: UITableViewController {
             }
         }
         if segue.identifier == "SavePlayerDetail" {
-            heart = Heart(review: reviewTextField.text!, rating: rating)
+            heart = Heart(name: restNm.text!, review: reviewTextField.text!, rating: rating)
         }
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    /*required init?(coder aDecoder: NSCoder) {
         print("init China_HeartTableViewController")
         super.init(coder: aDecoder)
     }
     deinit {
         print("deinit China_HeartTableViewController")
-    }
+    }*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
         ratingImageView.image = imageForRating(rating: rating)
+        restNm.text = "\(restName)"
     }
     
     override func didReceiveMemoryWarning() {

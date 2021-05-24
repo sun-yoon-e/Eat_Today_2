@@ -37,11 +37,10 @@ class Cafe_DetailTableViewController: UITableViewController, XMLParserDelegate {
             if let mapViewController = segue.destination as? Cafe_MapViewController {
                 mapViewController.restNm = restNm
             }
-            if let mapViewController = segue.destination as? Cafe_MapViewController {
-                mapViewController.REFINE_WGS84_LOGT = REFINE_WGS84_LOGT
-            }
-            if let mapViewController = segue.destination as? Cafe_MapViewController {
-                mapViewController.REFINE_WGS84_LAT = REFINE_WGS84_LAT
+        }
+        if segue.identifier == "segueToHeartView" {
+            if let heartViewController = segue.destination as? Cafe_HeartTableViewController {
+                heartViewController.restName = restNm
             }
         }
     }

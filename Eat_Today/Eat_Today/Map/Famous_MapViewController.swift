@@ -7,13 +7,13 @@ class Famous_MapViewController: UIViewController, MKMapViewDelegate {
     var posts = NSMutableArray()
     var foods : [Food] = []
     var restNm = NSMutableString()
-    var REFINE_WGS84_LOGT = NSMutableString()
-    var REFINE_WGS84_LAT = NSMutableString()
+    var LOGT : Double = 0
+    var LAT : Double = 0
     
     func loadInitialData() {
         for post in posts {
-            let BIZPLC_NM = (post as AnyObject).value(forKey: "RESTRT_NM") as! NSString as String
-            let name1 = BIZPLC_NM as NSString as String
+            let RESTRT_NM = (post as AnyObject).value(forKey: "RESTRT_NM") as! NSString as String
+            let name1 = RESTRT_NM as NSString as String
             let name2 = restNm as NSString as String
             if(name1 == name2){
                 let REFINE_ROADNM_ADDR = (post as AnyObject).value(forKey: "REFINE_ROADNM_ADDR") as! NSString as String
@@ -21,7 +21,9 @@ class Famous_MapViewController: UIViewController, MKMapViewDelegate {
                 let REFINE_WGS84_LAT = (post as AnyObject).value(forKey: "REFINE_WGS84_LAT") as! NSString as String
                 let lat = (REFINE_WGS84_LAT as NSString).doubleValue
                 let lon = (REFINE_WGS84_LOGT as NSString).doubleValue
-                let food = Food(title: BIZPLC_NM, road_addr: REFINE_ROADNM_ADDR, coordinate: CLLocationCoordinate2D(latitude: lat, longitude: lon))
+                LAT = lat
+                LOGT = lon
+                let food = Food(title: RESTRT_NM, road_addr: REFINE_ROADNM_ADDR, coordinate: CLLocationCoordinate2D(latitude: lat, longitude: lon))
                 foods.append(food)
             }
         }
@@ -60,16 +62,13 @@ class Famous_MapViewController: UIViewController, MKMapViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let lat = (REFINE_WGS84_LAT as NSString).doubleValue
-        let lon = (REFINE_WGS84_LOGT as NSString).doubleValue
         
-        let initialLocation = CLLocation(latitude: lat, longitude: lon)
+        loadInitialData()
         
+        let initialLocation = CLLocation(latitude: LAT, longitude: LOGT)
         centerMapOnLocation(location: initialLocation)
         
         mapView.delegate = self
-        loadInitialData()
         mapView.addAnnotations(foods)
     }
 }
