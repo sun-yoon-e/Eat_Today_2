@@ -212,7 +212,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJ1-Qo-pTV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2487" y="-1825"/>
+            <point key="canvasLocation" x="1467" y="-1825"/>
         </scene>
         <!--한식-->
         <scene sceneID="dkN-do-cEU">
@@ -257,7 +257,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="한식" id="Zen-cf-xWS">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="U6T-oY-VQc">
+                        <barButtonItem key="leftBarButtonItem" image="hou" id="U6T-oY-VQc">
                             <connections>
                                 <segue destination="oAj-gi-eH1" kind="unwind" unwindAction="doneFromKoreaToHomeWithSegue:" id="3qe-HH-F1e"/>
                             </connections>
@@ -544,7 +544,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="카페" id="FGu-Cw-4dE">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="4Bz-II-Ur1">
+                        <barButtonItem key="leftBarButtonItem" image="house" catalog="system" id="4Bz-II-Ur1">
                             <connections>
                                 <segue destination="h5w-2N-fDr" kind="unwind" unwindAction="doneFromCafeToHomeWithSegue:" id="Emn-aN-rwR"/>
                             </connections>
@@ -602,7 +602,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="양식" id="btN-UV-MAi">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="YXk-OA-guB">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="house" catalog="system" id="YXk-OA-guB">
                             <connections>
                                 <segue destination="pGK-G2-pWn" kind="unwind" unwindAction="doneFromItalyToHomeWithSegue:" id="NlX-Af-lyZ"/>
                             </connections>
@@ -660,7 +660,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="중식" id="KkK-hI-5v1">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="4y9-X8-Fkj">
+                        <barButtonItem key="leftBarButtonItem" image="house" catalog="system" id="4y9-X8-Fkj">
                             <connections>
                                 <segue destination="2G3-MY-1Fh" kind="unwind" unwindAction="doneFromChinaToHomeWithSegue:" id="ZCF-QI-wU8"/>
                             </connections>
@@ -718,7 +718,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="일식" id="Fqu-Sp-WnY">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="TcP-tl-pKD">
+                        <barButtonItem key="leftBarButtonItem" image="house" catalog="system" id="TcP-tl-pKD">
                             <connections>
                                 <segue destination="ang-go-mVk" kind="unwind" unwindAction="doneFromJapanToHomeWithSegue:" id="r00-Ki-KQo"/>
                             </connections>
@@ -776,7 +776,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="맛집" id="hSs-MP-GqA">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="LMC-TA-Q11">
+                        <barButtonItem key="leftBarButtonItem" image="house" catalog="system" id="LMC-TA-Q11">
                             <connections>
                                 <segue destination="rqu-ch-H5t" kind="unwind" unwindAction="doneFromFamousToHomeWithSegue:" id="A58-cq-Efy"/>
                             </connections>
@@ -2136,7 +2136,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Es-gQ-5ZI">
-                                            <rect key="frame" x="191" y="0.0" width="152" height="44"/>
+                                            <rect key="frame" x="210" y="8" width="150" height="27"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
@@ -2175,7 +2175,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H1C-FX-czF">
-                                            <rect key="frame" x="191" y="0.0" width="152" height="44"/>
+                                            <rect key="frame" x="210" y="8" width="150" height="27"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
@@ -2214,7 +2214,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ni-ok-KOF">
-                                            <rect key="frame" x="191" y="0.0" width="152" height="44"/>
+                                            <rect key="frame" x="210" y="8" width="150" height="27"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
@@ -2253,7 +2253,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TYT-g6-O89">
-                                            <rect key="frame" x="191" y="0.0" width="152" height="44"/>
+                                            <rect key="frame" x="210" y="8" width="150" height="27"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
@@ -2292,7 +2292,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Lv-ge-lvT">
-                                            <rect key="frame" x="191" y="0.0" width="152" height="44"/>
+                                            <rect key="frame" x="210" y="8" width="150" height="27"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
@@ -2331,7 +2331,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VbS-b0-NWR">
-                                            <rect key="frame" x="191" y="0.0" width="152" height="44"/>
+                                            <rect key="frame" x="210" y="8" width="150" height="27"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
@@ -2471,6 +2471,7 @@
         <image name="chevron.down" catalog="system" width="128" height="72"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="hou" width="128" height="128"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="map.fill" catalog="system" width="128" height="110"/>
