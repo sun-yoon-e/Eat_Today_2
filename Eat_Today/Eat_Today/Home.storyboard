@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -199,13 +199,7 @@
                         <viewLayoutGuide key="safeArea" id="5P0-lO-qDw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="홈" id="kMf-k0-Bcl">
-                        <barButtonItem key="rightBarButtonItem" title="AllMap" image="mappin.and.ellipse" catalog="system" id="JME-Du-FVt">
-                            <connections>
-                                <segue destination="aKo-Av-t8v" kind="show" identifier="segueToMapView" id="ogK-u4-gGv"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="홈" id="kMf-k0-Bcl"/>
                     <connections>
                         <outlet property="CityLabel" destination="zNR-3k-sVS" id="Ybw-Go-CYS"/>
                     </connections>
@@ -224,7 +218,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Food" textLabel="gcz-XB-aHb" detailTextLabel="9NY-P0-1od" style="IBUITableViewCellStyleSubtitle" id="QAq-Px-eqG">
-                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QAq-Px-eqG" id="Beo-90-1zo">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
@@ -257,7 +251,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="한식" id="Zen-cf-xWS">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="U6T-oY-VQc">
+                        <barButtonItem key="leftBarButtonItem" image="house" catalog="system" id="U6T-oY-VQc">
                             <connections>
                                 <segue destination="oAj-gi-eH1" kind="unwind" unwindAction="doneFromKoreaToHomeWithSegue:" id="3qe-HH-F1e"/>
                             </connections>
@@ -339,7 +333,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Heart" rowHeight="60" id="QTe-uX-uiK">
-                                <rect key="frame" x="0.0" y="28" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QTe-uX-uiK" id="aLW-YJ-BIR">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -476,31 +470,6 @@
             </objects>
             <point key="canvasLocation" x="728" y="178"/>
         </scene>
-        <!--도시 전체 Map-->
-        <scene sceneID="HnZ-tr-nX3">
-            <objects>
-                <viewController title="도시 전체 Map" id="aKo-Av-t8v" customClass="AllMapViewController" customModule="Eat_Today" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="as1-0v-d7d">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YoY-PN-Ebj">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="UCW-cu-I4P"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="5I6-yD-xvT"/>
-                    <connections>
-                        <outlet property="mapView" destination="YoY-PN-Ebj" id="TEF-X2-Xge"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Lq-kV-gcj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5593" y="-2506"/>
-        </scene>
         <!--카페-->
         <scene sceneID="8LH-40-AeP">
             <objects>
@@ -511,7 +480,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Food" textLabel="MKe-gH-WhP" detailTextLabel="LaT-Sw-l8u" style="IBUITableViewCellStyleSubtitle" id="lTf-Cl-vxA">
-                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lTf-Cl-vxA" id="E5E-0f-Nmb">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
@@ -544,7 +513,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="카페" id="FGu-Cw-4dE">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="4Bz-II-Ur1">
+                        <barButtonItem key="leftBarButtonItem" image="house" catalog="system" id="4Bz-II-Ur1">
                             <connections>
                                 <segue destination="h5w-2N-fDr" kind="unwind" unwindAction="doneFromCafeToHomeWithSegue:" id="Emn-aN-rwR"/>
                             </connections>
@@ -569,7 +538,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Food" textLabel="8Jr-Sd-llf" detailTextLabel="fiQ-6g-TzS" style="IBUITableViewCellStyleSubtitle" id="NCY-69-da7">
-                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NCY-69-da7" id="SKd-NN-1Y1">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
@@ -602,7 +571,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="양식" id="btN-UV-MAi">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="YXk-OA-guB">
+                        <barButtonItem key="leftBarButtonItem" image="house" catalog="system" id="YXk-OA-guB">
                             <connections>
                                 <segue destination="pGK-G2-pWn" kind="unwind" unwindAction="doneFromItalyToHomeWithSegue:" id="NlX-Af-lyZ"/>
                             </connections>
@@ -627,7 +596,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Food" textLabel="937-W6-zvt" detailTextLabel="uPA-lw-eDt" style="IBUITableViewCellStyleSubtitle" id="UTN-An-zDl">
-                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UTN-An-zDl" id="cXV-uw-leG">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
@@ -660,7 +629,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="중식" id="KkK-hI-5v1">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="4y9-X8-Fkj">
+                        <barButtonItem key="leftBarButtonItem" image="house" catalog="system" id="4y9-X8-Fkj">
                             <connections>
                                 <segue destination="2G3-MY-1Fh" kind="unwind" unwindAction="doneFromChinaToHomeWithSegue:" id="ZCF-QI-wU8"/>
                             </connections>
@@ -685,7 +654,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Food" textLabel="6no-Xk-MDx" detailTextLabel="1uu-za-wlT" style="IBUITableViewCellStyleSubtitle" id="7q0-Ci-FTz">
-                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7q0-Ci-FTz" id="GKN-Q8-97T">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
@@ -718,7 +687,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="일식" id="Fqu-Sp-WnY">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="TcP-tl-pKD">
+                        <barButtonItem key="leftBarButtonItem" image="house" catalog="system" id="TcP-tl-pKD">
                             <connections>
                                 <segue destination="ang-go-mVk" kind="unwind" unwindAction="doneFromJapanToHomeWithSegue:" id="r00-Ki-KQo"/>
                             </connections>
@@ -743,7 +712,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Food" textLabel="3da-bt-4Aq" detailTextLabel="4nq-Zb-4lO" style="IBUITableViewCellStyleSubtitle" id="BBx-pP-uQP">
-                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BBx-pP-uQP" id="ja4-Dg-4pr">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
@@ -776,7 +745,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="맛집" id="hSs-MP-GqA">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="LMC-TA-Q11">
+                        <barButtonItem key="leftBarButtonItem" image="house" catalog="system" id="LMC-TA-Q11">
                             <connections>
                                 <segue destination="rqu-ch-H5t" kind="unwind" unwindAction="doneFromFamousToHomeWithSegue:" id="A58-cq-Efy"/>
                             </connections>
@@ -933,7 +902,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodDetail" textLabel="3ft-R3-1u4" detailTextLabel="1Zd-Bp-LQ9" style="IBUITableViewCellStyleSubtitle" id="eyd-IE-HTI">
-                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eyd-IE-HTI" id="TQn-cn-dOs">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
@@ -1021,7 +990,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodDetail" textLabel="WWh-TG-CHb" detailTextLabel="PJU-Oq-iSo" style="IBUITableViewCellStyleSubtitle" id="di1-FO-iDm">
-                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="di1-FO-iDm" id="Zql-3E-e7N">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
@@ -1108,7 +1077,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodDetail" textLabel="sqj-hn-Xj8" detailTextLabel="ygx-tR-ymd" style="IBUITableViewCellStyleSubtitle" id="HFI-Cg-vwX">
-                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HFI-Cg-vwX" id="W1k-X9-O5h">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
@@ -1195,7 +1164,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodDetail" textLabel="smc-i3-eYJ" detailTextLabel="yEZ-mr-BnJ" style="IBUITableViewCellStyleSubtitle" id="UmF-o1-baZ">
-                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UmF-o1-baZ" id="csa-Xi-sKw">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
@@ -1282,7 +1251,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodDetail" textLabel="kVy-sX-jbd" detailTextLabel="TWn-FC-K8C" style="IBUITableViewCellStyleSubtitle" id="p9t-7j-Slp">
-                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p9t-7j-Slp" id="9PO-UY-plS">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
@@ -1369,7 +1338,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodDetail" textLabel="NLN-LK-iUj" detailTextLabel="m72-dB-rLf" style="IBUITableViewCellStyleSubtitle" id="tem-BP-8ud">
-                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tem-BP-8ud" id="h5X-WV-fQ7">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
@@ -1458,7 +1427,7 @@
                             <tableViewSection headerTitle="음식점 이름" id="x6K-Ne-BVh">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="RGo-sL-zzf" imageView="fRe-Yc-emI" style="IBUITableViewCellStyleDefault" id="dUX-RE-Cz1">
-                                        <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="49.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dUX-RE-Cz1" id="chF-Ez-pKm">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1483,7 +1452,7 @@
                             <tableViewSection headerTitle="한줄 리뷰" id="VpS-CD-jT9">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="9xr-Bm-Glv">
-                                        <rect key="frame" x="0.0" y="155" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="143" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9xr-Bm-Glv" id="jkN-lr-yF9">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1504,10 +1473,10 @@
                             <tableViewSection headerTitle="별점" id="ytg-iA-jcC">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="MHA-0P-ufk">
-                                        <rect key="frame" x="0.0" y="254.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="236.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MHA-0P-ufk" id="fJ2-Ne-gDx">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="맛 점수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcX-iQ-tJy">
@@ -1541,7 +1510,7 @@
                                 <segue destination="gck-aL-jTL" kind="unwind" unwindAction="cancelFromHeartToDetailWithSegue:" id="vaJ-Y7-ZYD"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="yYt-ji-m1c">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="yYt-ji-m1c">
                             <connections>
                                 <action selector="saveHeart:" destination="RRP-aJ-2Ot" id="bxm-0w-PUA"/>
                                 <segue destination="gck-aL-jTL" kind="unwind" identifier="SavePlayerDetail" unwindAction="saveFromStarToHeartWithSegue:" id="Zx7-eR-9lM"/>
@@ -1571,7 +1540,7 @@
                             <tableViewSection headerTitle="음식점 이름" id="awO-it-8aw">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="0qj-1f-6PX" imageView="IHC-pB-Pvt" style="IBUITableViewCellStyleDefault" id="3mk-cD-rS1">
-                                        <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="49.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3mk-cD-rS1" id="cSd-9L-BIt">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1596,7 +1565,7 @@
                             <tableViewSection headerTitle="한줄 리뷰" id="qie-A5-7ls">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="vI2-gL-4DJ">
-                                        <rect key="frame" x="0.0" y="155" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="143" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vI2-gL-4DJ" id="f5h-xR-3mi">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1617,10 +1586,10 @@
                             <tableViewSection headerTitle="별점" id="6Xp-rZ-UNp">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="XIl-rq-Cmi">
-                                        <rect key="frame" x="0.0" y="254.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="236.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XIl-rq-Cmi" id="YPQ-FB-l19">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="맛 점수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azb-KB-Puu">
@@ -1654,7 +1623,7 @@
                                 <segue destination="bY9-iB-jQT" kind="unwind" unwindAction="cancelFromHeartToDetailWithSegue:" id="RqM-L2-udY"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="jke-IS-R2n">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="jke-IS-R2n">
                             <connections>
                                 <segue destination="bY9-iB-jQT" kind="unwind" identifier="SavePlayerDetail" unwindAction="saveFromStarToHeartWithSegue:" id="LKE-LX-YV7"/>
                             </connections>
@@ -1683,7 +1652,7 @@
                             <tableViewSection headerTitle="음식점 이름" id="lPq-sI-p7y">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="86m-Pn-Y33" imageView="GnU-yI-elb" style="IBUITableViewCellStyleDefault" id="SYW-bE-G0N">
-                                        <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="49.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SYW-bE-G0N" id="0fc-cr-iDD">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1708,7 +1677,7 @@
                             <tableViewSection headerTitle="한줄 리뷰" id="rVC-va-ftE">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="bpQ-Lj-hzn">
-                                        <rect key="frame" x="0.0" y="155" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="143" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bpQ-Lj-hzn" id="7Ie-of-UXC">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1729,10 +1698,10 @@
                             <tableViewSection headerTitle="별점" id="GJ5-g2-G74">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="eje-7f-co6">
-                                        <rect key="frame" x="0.0" y="254.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="236.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eje-7f-co6" id="BxF-7C-C4V">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="맛 점수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GO-RP-Ap9">
@@ -1766,7 +1735,7 @@
                                 <segue destination="7fj-la-KYN" kind="unwind" unwindAction="cancelFromHeartToDetailWithSegue:" id="Ruv-4a-8U3"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="w3V-ex-CwR">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="w3V-ex-CwR">
                             <connections>
                                 <segue destination="7fj-la-KYN" kind="unwind" identifier="SavePlayerDetail" unwindAction="saveFromStarToHeartWithSegue:" id="v6d-YD-cNt"/>
                             </connections>
@@ -1795,7 +1764,7 @@
                             <tableViewSection headerTitle="음식점 이름" id="8fA-s3-GUv">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="PMq-rn-97s" imageView="3pJ-ac-LeO" style="IBUITableViewCellStyleDefault" id="HWD-Hv-B2s">
-                                        <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="49.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HWD-Hv-B2s" id="04R-uL-10W">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1820,7 +1789,7 @@
                             <tableViewSection headerTitle="한줄 리뷰" id="uvo-eD-4OQ">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="VXY-Fd-Z6Q">
-                                        <rect key="frame" x="0.0" y="155" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="143" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VXY-Fd-Z6Q" id="1lC-E6-4S3">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1841,10 +1810,10 @@
                             <tableViewSection headerTitle="별점" id="ARp-Je-mS7">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="EMF-J2-mfO">
-                                        <rect key="frame" x="0.0" y="254.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="236.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EMF-J2-mfO" id="LbE-iF-tBG">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="맛 점수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u04-6L-NTJ">
@@ -1878,7 +1847,7 @@
                                 <segue destination="Cf5-99-OsD" kind="unwind" unwindAction="cancelFromHeartToDetailWithSegue:" id="IEo-2a-sSI"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="aPA-pF-nBP">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="aPA-pF-nBP">
                             <connections>
                                 <segue destination="Cf5-99-OsD" kind="unwind" identifier="SavePlayerDetail" unwindAction="saveFromStarToHeartWithSegue:" id="Hp5-Om-ar0"/>
                             </connections>
@@ -1907,7 +1876,7 @@
                             <tableViewSection headerTitle="음식점 이름" id="SKE-Wh-VZd">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="jvR-I5-PqH" imageView="Il1-PF-LUk" style="IBUITableViewCellStyleDefault" id="NDH-jo-XdJ">
-                                        <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="49.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NDH-jo-XdJ" id="DPp-Xd-mbw">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1932,7 +1901,7 @@
                             <tableViewSection headerTitle="한줄 리뷰" id="LHR-JY-5vC">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="PcH-fb-Jaq">
-                                        <rect key="frame" x="0.0" y="155" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="143" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PcH-fb-Jaq" id="QVo-Cr-sFK">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -1953,10 +1922,10 @@
                             <tableViewSection headerTitle="별점" id="gDI-ZJ-9eF">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="e82-Iw-v9q">
-                                        <rect key="frame" x="0.0" y="254.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="236.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e82-Iw-v9q" id="Ggx-Bx-txA">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="맛 점수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucT-7u-5xL">
@@ -1990,7 +1959,7 @@
                                 <segue destination="seJ-FW-O8r" kind="unwind" unwindAction="cancelFromHeartToDetailWithSegue:" id="iAX-Kp-gES"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="H9S-Sd-mYE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="H9S-Sd-mYE">
                             <connections>
                                 <segue destination="seJ-FW-O8r" kind="unwind" identifier="SavePlayerDetail" unwindAction="saveFromStarToHeartWithSegue:" id="1I0-b9-GDX"/>
                             </connections>
@@ -2019,7 +1988,7 @@
                             <tableViewSection headerTitle="음식점 이름" id="gy3-Kf-aZB">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="bI2-Gx-bWj" imageView="ItW-YR-vxA" style="IBUITableViewCellStyleDefault" id="za2-Ol-gg4">
-                                        <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="49.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="za2-Ol-gg4" id="LWP-l7-c8w">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -2044,7 +2013,7 @@
                             <tableViewSection headerTitle="한줄 리뷰" id="ilK-ZO-mCz">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="Xok-pE-dV8">
-                                        <rect key="frame" x="0.0" y="155" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="143" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xok-pE-dV8" id="v86-Nh-ARJ">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -2065,10 +2034,10 @@
                             <tableViewSection headerTitle="별점" id="4Dg-xQ-eEL">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="xcl-3k-USq">
-                                        <rect key="frame" x="0.0" y="254.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="236.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xcl-3k-USq" id="ogi-Sq-LVR">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="맛 점수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YZ-km-eaQ">
@@ -2102,7 +2071,7 @@
                                 <segue destination="OTv-7V-hwS" kind="unwind" unwindAction="cancelFromHeartToDetailWithSegue:" id="l4C-9D-VTA"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="B6b-fW-TB2">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="B6b-fW-TB2">
                             <connections>
                                 <segue destination="OTv-7V-hwS" kind="unwind" identifier="SavePlayerDetail" unwindAction="saveFromStarToHeartWithSegue:" id="Xgg-mz-4Kh"/>
                             </connections>
@@ -2129,7 +2098,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StarCell" id="pGd-Gl-OBD">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pGd-Gl-OBD" id="wPj-w3-bKa">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -2168,7 +2137,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StarCell" id="f1J-gW-ViE">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f1J-gW-ViE" id="AKu-jZ-b4T">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -2207,7 +2176,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StarCell" id="MF1-mk-Mrk">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MF1-mk-Mrk" id="ynC-On-pZ2">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -2246,7 +2215,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StarCell" id="gKE-Td-sAr">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gKE-Td-sAr" id="zg2-UJ-qcs">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -2285,7 +2254,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StarCell" id="oM9-8d-7TH">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oM9-8d-7TH" id="ndk-R3-udr">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -2324,7 +2293,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StarCell" id="Ngk-vV-BVn">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ngk-vV-BVn" id="CDg-hH-kzB">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -2365,7 +2334,7 @@
                             <tableViewSection headerTitle=" " id="VWO-Yr-7Bw">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="egq-nN-8ec">
-                                        <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="49.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="egq-nN-8ec" id="NY4-8w-RyN">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -2390,10 +2359,10 @@
                             <tableViewSection headerTitle=" " id="c0D-8s-Jty">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="oas-YL-UPK">
-                                        <rect key="frame" x="0.0" y="155" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="143" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oas-YL-UPK" id="6aG-w8-5He">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="테마 색상" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXX-Fa-Jug">
@@ -2414,10 +2383,10 @@
                             <tableViewSection headerTitle=" " id="ox5-SP-PNH">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="lGD-7B-iHK">
-                                        <rect key="frame" x="0.0" y="254.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="236.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lGD-7B-iHK" id="pXk-zq-22g">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="찜 초기화" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmN-Lf-1mh">
@@ -2474,7 +2443,6 @@
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="map.fill" catalog="system" width="128" height="110"/>
-        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
         <image name="square.stack.3d.down.right.fill" catalog="system" width="124" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
