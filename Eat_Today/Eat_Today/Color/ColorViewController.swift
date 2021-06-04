@@ -42,7 +42,7 @@ class ColorViewController: UIViewController {
     
     @IBAction func pressedSave(_ sender: Any) {
         let alert = UIAlertController(title: title, message: "배경색을 변경헀어요~!", preferredStyle: .alert)
-        let action = UIAlertAction(title: "OK", style: .default)
+        let action = UIAlertAction(title: "~OK~", style: .cancel)
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
         
@@ -74,5 +74,3 @@ class ColorViewController: UIViewController {
         self.view.backgroundColor = UIColor(colorStruct: bg)
     }
 }
-
-
