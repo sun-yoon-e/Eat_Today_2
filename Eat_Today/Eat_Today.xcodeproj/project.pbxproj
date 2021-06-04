@@ -21,6 +21,7 @@
 		A114E558265B0BE60099B4E7 /* China_DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E557265B0BE60099B4E7 /* China_DetailTableViewController.swift */; };
 		A114E55B265B0BEE0099B4E7 /* Japan_DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E55A265B0BEE0099B4E7 /* Japan_DetailTableViewController.swift */; };
 		A114E55E265B0BFA0099B4E7 /* Famous_DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E55D265B0BFA0099B4E7 /* Famous_DetailTableViewController.swift */; };
+		A1468E59266A5FFB00E1B3B8 /* Search_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1468E58266A5FFB00E1B3B8 /* Search_TableViewController.swift */; };
 		A18374F9265C13BD009F212C /* Japan_HeartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18374F4265C13BD009F212C /* Japan_HeartTableViewController.swift */; };
 		A18374FA265C13BD009F212C /* China_HeartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18374F5265C13BD009F212C /* China_HeartTableViewController.swift */; };
 		A18374FB265C13BD009F212C /* Cafe_HeartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18374F6265C13BD009F212C /* Cafe_HeartTableViewController.swift */; };
@@ -62,6 +63,7 @@
 		A114E557265B0BE60099B4E7 /* China_DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = China_DetailTableViewController.swift; sourceTree = "<group>"; };
 		A114E55A265B0BEE0099B4E7 /* Japan_DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Japan_DetailTableViewController.swift; sourceTree = "<group>"; };
 		A114E55D265B0BFA0099B4E7 /* Famous_DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Famous_DetailTableViewController.swift; sourceTree = "<group>"; };
+		A1468E58266A5FFB00E1B3B8 /* Search_TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search_TableViewController.swift; sourceTree = "<group>"; };
 		A18374F4265C13BD009F212C /* Japan_HeartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Japan_HeartTableViewController.swift; sourceTree = "<group>"; };
 		A18374F5265C13BD009F212C /* China_HeartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = China_HeartTableViewController.swift; sourceTree = "<group>"; };
 		A18374F6265C13BD009F212C /* Cafe_HeartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cafe_HeartTableViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				A186CCB926578C9300F02B69 /* Home.storyboard */,
 				A186CCC22657916800F02B69 /* HomeViewController.swift */,
 				A114E53F265ABE8C0099B4E7 /* CityPickerViewController.swift */,
+				A1468E58266A5FFB00E1B3B8 /* Search_TableViewController.swift */,
 			);
 			path = Eat_Today;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				A18CA55C265BA730009CBD87 /* Famous_MapViewController.swift in Sources */,
 				A18374F9265C13BD009F212C /* Japan_HeartTableViewController.swift in Sources */,
 				A1F5DA7D264A7CC200557B38 /* SceneDelegate.swift in Sources */,
+				A1468E59266A5FFB00E1B3B8 /* Search_TableViewController.swift in Sources */,
 				A18CA54E265B98BB009CBD87 /* AllMapViewController.swift in Sources */,
 				A18CA553265BA6E4009CBD87 /* Korea_MapViewController.swift in Sources */,
 				A1AD157B265C0F1C00109A8B /* StarPickerViewController.swift in Sources */,
