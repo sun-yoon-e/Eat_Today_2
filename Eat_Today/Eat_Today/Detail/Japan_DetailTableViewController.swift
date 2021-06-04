@@ -69,7 +69,6 @@ class Japan_DetailTableViewController: UITableViewController, XMLParserDelegate 
         Fill()
         detailTableView!.reloadData()
         
-        let bg:Color = color
         self.view.backgroundColor = UIColor(colorStruct: bg)
     }
 }
