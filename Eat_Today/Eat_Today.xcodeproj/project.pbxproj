@@ -21,6 +21,8 @@
 		A114E558265B0BE60099B4E7 /* China_DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E557265B0BE60099B4E7 /* China_DetailTableViewController.swift */; };
 		A114E55B265B0BEE0099B4E7 /* Japan_DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E55A265B0BEE0099B4E7 /* Japan_DetailTableViewController.swift */; };
 		A114E55E265B0BFA0099B4E7 /* Famous_DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E55D265B0BFA0099B4E7 /* Famous_DetailTableViewController.swift */; };
+		A1468E5F266AB4D700E1B3B8 /* Famous.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1468E5E266AB4D700E1B3B8 /* Famous.swift */; };
+		A1468E61266ABE5B00E1B3B8 /* SearchFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1468E60266ABE5B00E1B3B8 /* SearchFooter.swift */; };
 		A18374F9265C13BD009F212C /* Japan_HeartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18374F4265C13BD009F212C /* Japan_HeartTableViewController.swift */; };
 		A18374FA265C13BD009F212C /* China_HeartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18374F5265C13BD009F212C /* China_HeartTableViewController.swift */; };
 		A18374FB265C13BD009F212C /* Cafe_HeartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18374F6265C13BD009F212C /* Cafe_HeartTableViewController.swift */; };
@@ -41,10 +43,11 @@
 		A1AD1574265C0D6300109A8B /* Korea_HeartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD1573265C0D6300109A8B /* Korea_HeartTableViewController.swift */; };
 		A1AD1578265C0DB200109A8B /* Heart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD1577265C0DB200109A8B /* Heart.swift */; };
 		A1AD157B265C0F1C00109A8B /* StarPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD157A265C0F1C00109A8B /* StarPickerViewController.swift */; };
-		A1B2E9D0266A7EE30027360F /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2E9CF266A7EE30027360F /* RGB.swift */; };
-		A1B2E9D3266A7F430027360F /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2E9D2266A7F430027360F /* ColorViewController.swift */; };
-		A1B2E9D9266AA4180027360F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2E9D8266AA4180027360F /* Color.swift */; };
-		A1B2E9DD266ABD1B0027360F /* OptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2E9DC266ABD1B0027360F /* OptionTableViewController.swift */; };
+		A1B2E9EC266AD4D90027360F /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2E9E9266AD4D90027360F /* ColorViewController.swift */; };
+		A1B2E9ED266AD4D90027360F /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2E9EA266AD4D90027360F /* RGB.swift */; };
+		A1B2E9EE266AD4D90027360F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2E9EB266AD4D90027360F /* Color.swift */; };
+		A1B2E9F1266AD4F10027360F /* OptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2E9F0266AD4F10027360F /* OptionTableViewController.swift */; };
+		A1B2E9F4266AD5090027360F /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2E9F3266AD5090027360F /* SearchTableViewController.swift */; };
 		A1F5DA7B264A7CC200557B38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F5DA7A264A7CC200557B38 /* AppDelegate.swift */; };
 		A1F5DA7D264A7CC200557B38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F5DA7C264A7CC200557B38 /* SceneDelegate.swift */; };
 		A1F5DA84264A7CC200557B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F5DA83264A7CC200557B38 /* Assets.xcassets */; };
@@ -66,6 +69,8 @@
 		A114E557265B0BE60099B4E7 /* China_DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = China_DetailTableViewController.swift; sourceTree = "<group>"; };
 		A114E55A265B0BEE0099B4E7 /* Japan_DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Japan_DetailTableViewController.swift; sourceTree = "<group>"; };
 		A114E55D265B0BFA0099B4E7 /* Famous_DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Famous_DetailTableViewController.swift; sourceTree = "<group>"; };
+		A1468E5E266AB4D700E1B3B8 /* Famous.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Famous.swift; sourceTree = "<group>"; };
+		A1468E60266ABE5B00E1B3B8 /* SearchFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFooter.swift; sourceTree = "<group>"; };
 		A18374F4265C13BD009F212C /* Japan_HeartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Japan_HeartTableViewController.swift; sourceTree = "<group>"; };
 		A18374F5265C13BD009F212C /* China_HeartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = China_HeartTableViewController.swift; sourceTree = "<group>"; };
 		A18374F6265C13BD009F212C /* Cafe_HeartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cafe_HeartTableViewController.swift; sourceTree = "<group>"; };
@@ -86,10 +91,11 @@
 		A1AD1573265C0D6300109A8B /* Korea_HeartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Korea_HeartTableViewController.swift; sourceTree = "<group>"; };
 		A1AD1577265C0DB200109A8B /* Heart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart.swift; sourceTree = "<group>"; };
 		A1AD157A265C0F1C00109A8B /* StarPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarPickerViewController.swift; sourceTree = "<group>"; };
-		A1B2E9CF266A7EE30027360F /* RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGB.swift; sourceTree = "<group>"; };
-		A1B2E9D2266A7F430027360F /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
-		A1B2E9D8266AA4180027360F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		A1B2E9DC266ABD1B0027360F /* OptionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTableViewController.swift; sourceTree = "<group>"; };
+		A1B2E9E9266AD4D90027360F /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		A1B2E9EA266AD4D90027360F /* RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGB.swift; sourceTree = "<group>"; };
+		A1B2E9EB266AD4D90027360F /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A1B2E9F0266AD4F10027360F /* OptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionTableViewController.swift; sourceTree = "<group>"; };
+		A1B2E9F3266AD5090027360F /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		A1F5DA77264A7CC200557B38 /* Eat_Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eat_Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F5DA7A264A7CC200557B38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1F5DA7C264A7CC200557B38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -176,12 +182,12 @@
 			path = Heart;
 			sourceTree = "<group>";
 		};
-		A1B2E9CE266A7EDA0027360F /* Color */ = {
+		A1B2E9E8266AD4AA0027360F /* Color */ = {
 			isa = PBXGroup;
 			children = (
-				A1B2E9CF266A7EE30027360F /* RGB.swift */,
-				A1B2E9D2266A7F430027360F /* ColorViewController.swift */,
-				A1B2E9D8266AA4180027360F /* Color.swift */,
+				A1B2E9EB266AD4D90027360F /* Color.swift */,
+				A1B2E9E9266AD4D90027360F /* ColorViewController.swift */,
+				A1B2E9EA266AD4D90027360F /* RGB.swift */,
 			);
 			path = Color;
 			sourceTree = "<group>";
@@ -205,7 +211,7 @@
 		A1F5DA79264A7CC200557B38 /* Eat_Today */ = {
 			isa = PBXGroup;
 			children = (
-				A1B2E9CE266A7EDA0027360F /* Color */,
+				A1B2E9E8266AD4AA0027360F /* Color */,
 				A1AD1572265C0D3B00109A8B /* Heart */,
 				A18CA551265BA6D0009CBD87 /* Map */,
 				A114E54D265B08B40099B4E7 /* Detail */,
@@ -218,7 +224,10 @@
 				A186CCB926578C9300F02B69 /* Home.storyboard */,
 				A186CCC22657916800F02B69 /* HomeViewController.swift */,
 				A114E53F265ABE8C0099B4E7 /* CityPickerViewController.swift */,
-				A1B2E9DC266ABD1B0027360F /* OptionTableViewController.swift */,
+				A1B2E9F0266AD4F10027360F /* OptionTableViewController.swift */,
+				A1B2E9F3266AD5090027360F /* SearchTableViewController.swift */,
+				A1468E60266ABE5B00E1B3B8 /* SearchFooter.swift */,
+				A1468E5E266AB4D700E1B3B8 /* Famous.swift */,
 			);
 			path = Eat_Today;
 			sourceTree = "<group>";
@@ -296,41 +305,44 @@
 			files = (
 				A114E539265A9A930099B4E7 /* Italy_TableViewController.swift in Sources */,
 				A114E54F265B0B8D0099B4E7 /* Korea_DetailTableViewController.swift in Sources */,
+				A1468E5F266AB4D700E1B3B8 /* Famous.swift in Sources */,
 				A18374FA265C13BD009F212C /* China_HeartTableViewController.swift in Sources */,
 				A114E536265A9A930099B4E7 /* China_TableViewController.swift in Sources */,
 				A186CCC32657916800F02B69 /* HomeViewController.swift in Sources */,
 				A18374FD265C13BD009F212C /* Italy_HeartTableViewController.swift in Sources */,
+				A1B2E9F1266AD4F10027360F /* OptionTableViewController.swift in Sources */,
 				A18374FC265C13BD009F212C /* Famous_HeartTableViewController.swift in Sources */,
 				A18CA55E265BA730009CBD87 /* Japan_MapViewController.swift in Sources */,
 				A114E538265A9A930099B4E7 /* Famous_TableViewController.swift in Sources */,
 				A18CA55B265BA730009CBD87 /* China_MapViewController.swift in Sources */,
 				A18CA55D265BA730009CBD87 /* Italy_MapViewController.swift in Sources */,
-				A1B2E9D9266AA4180027360F /* Color.swift in Sources */,
 				A114E552265B0BD10099B4E7 /* Cafe_DetailTableViewController.swift in Sources */,
+				A1B2E9EE266AD4D90027360F /* Color.swift in Sources */,
 				A1AD1578265C0DB200109A8B /* Heart.swift in Sources */,
 				A1AD1574265C0D6300109A8B /* Korea_HeartTableViewController.swift in Sources */,
 				A114E558265B0BE60099B4E7 /* China_DetailTableViewController.swift in Sources */,
 				A1F5DA7B264A7CC200557B38 /* AppDelegate.swift in Sources */,
+				A1468E61266ABE5B00E1B3B8 /* SearchFooter.swift in Sources */,
 				A1837501265C1B5D009F212C /* HeartTableViewController.swift in Sources */,
 				A114E52D265A99EF0099B4E7 /* Korea_TableViewController.swift in Sources */,
 				A114E55B265B0BEE0099B4E7 /* Japan_DetailTableViewController.swift in Sources */,
 				A114E540265ABE8C0099B4E7 /* CityPickerViewController.swift in Sources */,
 				A186CCBD26578D1700F02B69 /* LogoViewController.swift in Sources */,
 				A114E55E265B0BFA0099B4E7 /* Famous_DetailTableViewController.swift in Sources */,
+				A1B2E9ED266AD4D90027360F /* RGB.swift in Sources */,
 				A114E50C265A7B490099B4E7 /* Food.swift in Sources */,
 				A18CA55A265BA730009CBD87 /* Cafe_MapViewController.swift in Sources */,
 				A18CA55C265BA730009CBD87 /* Famous_MapViewController.swift in Sources */,
-				A1B2E9D0266A7EE30027360F /* RGB.swift in Sources */,
 				A18374F9265C13BD009F212C /* Japan_HeartTableViewController.swift in Sources */,
+				A1B2E9F4266AD5090027360F /* SearchTableViewController.swift in Sources */,
+				A1B2E9EC266AD4D90027360F /* ColorViewController.swift in Sources */,
 				A1F5DA7D264A7CC200557B38 /* SceneDelegate.swift in Sources */,
 				A18CA54E265B98BB009CBD87 /* AllMapViewController.swift in Sources */,
 				A18CA553265BA6E4009CBD87 /* Korea_MapViewController.swift in Sources */,
 				A1AD157B265C0F1C00109A8B /* StarPickerViewController.swift in Sources */,
-				A1B2E9DD266ABD1B0027360F /* OptionTableViewController.swift in Sources */,
 				A114E555265B0BDA0099B4E7 /* Italy_DetailTableViewController.swift in Sources */,
 				A18374FB265C13BD009F212C /* Cafe_HeartTableViewController.swift in Sources */,
 				A114E537265A9A930099B4E7 /* Japan_TableViewController.swift in Sources */,
-				A1B2E9D3266A7F430027360F /* ColorViewController.swift in Sources */,
 				A114E53A265A9A930099B4E7 /* Cafe_TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
