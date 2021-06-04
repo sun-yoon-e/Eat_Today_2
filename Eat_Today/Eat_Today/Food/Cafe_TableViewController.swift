@@ -3,7 +3,8 @@ import UIKit
 class Cafe_TableViewController: UITableViewController, XMLParserDelegate {
 
     @IBOutlet var tbData: UITableView!
-
+    
+    var bg:Color = color
     var parser = XMLParser()
     var posts = NSMutableArray()
     var elements = NSMutableDictionary()
@@ -25,6 +26,8 @@ class Cafe_TableViewController: UITableViewController, XMLParserDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         beginParsing()
+        
+        self.view.backgroundColor = UIColor(colorStruct: bg)
     }
     
     var url: String?
@@ -168,6 +171,7 @@ class Cafe_TableViewController: UITableViewController, XMLParserDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Food", for: indexPath)
         cell.textLabel?.text = (posts.object(at: indexPath.row) as AnyObject).value(forKey: "BIZPLC_NM") as! NSString as String
         cell.detailTextLabel?.text = (posts.object(at: indexPath.row) as AnyObject).value(forKey: "REFINE_ROADNM_ADDR") as! NSString as String
+        cell.backgroundColor = UIColor(colorStruct:bg)
         return cell
     }
 }

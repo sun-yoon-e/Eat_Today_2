@@ -50,6 +50,9 @@ class Italy_HeartTableViewController: UITableViewController {
         super.viewDidLoad()
         ratingImageView.image = imageForRating(rating: rating)
         restNm.text = "\(restName)"
+        
+        let bg:Color = color
+        self.view.backgroundColor = UIColor(colorStruct: bg)
     }
     
     override func didReceiveMemoryWarning() {

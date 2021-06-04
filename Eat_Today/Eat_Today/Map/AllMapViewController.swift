@@ -62,5 +62,8 @@ class AllMapViewController: UIViewController, MKMapViewDelegate {
         mapView.delegate = self
         loadInitialData()
         mapView.addAnnotations(foods)
+        
+        let bg:Color = color
+        self.view.backgroundColor = UIColor(colorStruct: bg)
     }
 }

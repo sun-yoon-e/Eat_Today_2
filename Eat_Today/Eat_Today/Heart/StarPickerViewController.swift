@@ -2,6 +2,7 @@ import UIKit
 
 class StarPickerViewController: UITableViewController {
     
+    var bg:Color = color
     var stars: [Int] = [ 1, 2, 3, 4, 5 ]
     var rating: Int = 1
     
@@ -31,6 +32,7 @@ class StarPickerViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StarCell", for: indexPath)
+        cell.backgroundColor = UIColor(colorStruct: bg)
         
         if let ratingImageView = cell.viewWithTag(100) as? UIImageView {
             ratingImageView.image = self.imageForRating(rating: indexPath.row + 1)
@@ -49,11 +51,19 @@ class StarPickerViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let cell = tableView.cellForRow(at: IndexPath(row: rating - 1, section: 0) as IndexPath)
+        cell?.backgroundColor = UIColor(colorStruct: bg)
         cell?.accessoryType = .none
         
         rating = stars[indexPath.row]
         
         let cell2 = tableView.cellForRow(at: indexPath)
+        cell2?.backgroundColor = UIColor(colorStruct: bg)
         cell2?.accessoryType = .checkmark
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor(colorStruct: bg)
     }
 }

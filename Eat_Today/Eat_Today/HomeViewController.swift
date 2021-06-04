@@ -2,6 +2,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    var bg:Color = color
     var sgguCd: String = "41820"
     var sgguNm: String = "가평군"
     
@@ -102,5 +103,10 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(colorStruct: bg)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.view.backgroundColor = UIColor(colorStruct: bg)
     }
 }

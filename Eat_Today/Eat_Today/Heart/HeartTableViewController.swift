@@ -2,6 +2,7 @@ import UIKit
 
 class HeartTableViewController: UITableViewController {
     
+    var bg:Color = color
     var hearts: [Heart] = []
     
     @IBAction func saveFromStarToHeart(segue: UIStoryboardSegue) {
@@ -62,6 +63,12 @@ class HeartTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor(colorStruct: bg)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.view.backgroundColor = UIColor(colorStruct: bg)
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -74,6 +81,7 @@ class HeartTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Heart", for: indexPath)
+        cell.backgroundColor = UIColor(colorStruct: bg)
         let heart = hearts[indexPath.row] as Heart
         
         if let nameLabel = cell.viewWithTag(100) as? UILabel {

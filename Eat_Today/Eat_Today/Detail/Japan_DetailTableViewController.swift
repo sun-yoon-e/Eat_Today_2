@@ -3,6 +3,7 @@ import UIKit
 class Japan_DetailTableViewController: UITableViewController, XMLParserDelegate {
     @IBOutlet var detailTableView: UITableView!
 
+    var bg:Color = color
     var url : String?
     var posts = NSMutableArray()
     
@@ -59,6 +60,7 @@ class Japan_DetailTableViewController: UITableViewController, XMLParserDelegate 
         let cell = tableView.dequeueReusableCell(withIdentifier: "FoodDetail", for: indexPath)
         cell.textLabel?.text = postname[indexPath.row]
         cell.detailTextLabel?.text = category[indexPath.row]
+        cell.backgroundColor = UIColor(colorStruct:bg)
         return cell
     }
     
@@ -66,5 +68,8 @@ class Japan_DetailTableViewController: UITableViewController, XMLParserDelegate 
         super.viewDidLoad()
         Fill()
         detailTableView!.reloadData()
+        
+        let bg:Color = color
+        self.view.backgroundColor = UIColor(colorStruct: bg)
     }
 }

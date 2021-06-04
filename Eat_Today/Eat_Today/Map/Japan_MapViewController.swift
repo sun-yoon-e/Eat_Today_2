@@ -70,5 +70,8 @@ class Japan_MapViewController: UIViewController, MKMapViewDelegate {
         
         mapView.delegate = self
         mapView.addAnnotations(foods)
+        
+        let bg:Color = color
+        self.view.backgroundColor = UIColor(colorStruct: bg)
     }
 }

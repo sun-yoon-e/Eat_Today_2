@@ -2,6 +2,7 @@ import UIKit
 
 class Korea_HeartTableViewController: UITableViewController {
     
+    var bg:Color = color
     var heart: Heart?
     
     var rating: Int = 1 {
@@ -50,6 +51,8 @@ class Korea_HeartTableViewController: UITableViewController {
         super.viewDidLoad()
         ratingImageView.image = imageForRating(rating: rating)
         restNm.text = "\(restName)"
+        
+        self.view.backgroundColor = UIColor(colorStruct: bg)
     }
     
     override func didReceiveMemoryWarning() {
