@@ -12,6 +12,8 @@ class HeartTableViewController: UITableViewController {
                 
                 let indexPath = IndexPath(row: hearts.count-1, section: 0)
                 tableView.insertRows(at: [indexPath], with: .automatic)
+                
+                categoryCount[0] += 1
             }
         }
         if let cafe_HeartTableViewController = segue.source as? Cafe_HeartTableViewController {
@@ -20,6 +22,8 @@ class HeartTableViewController: UITableViewController {
                 
                 let indexPath = IndexPath(row: hearts.count-1, section: 0)
                 tableView.insertRows(at: [indexPath], with: .automatic)
+                
+                categoryCount[1] += 1
             }
         }
         if let italy_HeartTableViewController = segue.source as? Italy_HeartTableViewController {
@@ -28,6 +32,8 @@ class HeartTableViewController: UITableViewController {
                 
                 let indexPath = IndexPath(row: hearts.count-1, section: 0)
                 tableView.insertRows(at: [indexPath], with: .automatic)
+
+                categoryCount[2] += 1
             }
         }
         if let china_HeartTableViewController = segue.source as? China_HeartTableViewController {
@@ -36,6 +42,8 @@ class HeartTableViewController: UITableViewController {
                 
                 let indexPath = IndexPath(row: hearts.count-1, section: 0)
                 tableView.insertRows(at: [indexPath], with: .automatic)
+                
+                categoryCount[3] += 1
             }
         }
         if let japan_HeartTableViewController = segue.source as? Japan_HeartTableViewController {
@@ -44,6 +52,8 @@ class HeartTableViewController: UITableViewController {
                 
                 let indexPath = IndexPath(row: hearts.count-1, section: 0)
                 tableView.insertRows(at: [indexPath], with: .automatic)
+                
+                categoryCount[4] += 1
             }
         }
         if let famous_HeartTableViewController = segue.source as? Famous_HeartTableViewController {
@@ -52,6 +62,8 @@ class HeartTableViewController: UITableViewController {
                 
                 let indexPath = IndexPath(row: hearts.count-1, section: 0)
                 tableView.insertRows(at: [indexPath], with: .automatic)
+                
+                categoryCount[5] += 1
             }
         }
     }
