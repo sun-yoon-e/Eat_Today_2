@@ -51,7 +51,9 @@
 		A1B2E9F4266AD5090027360F /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2E9F3266AD5090027360F /* SearchTableViewController.swift */; };
 		A1D83B20266EBC910002C621 /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D83B1F266EBC910002C621 /* AudioController.swift */; };
 		A1D83B23266EBCAC0002C621 /* ExplodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D83B22266EBCAC0002C621 /* ExplodeView.swift */; };
-		A1D83B30266EBD470002C621 /* Resource in Resources */ = {isa = PBXBuildFile; fileRef = A1D83B2F266EBD470002C621 /* Resource */; };
+		A1D83B37266EC6A90002C621 /* effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1D83B34266EC6A90002C621 /* effect.mp3 */; };
+		A1D83B38266EC6A90002C621 /* chartEffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1D83B35266EC6A90002C621 /* chartEffect.mp3 */; };
+		A1D83B39266EC6A90002C621 /* bgsound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1D83B36266EC6A90002C621 /* bgsound.mp3 */; };
 		A1F5DA7B264A7CC200557B38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F5DA7A264A7CC200557B38 /* AppDelegate.swift */; };
 		A1F5DA7D264A7CC200557B38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F5DA7C264A7CC200557B38 /* SceneDelegate.swift */; };
 		A1F5DA84264A7CC200557B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F5DA83264A7CC200557B38 /* Assets.xcassets */; };
@@ -107,7 +109,9 @@
 		A1B2E9F3266AD5090027360F /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		A1D83B1F266EBC910002C621 /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
 		A1D83B22266EBCAC0002C621 /* ExplodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplodeView.swift; sourceTree = "<group>"; };
-		A1D83B2F266EBD470002C621 /* Resource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resource; sourceTree = "<group>"; };
+		A1D83B34266EC6A90002C621 /* effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = effect.mp3; path = Resource/effect.mp3; sourceTree = "<group>"; };
+		A1D83B35266EC6A90002C621 /* chartEffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = chartEffect.mp3; path = Resource/chartEffect.mp3; sourceTree = "<group>"; };
+		A1D83B36266EC6A90002C621 /* bgsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bgsound.mp3; path = Resource/bgsound.mp3; sourceTree = "<group>"; };
 		A1F5DA77264A7CC200557B38 /* Eat_Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eat_Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F5DA7A264A7CC200557B38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1F5DA7C264A7CC200557B38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -266,7 +270,9 @@
 		A1F5DA79264A7CC200557B38 /* Eat_Today */ = {
 			isa = PBXGroup;
 			children = (
-				A1D83B2F266EBD470002C621 /* Resource */,
+				A1D83B36266EC6A90002C621 /* bgsound.mp3 */,
+				A1D83B35266EC6A90002C621 /* chartEffect.mp3 */,
+				A1D83B34266EC6A90002C621 /* effect.mp3 */,
 				A1504917266EA4B0003E0E48 /* TabBar */,
 				A15048F0266E6FE6003E0E48 /* Graph */,
 				A1B2E9E8266AD4AA0027360F /* Color */,
@@ -345,9 +351,11 @@
 			files = (
 				A1F5DA87264A7CC200557B38 /* LaunchScreen.storyboard in Resources */,
 				A186CCCC26579C1E00F02B69 /* Main.storyboard in Resources */,
-				A1D83B30266EBD470002C621 /* Resource in Resources */,
+				A1D83B38266EC6A90002C621 /* chartEffect.mp3 in Resources */,
+				A1D83B37266EC6A90002C621 /* effect.mp3 in Resources */,
 				A186CCBA26578C9300F02B69 /* Home.storyboard in Resources */,
 				A1F5DA84264A7CC200557B38 /* Assets.xcassets in Resources */,
+				A1D83B39266EC6A90002C621 /* bgsound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

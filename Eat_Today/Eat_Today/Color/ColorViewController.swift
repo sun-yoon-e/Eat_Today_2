@@ -3,7 +3,6 @@ var color = Color()
 import UIKit
 
 class ColorViewController: UIViewController {
-    @IBOutlet weak var originLabel: UILabel!
     @IBOutlet weak var changeLabel: UILabel!
   
     @IBOutlet weak var redLabel: UILabel!
@@ -38,13 +37,12 @@ class ColorViewController: UIViewController {
         let action = UIAlertAction(title: "확인", style: .cancel)
         
         let explore = ExplodeView(frame: CGRect(x: self.view.center.x - 60, y: self.view.center.y + 200, width: 120, height: 60))
-        originLabel.superview?.addSubview(explore)
-        originLabel.superview?.sendSubviewToBack(explore)
+        changeLabel.superview?.addSubview(explore)
+        changeLabel.superview?.sendSubviewToBack(explore)
         
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
 
-        originLabel.backgroundColor = UIColor(rgbStruct: rgb)
         self.view.backgroundColor = UIColor(rgbStruct: rgb)
         updateColor()
 
@@ -57,9 +55,7 @@ class ColorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        originLabel.backgroundColor = UIColor(colorStruct: bg)
-        changeLabel.backgroundColor = UIColor(rgbStruct: RGB(r: 256, g: 256, b: 256))
+        changeLabel.backgroundColor = UIColor(rgbStruct: RGB(r: 255, g: 255, b: 255))
         
         redLabel.text = "R \(rgb.r)"
         greenLabel.text = "G \(rgb.g)"

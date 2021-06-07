@@ -13,8 +13,8 @@ class Color {
     var b: Int = 0
     
     init() {
-        r = 256
-        b = 256
-        g = 256
+        r = 255
+        b = 255
+        g = 255
     }
 }

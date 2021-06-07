@@ -13,7 +13,7 @@ class GraphViewController: UIViewController {
     @IBOutlet var barChartView: BarChartView!
     
     var bg:Color = color
-    var isShowing = false
+    var isShowing = true
     
     var numbers = ["0","1","2","3","4","5"]
     var graph: [Int]!

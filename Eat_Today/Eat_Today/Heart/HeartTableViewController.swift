@@ -115,14 +115,15 @@ class HeartTableViewController: UITableViewController {
     }
     
     func clearView() {
-        let alert = UIAlertController(title: title, message: "찜 목록을 초기화 하시겠어요?", preferredStyle: .alert)
-        let action2 = UIAlertAction(title: "No!", style: .destructive)
-        let action = UIAlertAction(title: "Yes!", style: .default, handler: { action in
+        let alert = UIAlertController(title: title, message: "찜 목록을 초기화하시겠습니까?", preferredStyle: .alert)
+        let action2 = UIAlertAction(title: "취소", style: .destructive)
+        let action = UIAlertAction(title: "확인", style: .default, handler: { action in
             self.hearts.removeAll()
             self.tableView.reloadData()
         })
         alert.addAction(action)
         alert.addAction(action2)
         present(alert, animated: true, completion: nil)
+        categoryCount = [0, 0, 0, 0, 0, 0]
     }
 }
