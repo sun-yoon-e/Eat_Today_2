@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,7 +24,6 @@
 		A1468E5F266AB4D700E1B3B8 /* Famous.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1468E5E266AB4D700E1B3B8 /* Famous.swift */; };
 		A1468E61266ABE5B00E1B3B8 /* SearchFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1468E60266ABE5B00E1B3B8 /* SearchFooter.swift */; };
 		A15048FE266E76A6003E0E48 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15048FD266E76A6003E0E48 /* GraphViewController.swift */; };
-		A1504915266EA274003E0E48 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1504914266EA274003E0E48 /* ChartView.swift */; };
 		A18374F9265C13BD009F212C /* Japan_HeartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18374F4265C13BD009F212C /* Japan_HeartTableViewController.swift */; };
 		A18374FA265C13BD009F212C /* China_HeartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18374F5265C13BD009F212C /* China_HeartTableViewController.swift */; };
 		A18374FB265C13BD009F212C /* Cafe_HeartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18374F6265C13BD009F212C /* Cafe_HeartTableViewController.swift */; };
@@ -50,13 +49,20 @@
 		A1B2E9EE266AD4D90027360F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2E9EB266AD4D90027360F /* Color.swift */; };
 		A1B2E9F1266AD4F10027360F /* OptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2E9F0266AD4F10027360F /* OptionTableViewController.swift */; };
 		A1B2E9F4266AD5090027360F /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2E9F3266AD5090027360F /* SearchTableViewController.swift */; };
+		A1D83B20266EBC910002C621 /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D83B1F266EBC910002C621 /* AudioController.swift */; };
+		A1D83B23266EBCAC0002C621 /* ExplodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D83B22266EBCAC0002C621 /* ExplodeView.swift */; };
+		A1D83B30266EBD470002C621 /* Resource in Resources */ = {isa = PBXBuildFile; fileRef = A1D83B2F266EBD470002C621 /* Resource */; };
 		A1F5DA7B264A7CC200557B38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F5DA7A264A7CC200557B38 /* AppDelegate.swift */; };
 		A1F5DA7D264A7CC200557B38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F5DA7C264A7CC200557B38 /* SceneDelegate.swift */; };
 		A1F5DA84264A7CC200557B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F5DA83264A7CC200557B38 /* Assets.xcassets */; };
 		A1F5DA87264A7CC200557B38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F5DA85264A7CC200557B38 /* LaunchScreen.storyboard */; };
+		C4D2B623E8DC333911D9A704 /* Pods_Eat_Today.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B6AE9D8F1F1E9EF718BD7E /* Pods_Eat_Today.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BEFD8DC10D5169DEAD85E10 /* Pods-Eat_Today.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eat_Today.release.xcconfig"; path = "Target Support Files/Pods-Eat_Today/Pods-Eat_Today.release.xcconfig"; sourceTree = "<group>"; };
+		31B6AE9D8F1F1E9EF718BD7E /* Pods_Eat_Today.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eat_Today.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E4FC32F9F7134C66DD03321 /* Pods-Eat_Today.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eat_Today.debug.xcconfig"; path = "Target Support Files/Pods-Eat_Today/Pods-Eat_Today.debug.xcconfig"; sourceTree = "<group>"; };
 		A114E50B265A7B490099B4E7 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		A114E52C265A99EF0099B4E7 /* Korea_TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Korea_TableViewController.swift; sourceTree = "<group>"; };
 		A114E531265A9A930099B4E7 /* China_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = China_TableViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +80,6 @@
 		A1468E5E266AB4D700E1B3B8 /* Famous.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Famous.swift; sourceTree = "<group>"; };
 		A1468E60266ABE5B00E1B3B8 /* SearchFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFooter.swift; sourceTree = "<group>"; };
 		A15048FD266E76A6003E0E48 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
-		A1504914266EA274003E0E48 /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		A18374F4265C13BD009F212C /* Japan_HeartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Japan_HeartTableViewController.swift; sourceTree = "<group>"; };
 		A18374F5265C13BD009F212C /* China_HeartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = China_HeartTableViewController.swift; sourceTree = "<group>"; };
 		A18374F6265C13BD009F212C /* Cafe_HeartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cafe_HeartTableViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +105,9 @@
 		A1B2E9EB266AD4D90027360F /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		A1B2E9F0266AD4F10027360F /* OptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionTableViewController.swift; sourceTree = "<group>"; };
 		A1B2E9F3266AD5090027360F /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		A1D83B1F266EBC910002C621 /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
+		A1D83B22266EBCAC0002C621 /* ExplodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplodeView.swift; sourceTree = "<group>"; };
+		A1D83B2F266EBD470002C621 /* Resource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resource; sourceTree = "<group>"; };
 		A1F5DA77264A7CC200557B38 /* Eat_Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eat_Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F5DA7A264A7CC200557B38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1F5DA7C264A7CC200557B38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,12 +121,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4D2B623E8DC333911D9A704 /* Pods_Eat_Today.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5222EBDDCD8E8D5BA0E099B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E4FC32F9F7134C66DD03321 /* Pods-Eat_Today.debug.xcconfig */,
+				2BEFD8DC10D5169DEAD85E10 /* Pods-Eat_Today.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		83BF41B45BFF3233E52E1573 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31B6AE9D8F1F1E9EF718BD7E /* Pods_Eat_Today.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A114E514265A84120099B4E7 /* Food */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				A15048FD266E76A6003E0E48 /* GraphViewController.swift */,
-				A1504914266EA274003E0E48 /* ChartView.swift */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -163,6 +188,8 @@
 				A1B2E9F3266AD5090027360F /* SearchTableViewController.swift */,
 				A1468E60266ABE5B00E1B3B8 /* SearchFooter.swift */,
 				A1468E5E266AB4D700E1B3B8 /* Famous.swift */,
+				A1D83B1F266EBC910002C621 /* AudioController.swift */,
+				A1D83B22266EBCAC0002C621 /* ExplodeView.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -223,6 +250,8 @@
 			children = (
 				A1F5DA79264A7CC200557B38 /* Eat_Today */,
 				A1F5DA78264A7CC200557B38 /* Products */,
+				5222EBDDCD8E8D5BA0E099B6 /* Pods */,
+				83BF41B45BFF3233E52E1573 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -237,6 +266,7 @@
 		A1F5DA79264A7CC200557B38 /* Eat_Today */ = {
 			isa = PBXGroup;
 			children = (
+				A1D83B2F266EBD470002C621 /* Resource */,
 				A1504917266EA4B0003E0E48 /* TabBar */,
 				A15048F0266E6FE6003E0E48 /* Graph */,
 				A1B2E9E8266AD4AA0027360F /* Color */,
@@ -261,9 +291,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1F5DA8B264A7CC200557B38 /* Build configuration list for PBXNativeTarget "Eat_Today" */;
 			buildPhases = (
+				24A20A4F909DCA5C73FF56CF /* [CP] Check Pods Manifest.lock */,
 				A1F5DA73264A7CC200557B38 /* Sources */,
 				A1F5DA74264A7CC200557B38 /* Frameworks */,
 				A1F5DA75264A7CC200557B38 /* Resources */,
+				4684A60469FD68BE97A44BFA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -313,12 +345,55 @@
 			files = (
 				A1F5DA87264A7CC200557B38 /* LaunchScreen.storyboard in Resources */,
 				A186CCCC26579C1E00F02B69 /* Main.storyboard in Resources */,
+				A1D83B30266EBD470002C621 /* Resource in Resources */,
 				A186CCBA26578C9300F02B69 /* Home.storyboard in Resources */,
 				A1F5DA84264A7CC200557B38 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24A20A4F909DCA5C73FF56CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Eat_Today-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4684A60469FD68BE97A44BFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Eat_Today/Pods-Eat_Today-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Eat_Today/Pods-Eat_Today-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Eat_Today/Pods-Eat_Today-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1F5DA73264A7CC200557B38 /* Sources */ = {
@@ -329,6 +404,7 @@
 				A114E54F265B0B8D0099B4E7 /* Korea_DetailTableViewController.swift in Sources */,
 				A1468E5F266AB4D700E1B3B8 /* Famous.swift in Sources */,
 				A18374FA265C13BD009F212C /* China_HeartTableViewController.swift in Sources */,
+				A1D83B20266EBC910002C621 /* AudioController.swift in Sources */,
 				A114E536265A9A930099B4E7 /* China_TableViewController.swift in Sources */,
 				A186CCC32657916800F02B69 /* HomeViewController.swift in Sources */,
 				A18374FD265C13BD009F212C /* Italy_HeartTableViewController.swift in Sources */,
@@ -364,7 +440,7 @@
 				A18CA553265BA6E4009CBD87 /* Korea_MapViewController.swift in Sources */,
 				A1AD157B265C0F1C00109A8B /* StarPickerViewController.swift in Sources */,
 				A114E555265B0BDA0099B4E7 /* Italy_DetailTableViewController.swift in Sources */,
-				A1504915266EA274003E0E48 /* ChartView.swift in Sources */,
+				A1D83B23266EBCAC0002C621 /* ExplodeView.swift in Sources */,
 				A18374FB265C13BD009F212C /* Cafe_HeartTableViewController.swift in Sources */,
 				A114E537265A9A930099B4E7 /* Japan_TableViewController.swift in Sources */,
 				A114E53A265A9A930099B4E7 /* Cafe_TableViewController.swift in Sources */,
@@ -511,6 +587,7 @@
 		};
 		A1F5DA8C264A7CC200557B38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E4FC32F9F7134C66DD03321 /* Pods-Eat_Today.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -530,6 +607,7 @@
 		};
 		A1F5DA8D264A7CC200557B38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BEFD8DC10D5169DEAD85E10 /* Pods-Eat_Today.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

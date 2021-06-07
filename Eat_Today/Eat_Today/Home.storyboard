@@ -433,60 +433,6 @@
                                 <rect key="frame" x="57" y="298" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6sE-KQ-ljY">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cat-wO-b7C" customClass="TutorialChartView" customModule="Eat_Today" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="300" height="250"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                            </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="한식" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeJ-57-2Wg">
-                                                <rect key="frame" x="3" y="280" width="30" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="카페" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIL-hI-RKV">
-                                                <rect key="frame" x="56" y="280" width="30" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="양식" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzO-wF-MV0">
-                                                <rect key="frame" x="109" y="280" width="30" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="중식" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ES-0a-1Q0">
-                                                <rect key="frame" x="162" y="280" width="30" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="일식" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mK-7l-UbC">
-                                                <rect key="frame" x="217" y="280" width="30" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="맛집" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaj-Ab-j5e">
-                                                <rect key="frame" x="269" y="280" width="30" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NlJ-ZS-M6u">
                                         <rect key="frame" x="-20" y="0.0" width="340" height="300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -505,6 +451,18 @@
                                                 <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6sE-KQ-ljY">
+                                        <rect key="frame" x="-50" y="0.0" width="400" height="300"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cat-wO-b7C" customClass="BarChartView" customModule="Charts">
+                                                <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
@@ -543,9 +501,9 @@
                     <navigationItem key="navigationItem" title="통계" id="hu1-VE-Zk4"/>
                     <connections>
                         <outlet property="Category" destination="6sE-KQ-ljY" id="Hjt-0P-GM3"/>
-                        <outlet property="Graph" destination="cat-wO-b7C" id="Qhm-16-OX7"/>
                         <outlet property="Heart" destination="NlJ-ZS-M6u" id="JCl-iw-2ot"/>
                         <outlet property="allView" destination="QgD-DG-uSp" id="2FK-co-0EX"/>
+                        <outlet property="barChartView" destination="cat-wO-b7C" id="9b7-sJ-Vaz"/>
                         <outlet property="countHeart" destination="mMA-Ui-w3X" id="4kV-19-xVw"/>
                         <outlet property="countText" destination="RGO-zZ-GaX" id="d6v-nk-U8H"/>
                     </connections>
@@ -1695,12 +1653,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="찜" id="Qig-14-62O">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="7bi-hf-An7">
+                        <barButtonItem key="leftBarButtonItem" title="취소" id="7bi-hf-An7">
                             <connections>
                                 <segue destination="gck-aL-jTL" kind="unwind" unwindAction="cancelFromHeartToDetailWithSegue:" id="vaJ-Y7-ZYD"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="yYt-ji-m1c">
+                        <barButtonItem key="rightBarButtonItem" title="저장" style="done" id="yYt-ji-m1c">
                             <connections>
                                 <action selector="saveHeart:" destination="RRP-aJ-2Ot" id="bxm-0w-PUA"/>
                                 <segue destination="gck-aL-jTL" kind="unwind" identifier="SavePlayerDetail" unwindAction="saveFromStarToHeartWithSegue:" id="Zx7-eR-9lM"/>
@@ -1808,12 +1766,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="찜" id="t6v-0k-MFZ">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="mxJ-y6-hcW">
+                        <barButtonItem key="leftBarButtonItem" title="취소" id="mxJ-y6-hcW">
                             <connections>
                                 <segue destination="bY9-iB-jQT" kind="unwind" unwindAction="cancelFromHeartToDetailWithSegue:" id="RqM-L2-udY"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="jke-IS-R2n">
+                        <barButtonItem key="rightBarButtonItem" title="저장" style="done" id="jke-IS-R2n">
                             <connections>
                                 <segue destination="bY9-iB-jQT" kind="unwind" identifier="SavePlayerDetail" unwindAction="saveFromStarToHeartWithSegue:" id="LKE-LX-YV7"/>
                             </connections>
@@ -1920,12 +1878,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="찜" id="a7P-aD-J7q">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="h4J-IQ-Ru1">
+                        <barButtonItem key="leftBarButtonItem" title="취소" id="h4J-IQ-Ru1">
                             <connections>
                                 <segue destination="7fj-la-KYN" kind="unwind" unwindAction="cancelFromHeartToDetailWithSegue:" id="Ruv-4a-8U3"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="w3V-ex-CwR">
+                        <barButtonItem key="rightBarButtonItem" title="저장" style="done" id="w3V-ex-CwR">
                             <connections>
                                 <segue destination="7fj-la-KYN" kind="unwind" identifier="SavePlayerDetail" unwindAction="saveFromStarToHeartWithSegue:" id="v6d-YD-cNt"/>
                             </connections>
@@ -2032,12 +1990,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="찜" id="CdP-Ko-G8l">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="IZB-NK-CTB">
+                        <barButtonItem key="leftBarButtonItem" title="취소" id="IZB-NK-CTB">
                             <connections>
                                 <segue destination="Cf5-99-OsD" kind="unwind" unwindAction="cancelFromHeartToDetailWithSegue:" id="IEo-2a-sSI"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="aPA-pF-nBP">
+                        <barButtonItem key="rightBarButtonItem" title="저장" style="done" id="aPA-pF-nBP">
                             <connections>
                                 <segue destination="Cf5-99-OsD" kind="unwind" identifier="SavePlayerDetail" unwindAction="saveFromStarToHeartWithSegue:" id="Hp5-Om-ar0"/>
                             </connections>
@@ -2144,12 +2102,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="찜" id="GTf-aY-Ivn">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="3JK-bV-D8r">
+                        <barButtonItem key="leftBarButtonItem" title="취소" id="3JK-bV-D8r">
                             <connections>
                                 <segue destination="seJ-FW-O8r" kind="unwind" unwindAction="cancelFromHeartToDetailWithSegue:" id="iAX-Kp-gES"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="H9S-Sd-mYE">
+                        <barButtonItem key="rightBarButtonItem" title="저장" style="done" id="H9S-Sd-mYE">
                             <connections>
                                 <segue destination="seJ-FW-O8r" kind="unwind" identifier="SavePlayerDetail" unwindAction="saveFromStarToHeartWithSegue:" id="1I0-b9-GDX"/>
                             </connections>
@@ -2256,12 +2214,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="찜" id="rCo-rF-puK">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="tjd-Wo-Mhs">
+                        <barButtonItem key="leftBarButtonItem" title="취소" id="tjd-Wo-Mhs">
                             <connections>
                                 <segue destination="OTv-7V-hwS" kind="unwind" unwindAction="cancelFromHeartToDetailWithSegue:" id="l4C-9D-VTA"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="B6b-fW-TB2">
+                        <barButtonItem key="rightBarButtonItem" title="저장" style="done" id="B6b-fW-TB2">
                             <connections>
                                 <segue destination="OTv-7V-hwS" kind="unwind" identifier="SavePlayerDetail" unwindAction="saveFromStarToHeartWithSegue:" id="Xgg-mz-4Kh"/>
                             </connections>
@@ -2540,6 +2498,9 @@
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PZ0-PW-XWB">
                                                     <rect key="frame" x="347" y="6" width="49" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="switchDidChange:" destination="OHc-jn-v1y" eventType="valueChanged" id="crf-L0-xYJ"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -2571,30 +2532,7 @@
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle=" " id="ox5-SP-PNH">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="lGD-7B-iHK">
-                                        <rect key="frame" x="0.0" y="254.5" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lGD-7B-iHK" id="pXk-zq-22g">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="찜 초기화" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmN-Lf-1mh">
-                                                    <rect key="frame" x="20" y="11" width="64" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgV-8s-OBV">
-                                                    <rect key="frame" x="364" y="7" width="30" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" image="trash.circle" catalog="system"/>
-                                                </button>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
+                                <cells/>
                             </tableViewSection>
                         </sections>
                         <connections>
@@ -2603,6 +2541,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="설정" id="kJ8-5o-JaZ"/>
+                    <connections>
+                        <outlet property="soundSwitch" destination="PZ0-PW-XWB" id="lcF-xC-e5X"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ure-ZQ-caa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2725,7 +2666,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="색상 변경" id="oZR-rZ-BnO">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="PRa-cx-JcM">
+                        <barButtonItem key="rightBarButtonItem" title="저장" id="PRa-cx-JcM">
                             <connections>
                                 <action selector="pressedSave:" destination="2GW-tS-uMK" id="2Dj-Oy-7ff"/>
                             </connections>
@@ -2755,14 +2696,13 @@
         <image name="Korea" width="140" height="140"/>
         <image name="chevron.down" catalog="system" width="128" height="72"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
-        <image name="heart" width="512" height="512"/>
         <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart" width="512" height="512"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="map.fill" catalog="system" width="128" height="110"/>
         <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
         <image name="square.stack.3d.down.right.fill" catalog="system" width="124" height="128"/>
-        <image name="trash.circle" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

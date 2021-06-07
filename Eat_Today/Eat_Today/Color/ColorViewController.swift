@@ -1,15 +1,9 @@
-//
-//  ColorViewController.swift
-//  Eat_Today
-//
-//  Created by KPUGAME on 2021/06/05.
-//
-
 var color = Color()
 
 import UIKit
 
 class ColorViewController: UIViewController {
+    @IBOutlet weak var originLabel: UILabel!
     @IBOutlet weak var changeLabel: UILabel!
   
     @IBOutlet weak var redLabel: UILabel!
@@ -40,13 +34,20 @@ class ColorViewController: UIViewController {
     }
     
     @IBAction func pressedSave(_ sender: Any) {
-        let alert = UIAlertController(title: title, message: "배경색을 변경헀어요~!", preferredStyle: .alert)
-        let action = UIAlertAction(title: "~OK~", style: .cancel)
+        let alert = UIAlertController(title: title, message: "배경색이 변경되었습니다.", preferredStyle: .alert)
+        let action = UIAlertAction(title: "확인", style: .cancel)
+        
+        let explore = ExplodeView(frame: CGRect(x: self.view.center.x - 60, y: self.view.center.y + 200, width: 120, height: 60))
+        originLabel.superview?.addSubview(explore)
+        originLabel.superview?.sendSubviewToBack(explore)
+        
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
-        
+
+        originLabel.backgroundColor = UIColor(rgbStruct: rgb)
         self.view.backgroundColor = UIColor(rgbStruct: rgb)
         updateColor()
+
     }
     func updateColor() {
         color.r = rgb.r
@@ -57,6 +58,7 @@ class ColorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        originLabel.backgroundColor = UIColor(colorStruct: bg)
         changeLabel.backgroundColor = UIColor(rgbStruct: RGB(r: 256, g: 256, b: 256))
         
         redLabel.text = "R \(rgb.r)"

@@ -1,7 +1,6 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    
     var bg:Color = color
     var sgguCd: String = "41820"
     var sgguNm: String = "가평군"

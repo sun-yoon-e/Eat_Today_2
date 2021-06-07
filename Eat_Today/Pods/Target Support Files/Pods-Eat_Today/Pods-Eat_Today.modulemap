@@ -1,0 +1,6 @@
+framework module Pods_Eat_Today {
+  umbrella header "Pods-Eat_Today-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -6,7 +6,14 @@
 import UIKit
 
 class LogoViewController: UIViewController {
-
+    var audioController: AudioController
+    required init?(coder aDecoder: NSCoder) {
+        audioController = AudioController()
+        audioController.preloadAudioEffects(audioFileNames: AudioFiles)
+        
+        super.init(coder: aDecoder)
+    }
+    
     private let imageView: UIImageView = {
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 327, height: 155))
         imageView.image = UIImage(named: "logo")
@@ -20,6 +27,7 @@ class LogoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(imageView)
+        audioController.playerEffect(name: EffectSound)
     }
 
     override func viewDidLayoutSubviews() {
@@ -44,7 +52,7 @@ class LogoViewController: UIViewController {
                        animations: { self.imageView.alpha = 0 },
                        completion: { done in
                             if done {
-                                DispatchQueue.main.asyncAfter(deadline: .now()+0.3, execute: {
+                                DispatchQueue.main.asyncAfter(deadline: .now()+0.6, execute: {
                                     let Home = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(identifier: "Home")
                                     Home.modalPresentationStyle = .fullScreen
                                     self.present(Home, animated: true, completion: nil)
