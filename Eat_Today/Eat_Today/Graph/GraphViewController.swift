@@ -36,7 +36,7 @@ class GraphViewController: UIViewController {
         barChartView.doubleTapToZoomEnabled = false
         barChartView.xAxis.labelPosition = .bottom
         barChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: category)
-        barChartView.xAxis.setLabelCount(dataPoints.count, force: false)
+        barChartView.xAxis.setLabelCount(category.count, force: false)
         barChartView.leftAxis.valueFormatter = IndexAxisValueFormatter(values: numbers)
         barChartView.leftAxis.setLabelCount(numbers.count, force: false)
         barChartView.rightAxis.enabled = false
