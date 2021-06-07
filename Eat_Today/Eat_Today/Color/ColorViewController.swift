@@ -10,7 +10,6 @@ var color = Color()
 import UIKit
 
 class ColorViewController: UIViewController {
-    @IBOutlet weak var originLabel: UILabel!
     @IBOutlet weak var changeLabel: UILabel!
   
     @IBOutlet weak var redLabel: UILabel!
@@ -46,8 +45,6 @@ class ColorViewController: UIViewController {
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
         
-        
-        originLabel.backgroundColor = UIColor(rgbStruct: rgb)
         self.view.backgroundColor = UIColor(rgbStruct: rgb)
         updateColor()
     }
@@ -60,7 +57,6 @@ class ColorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        originLabel.backgroundColor = UIColor(colorStruct: bg)
         changeLabel.backgroundColor = UIColor(rgbStruct: RGB(r: 256, g: 256, b: 256))
         
         redLabel.text = "R \(rgb.r)"

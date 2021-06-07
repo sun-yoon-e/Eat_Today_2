@@ -50,6 +50,12 @@ class Search_TableViewController: UITableViewController, XMLParserDelegate {
         return searchController.isActive && (!searchBarIsEmpty() || searchBarScopeIsFiltering)
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.view.backgroundColor = UIColor(colorStruct: bg)
+        tableView.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         beginParsing()
